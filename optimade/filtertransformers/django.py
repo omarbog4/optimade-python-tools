@@ -3,8 +3,11 @@ from optimade.filterparser import LarkParser
 from lark import Tree
 from lark.lexer import Token
 from django.db.models import Q
-import json
-import os
+
+__all__ = (
+    "DjangoTransformer",
+    "Lark2Django",
+)
 
 
 class DjangoQueryError(Exception):
@@ -21,7 +24,7 @@ django_db_keys = {
 }
 
 
-class Lark2Django:
+class DjangoTransformer:
     def __init__(self):
         self.opers = {
             "=": self.eq,
@@ -101,3 +104,7 @@ class Lark2Django:
                 return self.opers[parse_Tree.value]
         else:
             raise DjangoQueryError("Not a Lark Tree or Token")
+
+
+# alias for backwards compatibility
+Lark2Django = DjangoTransformer
