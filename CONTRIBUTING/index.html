@@ -6,11 +6,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
-<link href="https://www.optimade.org/optimade-python-tools/" rel="canonical"/>
-<link href="assets/images/favicon.png" rel="shortcut icon"/>
+<link href="https://www.optimade.org/optimade-python-tools/CONTRIBUTING/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
-<title>OPTIMADE-Python-Tools Documentation</title>
-<link href="assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<title>Contributing - OPTIMADE-Python-Tools Documentation</title>
+<link href="../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -20,7 +20,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#optimade-python-tools">
+<a class="md-skip" href="#contributing">
           Skip to content
         </a>
 </div>
@@ -41,7 +41,7 @@
           </span>
 <span class="md-header-nav__topic md-ellipsis">
             
-              OPTIMADE Python tools
+              Contributing
             
           </span>
 </div>
@@ -110,16 +110,26 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href=".." title="OPTIMADE Python tools">
+      OPTIMADE Python tools
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../INSTALL/" title="Installation">
+      Installation
+    </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-        OPTIMADE Python tools
+        Contributing
         <span class="md-nav__icon md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
 </span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="." title="OPTIMADE Python tools">
-      OPTIMADE Python tools
+<a class="md-nav__link md-nav__link--active" href="./" title="Contributing">
+      Contributing
     </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -130,37 +140,26 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#status">
-    Status
+<a class="md-nav__link" href="#getting-started-with-filter-parsing-and-transforming">
+    Getting Started with Filter Parsing and Transforming
+  </a>
+<nav aria-label="Getting Started with Filter Parsing and Transforming" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flow-for-parsing-user-supplied-filter-and-converting-to-backend-query">
+    Flow for Parsing User-Supplied Filter and Converting to Backend Query
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
-    Installation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#contributing">
-    Contributing
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#links">
-    Links
+<a class="md-nav__link" href="#developing-new-filter-transformers">
+    Developing New Filter Transformers
   </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="INSTALL/" title="Installation">
-      Installation
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="CONTRIBUTING/" title="Contributing">
-      Contributing
-    </a>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
@@ -179,17 +178,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="use_cases/single_db/" title="OPTIMADE API for a single database">
+<a class="md-nav__link" href="../use_cases/single_db/" title="OPTIMADE API for a single database">
       OPTIMADE API for a single database
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="use_cases/multi_db/" title="OPTIMADE API for multiple databases">
+<a class="md-nav__link" href="../use_cases/multi_db/" title="OPTIMADE API for multiple databases">
       OPTIMADE API for multiple databases
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases">
+<a class="md-nav__link" href="../use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases">
       OPTIMADE API for dynamic databases
     </a>
 </li>
@@ -197,7 +196,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="CHANGELOG/" title="Changelog">
+<a class="md-nav__link" href="../CHANGELOG/" title="Changelog">
       Changelog
     </a>
 </li>
@@ -218,7 +217,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/" title="Models">
+<a class="md-nav__link" href="../reference/models/" title="Models">
       Models
     </a>
 </li>
@@ -239,27 +238,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/filtertransformers/debug/" title="Debug">
+<a class="md-nav__link" href="../reference/filtertransformers/debug/" title="Debug">
       Debug
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/filtertransformers/django/" title="Django">
+<a class="md-nav__link" href="../reference/filtertransformers/django/" title="Django">
       Django
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/filtertransformers/elasticsearch/" title="Elasticsearch">
+<a class="md-nav__link" href="../reference/filtertransformers/elasticsearch/" title="Elasticsearch">
       Elasticsearch
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/filtertransformers/json/" title="Json">
+<a class="md-nav__link" href="../reference/filtertransformers/json/" title="Json">
       Json
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/filtertransformers/mongo/" title="Mongo">
+<a class="md-nav__link" href="../reference/filtertransformers/mongo/" title="Mongo">
       Mongo
     </a>
 </li>
@@ -283,52 +282,52 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/baseinfo/" title="Baseinfo">
+<a class="md-nav__link" href="../reference/models/baseinfo/" title="Baseinfo">
       Baseinfo
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/entries/" title="Entries">
+<a class="md-nav__link" href="../reference/models/entries/" title="Entries">
       Entries
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/index_metadb/" title="Index metadb">
+<a class="md-nav__link" href="../reference/models/index_metadb/" title="Index metadb">
       Index metadb
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/jsonapi/" title="Jsonapi">
+<a class="md-nav__link" href="../reference/models/jsonapi/" title="Jsonapi">
       Jsonapi
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/links/" title="Links">
+<a class="md-nav__link" href="../reference/models/links/" title="Links">
       Links
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/optimade_json/" title="Optimade json">
+<a class="md-nav__link" href="../reference/models/optimade_json/" title="Optimade json">
       Optimade json
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/references/" title="References">
+<a class="md-nav__link" href="../reference/models/references/" title="References">
       References
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/responses/" title="Responses">
+<a class="md-nav__link" href="../reference/models/responses/" title="Responses">
       Responses
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/structures/" title="Structures">
+<a class="md-nav__link" href="../reference/models/structures/" title="Structures">
       Structures
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/models/utils/" title="Utils">
+<a class="md-nav__link" href="../reference/models/utils/" title="Utils">
       Utils
     </a>
 </li>
@@ -352,37 +351,37 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/config/" title="Config">
+<a class="md-nav__link" href="../reference/server/config/" title="Config">
       Config
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/exception_handlers/" title="Exception handlers">
+<a class="md-nav__link" href="../reference/server/exception_handlers/" title="Exception handlers">
       Exception handlers
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/exceptions/" title="Exceptions">
+<a class="md-nav__link" href="../reference/server/exceptions/" title="Exceptions">
       Exceptions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/main/" title="Main">
+<a class="md-nav__link" href="../reference/server/main/" title="Main">
       Main
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/main_index/" title="Main index">
+<a class="md-nav__link" href="../reference/server/main_index/" title="Main index">
       Main index
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/middleware/" title="Middleware">
+<a class="md-nav__link" href="../reference/server/middleware/" title="Middleware">
       Middleware
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/query_params/" title="Query params">
+<a class="md-nav__link" href="../reference/server/query_params/" title="Query params">
       Query params
     </a>
 </li>
@@ -403,12 +402,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/entry_collections/entry_collections/" title="Entry collections">
+<a class="md-nav__link" href="../reference/server/entry_collections/entry_collections/" title="Entry collections">
       Entry collections
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/entry_collections/mongo/" title="Mongo">
+<a class="md-nav__link" href="../reference/server/entry_collections/mongo/" title="Mongo">
       Mongo
     </a>
 </li>
@@ -432,22 +431,22 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/mappers/entries/" title="Entries">
+<a class="md-nav__link" href="../reference/server/mappers/entries/" title="Entries">
       Entries
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/mappers/links/" title="Links">
+<a class="md-nav__link" href="../reference/server/mappers/links/" title="Links">
       Links
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/mappers/references/" title="References">
+<a class="md-nav__link" href="../reference/server/mappers/references/" title="References">
       References
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/mappers/structures/" title="Structures">
+<a class="md-nav__link" href="../reference/server/mappers/structures/" title="Structures">
       Structures
     </a>
 </li>
@@ -471,37 +470,37 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/index_info/" title="Index info">
+<a class="md-nav__link" href="../reference/server/routers/index_info/" title="Index info">
       Index info
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/info/" title="Info">
+<a class="md-nav__link" href="../reference/server/routers/info/" title="Info">
       Info
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/landing/" title="Landing">
+<a class="md-nav__link" href="../reference/server/routers/landing/" title="Landing">
       Landing
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/links/" title="Links">
+<a class="md-nav__link" href="../reference/server/routers/links/" title="Links">
       Links
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/references/" title="References">
+<a class="md-nav__link" href="../reference/server/routers/references/" title="References">
       References
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/structures/" title="Structures">
+<a class="md-nav__link" href="../reference/server/routers/structures/" title="Structures">
       Structures
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/server/routers/utils/" title="Utils">
+<a class="md-nav__link" href="../reference/server/routers/utils/" title="Utils">
       Utils
     </a>
 </li>
@@ -528,12 +527,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/validator/validator/" title="Validator">
+<a class="md-nav__link" href="../reference/validator/validator/" title="Validator">
       Validator
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="reference/validator/validator_model_patches/" title="Validator model patches">
+<a class="md-nav__link" href="../reference/validator/validator_model_patches/" title="Validator model patches">
       Validator model patches
     </a>
 </li>
@@ -560,24 +559,23 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#status">
-    Status
+<a class="md-nav__link" href="#getting-started-with-filter-parsing-and-transforming">
+    Getting Started with Filter Parsing and Transforming
+  </a>
+<nav aria-label="Getting Started with Filter Parsing and Transforming" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flow-for-parsing-user-supplied-filter-and-converting-to-backend-query">
+    Flow for Parsing User-Supplied Filter and Converting to Backend Query
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
-    Installation
+<a class="md-nav__link" href="#developing-new-filter-transformers">
+    Developing New Filter Transformers
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#contributing">
-    Contributing
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#links">
-    Links
-  </a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -586,49 +584,117 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Materials-Consortia/optimade-python-tools/edit/master/docs/index.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Materials-Consortia/optimade-python-tools/edit/master/docs/CONTRIBUTING.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="optimade-python-tools">OPTIMADE Python tools<a class="headerlink" href="#optimade-python-tools" title="Permanent link">¶</a></h1>
-<table>
-<thead>
-<tr>
-<th align="center">Latest release</th>
-<th align="center">Build status</th>
-<th align="center">Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="https://pypi.org/project/optimade/"><img alt="PyPI Version" src="https://img.shields.io/pypi/v/optimade?logo=pypi"/></a><br/><a href="https://pypi.org/project/optimade/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/optimade?logo=python"/></a><br/><a href="https://github.com/Materials-Consortia/OPTIMADE/"><img alt="OPTIMADE" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Materials-Consortia/optimade-python-tools/master/.ci/optimade-version.json"/></a></td>
-<td align="center"><a href="https://github.com/Materials-Consortia/optimade-python-tools/actions?query=branch%3Amaster+"><img alt="Build Status" src="https://img.shields.io/github/workflow/status/Materials-Consortia/optimade-python-tools/Testing,%20linting,%20and%20OpenAPI%20validation?logo=github"/></a><br/><a href="https://codecov.io/gh/Materials-Consortia/optimade-python-tools"><img alt="codecov" src="https://codecov.io/gh/Materials-Consortia/optimade-python-tools/branch/master/graph/badge.svg"/></a><br/><a href="https://optimade.herokuapp.com"><img alt="Heroku App Status" src="https://heroku-shields.herokuapp.com/optimade??logo=heroku"/></a></td>
-<td align="center"><a href="https://github.com/Materials-Consortia/optimade-python-tools/pulse"><img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/m/Materials-Consortia/optimade-python-tools?logo=github"/></a><br/><a href="https://github.com/Materials-Consortia/optimade-python-tools/commits/master"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/Materials-Consortia/optimade-python-tools/master?logo=github"/></a><br/><a href="https://dependabot.com"><img alt="Dependabot" src="https://badgen.net/dependabot/Materials-Consortia/optimade-python-tools/?icon=dependabot"/></a></td>
-</tr>
-</tbody>
-</table>
-<p>The aim of OPTIMADE is to develop a common API, compliant with the <a href="http://jsonapi.org/format/1.0/">JSON API 1.0</a> specification.
-This is to enable interoperability among databases that contain calculated properties of existing and hypothetical materials.</p>
-<p>This repository contains a library of tools for implementing and consuming <a href="https://www.optimade.org">OPTIMADE</a> APIs using Python.
-It also contains a server validator tool, which may be called from the shell or used as a GitHub Action from <a href="https://github.com/Materials-Consortia/optimade-validator-action">optimade-validator-action</a>.</p>
-<p><em>Disclaimer</em>: While the package supports <code>elasticsearch-dsl</code> v6 &amp; v7 and <code>django</code> v2 &amp; v3, all tests are performed with the latest supported version.
-If you experience any issues with the older versions, you are most welcome to contribute to the repository (see below under Contributing).</p>
-<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">¶</a></h2>
-<p>Both the OPTIMADE specification and this repository are <strong>under development</strong>.</p>
-<p>The latest stable version can be obtained from <a href="https://pypi.org/project/optimade">PyPI</a> <code>pip install optimade</code> or by cloning the master branch of this repository <code>git clone git@github.com:Materials-Consortia/optimade-python-tools</code>.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
-<p>Installation instructions, for both the index meta-database, and for the main API can be found in <a href="INSTALL/">INSTALL.md</a>.</p>
-<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h2>
-<p>Contribution guidelines and tips can be found in <a href="CONTRIBUTING/">CONTRIBUTING.md</a>.</p>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="https://github.com/Materials-Consortia/OPTIMADE/blob/develop/optimade.rst">OPTIMADE Specification</a>, the human-readable specification that this library is based on.</li>
-<li><a href="https://github.com/Materials-Consortia/optimade-validator-action">optimade-validator-action</a>, a GitHub action that can be used to validate implementations from a URL (using the validator from this repo).</li>
-<li><a href="https://github.com/OAI/OpenAPI-Specification">OpenAPI</a>, the machine-readable format used to specify the OPTIMADE API in <a href="openapi.json"><code>openapi.json</code></a>.</li>
-<li><a href="https://petstore.swagger.io/?url=https://raw.githubusercontent.com/Materials-Consortia/optimade-python-tools/master/openapi.json">Interactive documentation</a> generated from <a href="openapi.json"><code>openapi.json</code></a> (see also <a href="https://editor.swagger.io/?url=https://raw.githubusercontent.com/Materials-Consortia/optimade-python-tools/master/openapi.json">interactive JSON editor</a>).</li>
-<li><a href="https://pydantic-docs.helpmanual.io/">pydantic</a>, the library used for generating the OpenAPI schema from <a href="optimade/models">Python models</a>.</li>
-<li><a href="https://fastapi.tiangolo.com/">FastAPI</a>, the framework used for generating the reference implementation from the <a href="openapi.json"><code>openapi.json</code></a> specification.</li>
-<li><a href="https://github.com/lark-parser/lark">lark</a>, the library used to parse the filter language in OPTIMADE queries.</li>
-</ul>
+<h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h1>
+<p>The <a href="https://github.com/Materials-Consortia">Materials Consortia</a> is very open to contributions to this package.</p>
+<p>This may be anything from simple feedback and raising <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/new">new issues</a> to creating <a href="https://github.com/Materials-Consortia/optimade-python-tools/compare">new PRs</a>.</p>
+<p>We have below recommendations for setting up an environment in which one may develop the package further.</p>
+<h2 id="getting-started-with-filter-parsing-and-transforming">Getting Started with Filter Parsing and Transforming<a class="headerlink" href="#getting-started-with-filter-parsing-and-transforming" title="Permanent link">¶</a></h2>
+<p>Example use:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">optimade.filterparser</span> <span class="kn">import</span> <span class="n">Parser</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">Parser</span><span class="p">(</span><span class="n">version</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">"nelements&lt;3"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Tree<span class="o">(</span>start, <span class="o">[</span>Tree<span class="o">(</span>expression, <span class="o">[</span>Tree<span class="o">(</span>term, <span class="o">[</span>Tree<span class="o">(</span>atom, <span class="o">[</span>Tree<span class="o">(</span>comparison, <span class="o">[</span>Token<span class="o">(</span>VALUE, <span class="s1">'nelements'</span><span class="o">)</span>, Token<span class="o">(</span>OPERATOR, <span class="s1">'&lt;'</span><span class="o">)</span>, Token<span class="o">(</span>VALUE, <span class="s1">'3'</span><span class="o">)])])])])])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">pretty</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>start
+  expression
+    term
+      atom
+        comparison
+          nelements
+          &lt;
+          <span class="m">3</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">tree</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">'_mp_bandgap &gt; 5.0 AND _cod_molecular_weight &lt; 350'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">pretty</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>start
+  expression
+    term
+      term
+        atom
+          comparison
+            _mp_bandgap
+            &gt;
+            <span class="m">5</span>.0
+      AND
+      atom
+        comparison
+          _cod_molecular_weight
+          &lt;
+          <span class="m">350</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assumes graphviz installed on system (e.g. `conda install -c anaconda graphviz`) and `pip install pydot`</span>
+<span class="kn">from</span> <span class="nn">lark.tree</span> <span class="kn">import</span> <span class="n">pydot__tree_to_png</span>
+
+<span class="n">pydot__tree_to_png</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="s2">"exampletree.png"</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="example tree" src="exampletree.png"/></p>
+<h3 id="flow-for-parsing-user-supplied-filter-and-converting-to-backend-query">Flow for Parsing User-Supplied Filter and Converting to Backend Query<a class="headerlink" href="#flow-for-parsing-user-supplied-filter-and-converting-to-backend-query" title="Permanent link">¶</a></h3>
+<p><code>optimade.filterparser.Parser</code> will take user input to generate a <code>lark.Tree</code> and feed that to a <code>lark.Transformer</code>.
+E.g., <code>optimade.filtertransformers.mongo.MongoTransformer</code> will turn the tree into something useful for your MondoDB backend:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example: Converting to MongoDB Query Syntax</span>
+<span class="kn">from</span> <span class="nn">optimade.filtertransformers.mongo</span> <span class="kn">import</span> <span class="n">MongoTransformer</span>
+
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">MongoTransformer</span><span class="p">()</span>
+
+<span class="n">tree</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">'_mp_bandgap &gt; 5.0 AND _cod_molecular_weight &lt; 350'</span><span class="p">)</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="s1">'$and'</span><span class="p">:</span> <span class="p">[{</span><span class="s1">'_mp_bandgap'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'$gt'</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">}},</span> <span class="p">{</span><span class="s1">'_cod_molecular_weight'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'$lt'</span><span class="p">:</span> <span class="mf">350.0</span><span class="p">}}]}</span>
+</code></pre></div>
+<p>There is also a <a href="optimade/filtertransformers/json.py">basic JSON transformer</a> (<code>optimade.filtertransformers.json.JSONTransformer</code>) you can use as a simple example for developing your own transformer.
+You can also use the JSON output it produces as an easy-to-parse input for a "transformer" in your programming language of choice.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">JSONTransformer</span><span class="p">(</span><span class="n">Transformer</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">compact</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compact</span> <span class="o">=</span> <span class="n">compact</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__default__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">):</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">Token</span><span class="p">):</span>
+                <span class="n">token_repr</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="s2">"@module"</span><span class="p">:</span> <span class="s2">"lark.lexer"</span><span class="p">,</span>
+                    <span class="s2">"@class"</span><span class="p">:</span> <span class="s2">"Token"</span><span class="p">,</span>
+                    <span class="s2">"type_"</span><span class="p">:</span> <span class="n">c</span><span class="o">.</span><span class="n">type</span><span class="p">,</span>
+                    <span class="s2">"value"</span><span class="p">:</span> <span class="n">c</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+                <span class="p">}</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">compact</span><span class="p">:</span>
+                    <span class="k">del</span> <span class="n">token_repr</span><span class="p">[</span><span class="s2">"@module"</span><span class="p">]</span>
+                    <span class="k">del</span> <span class="n">token_repr</span><span class="p">[</span><span class="s2">"@class"</span><span class="p">]</span>
+                <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token_repr</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Unknown type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="si">}</span><span class="s2"> for tree child </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="n">tree_repr</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"@module"</span><span class="p">:</span> <span class="s2">"lark"</span><span class="p">,</span>
+            <span class="s2">"@class"</span><span class="p">:</span> <span class="s2">"Tree"</span><span class="p">,</span>
+            <span class="s2">"data"</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span>
+            <span class="s2">"children"</span><span class="p">:</span> <span class="n">items</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">compact</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">tree_repr</span><span class="p">[</span><span class="s2">"@module"</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">tree_repr</span><span class="p">[</span><span class="s2">"@class"</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">tree_repr</span>
+</code></pre></div>
+<h3 id="developing-new-filter-transformers">Developing New Filter Transformers<a class="headerlink" href="#developing-new-filter-transformers" title="Permanent link">¶</a></h3>
+<p>If you would like to add a new transformer, please add:</p>
+<ol>
+<li>A module (.py file) in the <code>optimade/filtertransformers</code> folder.</li>
+<li>Any additional Python requirements must be optional and provided as a separate "<code>extra_requires</code>" entry in <code>setup.py</code>.</li>
+<li>Tests in <code>optimade/filtertransformers/tests</code> that are skipped if the required packages fail to import.</li>
+</ol>
+<p>For examples, please check out existing filter transformers.</p>
 </article>
 </div>
 </div>
@@ -636,13 +702,26 @@ If you experience any issues with the older versions, you are most welcome to co
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--next" href="INSTALL/" rel="next" title="Installation">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../INSTALL/" rel="prev" title="Installation">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Installation
+              </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../use_cases/single_db/" rel="next" title="OPTIMADE API for a single database">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Installation
+                OPTIMADE API for a single database
               </div>
 </div>
 <div class="md-footer-nav__button md-icon">
@@ -667,14 +746,14 @@ If you experience any issues with the older versions, you are most welcome to co
 </div>
 </footer>
 </div>
-<script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+<script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
-          base: ".",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

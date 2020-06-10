@@ -1,0 +1,1367 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
+<link href="https://www.optimade.org/optimade-python-tools/reference/server/routers/utils/" rel="canonical"/>
+<link href="../../../../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<title>Utils - OPTIMADE-Python-Tools Documentation</title>
+<link href="../../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#optimade.server.routers.utils">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-header-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            OPTIMADE-Python-Tools Documentation
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              Utils
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    OPTIMADE-Python-Tools Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../.." title="OPTIMADE Python tools">
+      OPTIMADE Python tools
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../INSTALL/" title="Installation">
+      Installation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../CONTRIBUTING/" title="Contributing">
+      Contributing
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-4">
+      Use Cases
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Use Cases" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Use Cases
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../use_cases/single_db/" title="OPTIMADE API for a single database">
+      OPTIMADE API for a single database
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../use_cases/multi_db/" title="OPTIMADE API for multiple databases">
+      OPTIMADE API for multiple databases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases">
+      OPTIMADE API for dynamic databases
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../CHANGELOG/" title="Changelog">
+      Changelog
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6" id="nav-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-6">
+      API Reference
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="API Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-6">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        API Reference
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/" title="Models">
+      Models
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" id="nav-6-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-2">
+      Filtertransformers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Filtertransformers" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-2">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Filtertransformers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filtertransformers/debug/" title="Debug">
+      Debug
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filtertransformers/django/" title="Django">
+      Django
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filtertransformers/elasticsearch/" title="Elasticsearch">
+      Elasticsearch
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filtertransformers/json/" title="Json">
+      Json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filtertransformers/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-3" id="nav-6-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-3">
+      Models
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Models" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-3">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Models
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/baseinfo/" title="Baseinfo">
+      Baseinfo
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/entries/" title="Entries">
+      Entries
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/index_metadb/" title="Index metadb">
+      Index metadb
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/jsonapi/" title="Jsonapi">
+      Jsonapi
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/optimade_json/" title="Optimade json">
+      Optimade json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/responses/" title="Responses">
+      Responses
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../models/utils/" title="Utils">
+      Utils
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4" id="nav-6-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4">
+      Server
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Server" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Server
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../config/" title="Config">
+      Config
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../exception_handlers/" title="Exception handlers">
+      Exception handlers
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../exceptions/" title="Exceptions">
+      Exceptions
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../main/" title="Main">
+      Main
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../main_index/" title="Main index">
+      Main index
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../middleware/" title="Middleware">
+      Middleware
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../query_params/" title="Query params">
+      Query params
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-8" id="nav-6-4-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-8">
+      Entry collections
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Entry collections" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-8">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Entry collections
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../entry_collections/entry_collections/" title="Entry collections">
+      Entry collections
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../entry_collections/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-9" id="nav-6-4-9" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-9">
+      Mappers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Mappers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-9">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Mappers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mappers/entries/" title="Entries">
+      Entries
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mappers/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mappers/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mappers/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-10" id="nav-6-4-10" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-10">
+      Routers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Routers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-10">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Routers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../index_info/" title="Index info">
+      Index info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../info/" title="Info">
+      Info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../landing/" title="Landing">
+      Landing
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../structures/" title="Structures">
+      Structures
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Utils
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="Utils">
+      Utils
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils">
+    optimade.server.routers.utils
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_base_url">
+    get_base_url()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_entries">
+    get_entries()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_included_relationships">
+    get_included_relationships()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_providers">
+    get_providers()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.handle_response_fields">
+    handle_response_fields()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.meta_values">
+    meta_values()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.mongo_id_for_database">
+    mongo_id_for_database()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" id="nav-6-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-5">
+      Validator
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Validator" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-5">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Validator
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../validator/validator/" title="Validator">
+      Validator
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../validator/validator_model_patches/" title="Validator model patches">
+      Validator model patches
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils">
+    optimade.server.routers.utils
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_base_url">
+    get_base_url()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_entries">
+    get_entries()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_included_relationships">
+    get_included_relationships()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.get_providers">
+    get_providers()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.handle_response_fields">
+    handle_response_fields()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.meta_values">
+    meta_values()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.routers.utils.mongo_id_for_database">
+    mongo_id_for_database()
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Materials-Consortia/optimade-python-tools/edit/master/docs/reference/server/routers/utils.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1>Utils</h1>
+<div class="doc doc-object doc-module">
+<h2 class="hidden-toc" href="#optimade.server.routers.utils" id="optimade.server.routers.utils" style="visibility: hidden; width: 0; height: 0;">
+<a class="headerlink" href="#optimade.server.routers.utils" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.get_base_url">
+<code class="highlight language-python">
+get_base_url<span class="p">(</span><span class="n">parsed_url_request</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.get_base_url" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Get base URL for current server</p>
+<p>Take the base URL from the config file, if it exists, otherwise use the request.</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>170
+171
+172
+173
+174
+175
+176
+177
+178
+179</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_base_url</span><span class="p">(</span><span class="n">parsed_url_request</span><span class="p">:</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">ParseResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">"""Get base URL for current server</span>
+
+<span class="sd">    Take the base URL from the config file, if it exists, otherwise use the request.</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">CONFIG</span><span class="o">.</span><span class="n">base_url</span>
+        <span class="k">if</span> <span class="n">CONFIG</span><span class="o">.</span><span class="n">base_url</span>
+        <span class="k">else</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">parsed_url_request</span><span class="o">.</span><span class="n">scheme</span><span class="si">}</span><span class="s2">://</span><span class="si">{</span><span class="n">parsed_url_request</span><span class="o">.</span><span class="n">netloc</span><span class="si">}</span><span class="s2">"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.get_entries">
+<code class="highlight language-python">
+get_entries<span class="p">(</span><span class="n">collection</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.get_entries" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Generalized /{entry} endpoint getter</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_entries</span><span class="p">(</span>
+    <span class="n">collection</span><span class="p">:</span> <span class="n">EntryCollection</span><span class="p">,</span>
+    <span class="n">response</span><span class="p">:</span> <span class="n">EntryResponseMany</span><span class="p">,</span>
+    <span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">,</span>
+    <span class="n">params</span><span class="p">:</span> <span class="n">EntryListingQueryParams</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EntryResponseMany</span><span class="p">:</span>
+    <span class="sd">"""Generalized /{entry} endpoint getter"""</span>
+    <span class="kn">from</span> <span class="nn">optimade.server.routers</span> <span class="kn">import</span> <span class="n">ENTRY_COLLECTIONS</span>
+
+    <span class="n">results</span><span class="p">,</span> <span class="n">data_returned</span><span class="p">,</span> <span class="n">more_data_available</span><span class="p">,</span> <span class="n">fields</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+
+    <span class="n">include</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="s2">"include"</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="n">include</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">include</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">))</span>
+    <span class="n">included</span> <span class="o">=</span> <span class="n">get_included_relationships</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">ENTRY_COLLECTIONS</span><span class="p">,</span> <span class="n">include</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">more_data_available</span><span class="p">:</span>
+        <span class="c1"># Deduce the `next` link from the current request</span>
+        <span class="n">parse_result</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlparse</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">parse_qs</span><span class="p">(</span><span class="n">parse_result</span><span class="o">.</span><span class="n">query</span><span class="p">)</span>
+        <span class="n">query</span><span class="p">[</span><span class="s2">"page_offset"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"page_offset"</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+        <span class="n">urlencoded</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">doseq</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">base_url</span> <span class="o">=</span> <span class="n">get_base_url</span><span class="p">(</span><span class="n">parse_result</span><span class="p">)</span>
+
+        <span class="n">links</span> <span class="o">=</span> <span class="n">ToplevelLinks</span><span class="p">(</span><span class="nb">next</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">base_url</span><span class="si">}{</span><span class="n">parse_result</span><span class="o">.</span><span class="n">path</span><span class="si">}</span><span class="s2">?</span><span class="si">{</span><span class="n">urlencoded</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">links</span> <span class="o">=</span> <span class="n">ToplevelLinks</span><span class="p">(</span><span class="nb">next</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">fields</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">handle_response_fields</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">fields</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">response</span><span class="p">(</span>
+        <span class="n">links</span><span class="o">=</span><span class="n">links</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">results</span><span class="p">,</span>
+        <span class="n">meta</span><span class="o">=</span><span class="n">meta_values</span><span class="p">(</span>
+            <span class="n">url</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">url</span><span class="p">),</span>
+            <span class="n">data_returned</span><span class="o">=</span><span class="n">data_returned</span><span class="p">,</span>
+            <span class="n">data_available</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">collection</span><span class="p">),</span>
+            <span class="n">more_data_available</span><span class="o">=</span><span class="n">more_data_available</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">included</span><span class="o">=</span><span class="n">included</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.get_included_relationships">
+<code class="highlight language-python">
+get_included_relationships<span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">ENTRY_COLLECTIONS</span><span class="p">,</span> <span class="n">include_param</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.get_included_relationships" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Filters the included relationships and makes the appropriate compound request
+to include them in the response.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>results</code></td>
+<td><code>Union[optimade.models.entries.EntryResource, List[optimade.models.entries.EntryResource]]</code></td>
+<td>
+<p>list of returned documents.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>ENTRY_COLLECTIONS</code></td>
+<td><code>Dict[str, optimade.server.entry_collections.entry_collections.EntryCollection]</code></td>
+<td>
+<p>dictionary containing collections to query, with key
+based on endpoint type.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>include_param</code></td>
+<td><code>List[str]</code></td>
+<td>
+<p>list of queried related resources that should be included in
+<code>included</code>.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Dict[str, List[optimade.models.entries.EntryResource]]</code></td>
+<td>
+<p>Dictionary with the same keys as ENTRY_COLLECTIONS, each containing the list
+    of resource objects for that entry type.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span> 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_included_relationships</span><span class="p">(</span>
+    <span class="n">results</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">EntryResource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">EntryResource</span><span class="p">]],</span>
+    <span class="n">ENTRY_COLLECTIONS</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">EntryCollection</span><span class="p">],</span>
+    <span class="n">include_param</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">EntryResource</span><span class="p">]]:</span>
+    <span class="sd">"""Filters the included relationships and makes the appropriate compound request</span>
+<span class="sd">    to include them in the response.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        results: list of returned documents.</span>
+<span class="sd">        ENTRY_COLLECTIONS: dictionary containing collections to query, with key</span>
+<span class="sd">            based on endpoint type.</span>
+<span class="sd">        include_param: list of queried related resources that should be included in</span>
+<span class="sd">            `included`.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dictionary with the same keys as ENTRY_COLLECTIONS, each containing the list</span>
+<span class="sd">            of resource objects for that entry type.</span>
+
+<span class="sd">    """</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="n">results</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">entry_type</span> <span class="ow">in</span> <span class="n">include_param</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">entry_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ENTRY_COLLECTIONS</span> <span class="ow">and</span> <span class="n">entry_type</span> <span class="o">!=</span> <span class="s2">""</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">BadRequest</span><span class="p">(</span>
+                <span class="n">detail</span><span class="o">=</span><span class="sa">f</span><span class="s2">"'</span><span class="si">{</span><span class="n">entry_type</span><span class="si">}</span><span class="s2">' cannot be identified as a valid relationship type. "</span>
+                <span class="sa">f</span><span class="s2">"Known relationship types: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">ENTRY_COLLECTIONS</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">"</span>
+            <span class="p">)</span>
+
+    <span class="n">endpoint_includes</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="c1"># convert list of references into dict by ID to only included unique IDs</span>
+        <span class="k">if</span> <span class="n">doc</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">relationships</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">relationships</span>
+        <span class="k">if</span> <span class="n">relationships</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">relationships</span> <span class="o">=</span> <span class="n">relationships</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">entry_type</span> <span class="ow">in</span> <span class="n">ENTRY_COLLECTIONS</span><span class="p">:</span>
+            <span class="c1"># Skip entry type if it is not in `include_param`</span>
+            <span class="k">if</span> <span class="n">entry_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">include_param</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="n">entry_relationship</span> <span class="o">=</span> <span class="n">relationships</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">entry_type</span><span class="p">,</span> <span class="p">{})</span>
+            <span class="k">if</span> <span class="n">entry_relationship</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">refs</span> <span class="o">=</span> <span class="n">entry_relationship</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"data"</span><span class="p">,</span> <span class="p">[])</span>
+                <span class="k">for</span> <span class="n">ref</span> <span class="ow">in</span> <span class="n">refs</span><span class="p">:</span>
+                    <span class="c1"># could check here and raise a warning if any IDs clash</span>
+                    <span class="n">endpoint_includes</span><span class="p">[</span><span class="n">entry_type</span><span class="p">][</span><span class="n">ref</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ref</span>
+
+    <span class="n">included</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">entry_type</span> <span class="ow">in</span> <span class="n">endpoint_includes</span><span class="p">:</span>
+        <span class="n">compound_filter</span> <span class="o">=</span> <span class="s2">" OR "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+            <span class="p">[</span><span class="s1">'id="</span><span class="si">{}</span><span class="s1">"'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ref_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">ref_id</span> <span class="ow">in</span> <span class="n">endpoint_includes</span><span class="p">[</span><span class="n">entry_type</span><span class="p">]]</span>
+        <span class="p">)</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="n">EntryListingQueryParams</span><span class="p">(</span>
+            <span class="nb">filter</span><span class="o">=</span><span class="n">compound_filter</span><span class="p">,</span>
+            <span class="n">response_format</span><span class="o">=</span><span class="s2">"json"</span><span class="p">,</span>
+            <span class="n">response_fields</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">page_limit</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">page_offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># still need to handle pagination</span>
+        <span class="n">ref_results</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">ENTRY_COLLECTIONS</span><span class="p">[</span><span class="n">entry_type</span><span class="p">]</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">included</span><span class="p">[</span><span class="n">entry_type</span><span class="p">]</span> <span class="o">=</span> <span class="n">ref_results</span>
+
+    <span class="c1"># flatten dict by endpoint to list</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">obj</span> <span class="k">for</span> <span class="n">endp</span> <span class="ow">in</span> <span class="n">included</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">endp</span><span class="p">]</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.get_providers">
+<code class="highlight language-python">
+get_providers<span class="p">()</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.get_providers" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Retrieve Materials-Consortia providers (from https://providers.optimade.org/providers.json)</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_providers</span><span class="p">():</span>
+    <span class="sd">"""Retrieve Materials-Consortia providers (from https://providers.optimade.org/providers.json)"""</span>
+    <span class="kn">import</span> <span class="nn">requests</span>
+
+    <span class="n">mat_consortia_providers</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+        <span class="s2">"https://providers.optimade.org/providers.json"</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+    <span class="n">providers_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">provider</span> <span class="ow">in</span> <span class="n">mat_consortia_providers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"data"</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="c1"># Remove/skip "exmpl"</span>
+        <span class="k">if</span> <span class="n">provider</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"exmpl"</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">provider</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">provider</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"attributes"</span><span class="p">))</span>
+
+        <span class="c1"># Add MongoDB ObjectId</span>
+        <span class="n">provider</span><span class="p">[</span><span class="s2">"_id"</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"$oid"</span><span class="p">:</span> <span class="n">mongo_id_for_database</span><span class="p">(</span><span class="n">provider</span><span class="p">[</span><span class="s2">"id"</span><span class="p">],</span> <span class="n">provider</span><span class="p">[</span><span class="s2">"type"</span><span class="p">])</span>
+        <span class="p">}</span>
+
+        <span class="n">providers_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">provider</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">providers_list</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.handle_response_fields">
+<code class="highlight language-python">
+handle_response_fields<span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">exclude_fields</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.handle_response_fields" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Handle query parameter <code>response_fields</code></p>
+<p>It is assumed that all fields are under <code>attributes</code>.
+This is due to all other top-level fields are REQUIRED in the response.</p>
+<p>:param exclude_fields: Fields under <code>attributes</code> to be excluded from the response.</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">handle_response_fields</span><span class="p">(</span>
+    <span class="n">results</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">EntryResource</span><span class="p">],</span> <span class="n">EntryResource</span><span class="p">],</span> <span class="n">exclude_fields</span><span class="p">:</span> <span class="nb">set</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="sd">"""Handle query parameter ``response_fields``</span>
+
+<span class="sd">    It is assumed that all fields are under ``attributes``.</span>
+<span class="sd">    This is due to all other top-level fields are REQUIRED in the response.</span>
+
+<span class="sd">    :param exclude_fields: Fields under ``attributes`` to be excluded from the response.</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="n">results</span><span class="p">]</span>
+
+    <span class="n">new_results</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="n">results</span><span class="p">:</span>
+        <span class="n">entry</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">new_entry</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="n">dict</span><span class="p">(</span><span class="n">exclude_unset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">exclude_fields</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">new_entry</span><span class="p">[</span><span class="s2">"attributes"</span><span class="p">]:</span>
+                <span class="k">del</span> <span class="n">new_entry</span><span class="p">[</span><span class="s2">"attributes"</span><span class="p">][</span><span class="n">field</span><span class="p">]</span>
+        <span class="n">new_results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_entry</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">new_results</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.meta_values">
+<code class="highlight language-python">
+meta_values<span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data_returned</span><span class="p">,</span> <span class="n">data_available</span><span class="p">,</span> <span class="n">more_data_available</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.meta_values" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Helper to initialize the meta values</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">meta_values</span><span class="p">(</span>
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">data_returned</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">data_available</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">more_data_available</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ResponseMeta</span><span class="p">:</span>
+    <span class="sd">"""Helper to initialize the meta values"""</span>
+    <span class="kn">from</span> <span class="nn">optimade.models</span> <span class="kn">import</span> <span class="n">ResponseMetaQuery</span>
+
+    <span class="n">parse_result</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlparse</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+    <span class="c1"># To catch all (valid) variations of the version part of the URL, a regex is used</span>
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">"/v[0-9]+(\.[0-9]+){,2}/.*"</span><span class="p">,</span> <span class="n">parse_result</span><span class="o">.</span><span class="n">path</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">url_path</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">"/v[0-9]+(\.[0-9]+){,2}/"</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">,</span> <span class="n">parse_result</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">url_path</span> <span class="o">=</span> <span class="n">parse_result</span><span class="o">.</span><span class="n">path</span>
+
+    <span class="k">return</span> <span class="n">ResponseMeta</span><span class="p">(</span>
+        <span class="n">query</span><span class="o">=</span><span class="n">ResponseMetaQuery</span><span class="p">(</span><span class="n">representation</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">url_path</span><span class="si">}</span><span class="s2">?</span><span class="si">{</span><span class="n">parse_result</span><span class="o">.</span><span class="n">query</span><span class="si">}</span><span class="s2">"</span><span class="p">),</span>
+        <span class="n">api_version</span><span class="o">=</span><span class="sa">f</span><span class="s2">"v</span><span class="si">{</span><span class="n">__api_version__</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="n">time_stamp</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">(),</span>
+        <span class="n">data_returned</span><span class="o">=</span><span class="n">data_returned</span><span class="p">,</span>
+        <span class="n">more_data_available</span><span class="o">=</span><span class="n">more_data_available</span><span class="p">,</span>
+        <span class="n">provider</span><span class="o">=</span><span class="n">CONFIG</span><span class="o">.</span><span class="n">provider</span><span class="p">,</span>
+        <span class="n">data_available</span><span class="o">=</span><span class="n">data_available</span><span class="p">,</span>
+        <span class="n">implementation</span><span class="o">=</span><span class="n">CONFIG</span><span class="o">.</span><span class="n">implementation</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.routers.utils.mongo_id_for_database">
+<code class="highlight language-python">
+mongo_id_for_database<span class="p">(</span><span class="n">database_id</span><span class="p">,</span> <span class="n">database_type</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.routers.utils.mongo_id_for_database" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Produce a MondoDB ObjectId for a database</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/routers/utils.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">mongo_id_for_database</span><span class="p">(</span><span class="n">database_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">database_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">"""Produce a MondoDB ObjectId for a database"""</span>
+    <span class="kn">from</span> <span class="nn">bson.objectid</span> <span class="kn">import</span> <span class="n">ObjectId</span>
+
+    <span class="n">oid</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">database_id</span><span class="si">}{</span><span class="n">database_type</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">oid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="n">oid</span> <span class="o">=</span> <span class="n">oid</span><span class="p">[:</span><span class="mi">12</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">oid</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="n">oid</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">oid</span><span class="si">}{</span><span class="s1">'0'</span> <span class="o">*</span> <span class="p">(</span><span class="mi">12</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">oid</span><span class="p">))</span><span class="si">}</span><span class="s2">"</span>
+
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">ObjectId</span><span class="p">(</span><span class="n">oid</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"UTF-8"</span><span class="p">)))</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../structures/" rel="prev" title="Structures">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Structures
+              </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../../../validator/validator/" rel="next" title="Validator">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Validator
+              </div>
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Built by OPTIMADE Development Team
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+<script src="../../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script>
+        app = initialize({
+          base: "../../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,1553 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
+<link href="https://www.optimade.org/optimade-python-tools/reference/models/entries/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<title>Entries - OPTIMADE-Python-Tools Documentation</title>
+<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#optimade.models.entries">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-header-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            OPTIMADE-Python-Tools Documentation
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              Entries
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    OPTIMADE-Python-Tools Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../.." title="OPTIMADE Python tools">
+      OPTIMADE Python tools
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../INSTALL/" title="Installation">
+      Installation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CONTRIBUTING/" title="Contributing">
+      Contributing
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-4">
+      Use Cases
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Use Cases" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Use Cases
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/single_db/" title="OPTIMADE API for a single database">
+      OPTIMADE API for a single database
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/multi_db/" title="OPTIMADE API for multiple databases">
+      OPTIMADE API for multiple databases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases">
+      OPTIMADE API for dynamic databases
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CHANGELOG/" title="Changelog">
+      Changelog
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6" id="nav-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-6">
+      API Reference
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="API Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-6">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        API Reference
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../" title="Models">
+      Models
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" id="nav-6-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-2">
+      Filtertransformers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Filtertransformers" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-2">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Filtertransformers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/debug/" title="Debug">
+      Debug
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/django/" title="Django">
+      Django
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/elasticsearch/" title="Elasticsearch">
+      Elasticsearch
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/json/" title="Json">
+      Json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6-3" id="nav-6-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-3">
+      Models
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Models" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-3">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Models
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../baseinfo/" title="Baseinfo">
+      Baseinfo
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Entries
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="Entries">
+      Entries
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries">
+    optimade.models.entries
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty">
+    EntryInfoProperty
+  </a>
+<nav aria-label="EntryInfoProperty" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.description">
+    description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.sortable">
+    sortable
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.unit">
+    unit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource">
+    EntryInfoResource
+  </a>
+<nav aria-label="EntryInfoResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.description">
+    description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.formats">
+    formats
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.output_fields_by_format">
+    output_fields_by_format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.properties">
+    properties
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships">
+    EntryRelationships
+  </a>
+<nav aria-label="EntryRelationships" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships.references">
+    references
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships.structures">
+    structures
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource">
+    EntryResource
+  </a>
+<nav aria-label="EntryResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.attributes">
+    attributes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.id">
+    id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.meta">
+    meta
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.relationships">
+    relationships
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.type">
+    type
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes">
+    EntryResourceAttributes
+  </a>
+<nav aria-label="EntryResourceAttributes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes.immutable_id">
+    immutable_id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes.last_modified">
+    last_modified
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship">
+    ReferenceRelationship
+  </a>
+<nav aria-label="ReferenceRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship">
+    StructureRelationship
+  </a>
+<nav aria-label="StructureRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship">
+    TypedRelationship
+  </a>
+<nav aria-label="TypedRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../index_metadb/" title="Index metadb">
+      Index metadb
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../jsonapi/" title="Jsonapi">
+      Jsonapi
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../optimade_json/" title="Optimade json">
+      Optimade json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../responses/" title="Responses">
+      Responses
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../structures/" title="Structures">
+      Structures
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../utils/" title="Utils">
+      Utils
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4" id="nav-6-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4">
+      Server
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Server" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Server
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/config/" title="Config">
+      Config
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/exception_handlers/" title="Exception handlers">
+      Exception handlers
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/exceptions/" title="Exceptions">
+      Exceptions
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/main/" title="Main">
+      Main
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/main_index/" title="Main index">
+      Main index
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/middleware/" title="Middleware">
+      Middleware
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/query_params/" title="Query params">
+      Query params
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-8" id="nav-6-4-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-8">
+      Entry collections
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Entry collections" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-8">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Entry collections
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/entry_collections/entry_collections/" title="Entry collections">
+      Entry collections
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/entry_collections/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-9" id="nav-6-4-9" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-9">
+      Mappers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Mappers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-9">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Mappers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/entries/" title="Entries">
+      Entries
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-10" id="nav-6-4-10" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-10">
+      Routers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Routers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-10">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Routers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/index_info/" title="Index info">
+      Index info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/info/" title="Info">
+      Info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/landing/" title="Landing">
+      Landing
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/utils/" title="Utils">
+      Utils
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" id="nav-6-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-5">
+      Validator
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Validator" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-5">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Validator
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validator/validator/" title="Validator">
+      Validator
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validator/validator_model_patches/" title="Validator model patches">
+      Validator model patches
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries">
+    optimade.models.entries
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty">
+    EntryInfoProperty
+  </a>
+<nav aria-label="EntryInfoProperty" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.description">
+    description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.sortable">
+    sortable
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoProperty.unit">
+    unit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource">
+    EntryInfoResource
+  </a>
+<nav aria-label="EntryInfoResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.description">
+    description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.formats">
+    formats
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.output_fields_by_format">
+    output_fields_by_format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryInfoResource.properties">
+    properties
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships">
+    EntryRelationships
+  </a>
+<nav aria-label="EntryRelationships" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships.references">
+    references
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryRelationships.structures">
+    structures
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource">
+    EntryResource
+  </a>
+<nav aria-label="EntryResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.attributes">
+    attributes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.id">
+    id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.meta">
+    meta
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.relationships">
+    relationships
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResource.type">
+    type
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes">
+    EntryResourceAttributes
+  </a>
+<nav aria-label="EntryResourceAttributes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes.immutable_id">
+    immutable_id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.EntryResourceAttributes.last_modified">
+    last_modified
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship">
+    ReferenceRelationship
+  </a>
+<nav aria-label="ReferenceRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.ReferenceRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship">
+    StructureRelationship
+  </a>
+<nav aria-label="StructureRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.StructureRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship">
+    TypedRelationship
+  </a>
+<nav aria-label="TypedRelationship" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.data">
+    data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.entries.TypedRelationship.meta">
+    meta
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Materials-Consortia/optimade-python-tools/edit/master/docs/reference/models/entries.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1>Entries</h1>
+<div class="doc doc-object doc-module">
+<h2 class="hidden-toc" href="#optimade.models.entries" id="optimade.models.entries" style="visibility: hidden; width: 0; height: 0;">
+<a class="headerlink" href="#optimade.models.entries" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.EntryInfoProperty">
+<code>EntryInfoProperty</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoProperty" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoProperty.description">
+<code class="highlight">
+description: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoProperty.description" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>description of the entry property</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoProperty.sortable">
+<code class="highlight">
+sortable: <span class="nb">bool</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoProperty.sortable" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>defines whether the entry property can be used for sorting with the "sort" parameter. If the entry listing endpoint supports sorting, this key MUST be present for sortable properties with value <code>true</code>.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoProperty.unit">
+<code class="highlight">
+unit: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoProperty.unit" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>the physical unit of the entry property</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.EntryInfoResource">
+<code>EntryInfoResource</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoResource" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoResource.description">
+<code class="highlight">
+description: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoResource.description" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>description of the entry</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoResource.formats">
+<code class="highlight">
+formats: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoResource.formats" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>list of available output formats.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoResource.output_fields_by_format">
+<code class="highlight">
+output_fields_by_format: <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoResource.output_fields_by_format" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a dictionary of available output fields for this entry type, where the keys are the values of the <code>formats</code> list and the values are the keys of the <code>properties</code> dictionary.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryInfoResource.properties">
+<code class="highlight">
+properties: <span class="n">EntryInfoProperty</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryInfoResource.properties" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a dictionary describing queryable properties for this entry type, where each key is a property ID.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.EntryRelationships">
+<code>EntryRelationships</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryRelationships" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>This model wraps the JSON API Relationships to include type-specific top level keys. </p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryRelationships.references">
+<code class="highlight">
+references: <span class="n">ReferenceRelationship</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryRelationships.references" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Object containing links to relationships with entries of the <code>references</code> type.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryRelationships.structures">
+<code class="highlight">
+structures: <span class="n">StructureRelationship</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryRelationships.structures" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Object containing links to relationships with entries of the <code>structures</code> type.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.EntryResource">
+<code>EntryResource</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.attributes">
+<code class="highlight">
+attributes: <span class="n">EntryResourceAttributes</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.attributes" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a dictionary, containing key-value pairs representing the entry's properties, except for type and id.</p>
+<p>Database-provider-specific properties need to include the database-provider-specific prefix
+(see appendix <code>Database-Provider-Specific Namespace Prefixes</code>_).</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.id">
+<code class="highlight">
+id: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.id" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>An entry's ID as defined in section <code>Definition of Terms</code>_.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li><strong>Response</strong>: REQUIRED in the response.</li>
+<li>
+<p>See section <code>Definition of Terms</code>_.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"db/1234567"</code></p>
+</li>
+<li>:val:<code>"cod/2000000"</code></li>
+<li>:val:<code>"cod/2000000@1234567"</code></li>
+<li>:val:<code>"nomad/L1234567890"</code></li>
+<li>:val:<code>"42"</code></li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.links">
+<code class="highlight">
+links: <span class="n">ResourceLinks</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.links" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a links object containing links related to the resource.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.meta">
+<code class="highlight">
+meta: <span class="n">Meta</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.meta" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a meta object containing non-standard meta-information about a resource that can not be represented as an attribute or relationship.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.relationships">
+<code class="highlight">
+relationships: <span class="n">EntryRelationships</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.relationships" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a dictionary containing references to other entries according to the description in section <code>Relationships</code>_
+encoded as <code>JSON API Relationships &lt;https://jsonapi.org/format/1.0/#document-resource-object-relationships&gt;</code>__.
+The OPTIONAL human-readable description of the relationship MAY be provided in the :field:<code>description</code> field inside the :field:<code>meta</code> dictionary.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResource.type">
+<code class="highlight">
+type: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResource.type" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The name of the type of an entry.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li><strong>Response</strong>: REQUIRED in the response.</li>
+<li>MUST be an existing entry type.</li>
+<li>
+<p>The entry of type <code>&lt;type&gt;</code> and ID <code>&lt;id&gt;</code> MUST be returned in response to a request for :endpoint:<code>/&lt;type&gt;/&lt;id&gt;</code> under the versioned base URL.</p>
+</li>
+<li>
+<p><strong>Example</strong>: :val:<code>"structures"</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.EntryResourceAttributes">
+<code>EntryResourceAttributes</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResourceAttributes" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Contains key-value pairs representing the entry's properties.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResourceAttributes.immutable_id">
+<code class="highlight">
+immutable_id: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResourceAttributes.immutable_id" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The entry's immutable ID (e.g., an UUID).
+This is important for databases having preferred IDs that point to "the latest version" of a record, but still offer access to older variants.
+This ID maps to the version-specific record, in case it changes in the future.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: OPTIONAL, i.e., MAY be :val:<code>null</code>.</li>
+<li>
+<p><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"8bd3e750-b477-41a0-9b11-3a799f21b44f"</code></p>
+</li>
+<li>:val:<code>"fjeiwoj,54;@=%&lt;&gt;#32"</code> (Strings that are not URL-safe are allowed.)</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.EntryResourceAttributes.last_modified">
+<code class="highlight">
+last_modified: <span class="n">datetime</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.EntryResourceAttributes.last_modified" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Date and time representing when the entry was last modified.
+- <strong>Type</strong>: timestamp.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li>
+<p><strong>Response</strong>: REQUIRED in the response unless the query parameter :query-param:<code>response_fields</code> is present and does not include this property.</p>
+</li>
+<li>
+<p><strong>Example</strong>:</p>
+</li>
+<li>
+<p>As part of JSON response format: :VAL:<code>"2007-04-05T14:30Z"</code> (i.e., encoded as an <code>RFC 3339 Internet Date/Time Format &lt;https://tools.ietf.org/html/rfc3339#section-5.6&gt;</code>__ string.)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.ReferenceRelationship">
+<code>ReferenceRelationship</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.ReferenceRelationship" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.ReferenceRelationship.data">
+<code class="highlight">
+data: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">]]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.ReferenceRelationship.data" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Resource linkage</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.ReferenceRelationship.links">
+<code class="highlight">
+links: <span class="n">RelationshipLinks</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.ReferenceRelationship.links" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a links object containing at least one of the following: self, related</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.ReferenceRelationship.meta">
+<code class="highlight">
+meta: <span class="n">Meta</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.ReferenceRelationship.meta" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a meta object that contains non-standard meta-information about the relationship.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.StructureRelationship">
+<code>StructureRelationship</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.StructureRelationship" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.StructureRelationship.data">
+<code class="highlight">
+data: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">]]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.StructureRelationship.data" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Resource linkage</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.StructureRelationship.links">
+<code class="highlight">
+links: <span class="n">RelationshipLinks</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.StructureRelationship.links" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a links object containing at least one of the following: self, related</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.StructureRelationship.meta">
+<code class="highlight">
+meta: <span class="n">Meta</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.StructureRelationship.meta" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a meta object that contains non-standard meta-information about the relationship.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.entries.TypedRelationship">
+<code>TypedRelationship</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.TypedRelationship" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.TypedRelationship.data">
+<code class="highlight">
+data: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">]]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.TypedRelationship.data" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Resource linkage</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.TypedRelationship.links">
+<code class="highlight">
+links: <span class="n">RelationshipLinks</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.TypedRelationship.links" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a links object containing at least one of the following: self, related</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.entries.TypedRelationship.meta">
+<code class="highlight">
+meta: <span class="n">Meta</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.entries.TypedRelationship.meta" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a meta object that contains non-standard meta-information about the relationship.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../baseinfo/" rel="prev" title="Baseinfo">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Baseinfo
+              </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../index_metadb/" rel="next" title="Index metadb">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Index metadb
+              </div>
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Built by OPTIMADE Development Team
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>

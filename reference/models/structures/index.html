@@ -1,0 +1,2081 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
+<link href="https://www.optimade.org/optimade-python-tools/reference/models/structures/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<title>Structures - OPTIMADE-Python-Tools Documentation</title>
+<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#optimade.models.structures">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-header-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            OPTIMADE-Python-Tools Documentation
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              Structures
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="OPTIMADE-Python-Tools Documentation" class="md-nav__button md-logo" href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    OPTIMADE-Python-Tools Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../.." title="OPTIMADE Python tools">
+      OPTIMADE Python tools
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../INSTALL/" title="Installation">
+      Installation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CONTRIBUTING/" title="Contributing">
+      Contributing
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-4">
+      Use Cases
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Use Cases" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Use Cases
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/single_db/" title="OPTIMADE API for a single database">
+      OPTIMADE API for a single database
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/multi_db/" title="OPTIMADE API for multiple databases">
+      OPTIMADE API for multiple databases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases">
+      OPTIMADE API for dynamic databases
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CHANGELOG/" title="Changelog">
+      Changelog
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6" id="nav-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-6">
+      API Reference
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="API Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-6">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        API Reference
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../" title="Models">
+      Models
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" id="nav-6-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-2">
+      Filtertransformers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Filtertransformers" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-2">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Filtertransformers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/debug/" title="Debug">
+      Debug
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/django/" title="Django">
+      Django
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/elasticsearch/" title="Elasticsearch">
+      Elasticsearch
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/json/" title="Json">
+      Json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../filtertransformers/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-6-3" id="nav-6-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-3">
+      Models
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Models" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-3">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Models
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../baseinfo/" title="Baseinfo">
+      Baseinfo
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../entries/" title="Entries">
+      Entries
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../index_metadb/" title="Index metadb">
+      Index metadb
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../jsonapi/" title="Jsonapi">
+      Jsonapi
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../optimade_json/" title="Optimade json">
+      Optimade json
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../responses/" title="Responses">
+      Responses
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Structures
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="Structures">
+      Structures
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures">
+    optimade.models.structures
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly">
+    Assembly
+  </a>
+<nav aria-label="Assembly" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly.group_probabilities">
+    group_probabilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly.sites_in_groups">
+    sites_in_groups
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Periodicity">
+    Periodicity
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species">
+    Species
+  </a>
+<nav aria-label="Species" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.chemical_symbols">
+    chemical_symbols
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.concentration">
+    concentration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.mass">
+    mass
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.original_name">
+    original_name
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource">
+    StructureResource
+  </a>
+<nav aria-label="StructureResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.id">
+    id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.meta">
+    meta
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.relationships">
+    relationships
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.type">
+    type
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes">
+    StructureResourceAttributes
+  </a>
+<nav aria-label="StructureResourceAttributes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.assemblies">
+    assemblies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.cartesian_site_positions">
+    cartesian_site_positions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_anonymous">
+    chemical_formula_anonymous
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_descriptive">
+    chemical_formula_descriptive
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_hill">
+    chemical_formula_hill
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_reduced">
+    chemical_formula_reduced
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.dimension_types">
+    dimension_types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.elements">
+    elements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.elements_ratios">
+    elements_ratios
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.immutable_id">
+    immutable_id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.last_modified">
+    last_modified
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.lattice_vectors">
+    lattice_vectors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.nelements">
+    nelements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.nsites">
+    nsites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.species">
+    species
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.species_at_sites">
+    species_at_sites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.structure_features">
+    structure_features
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../utils/" title="Utils">
+      Utils
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4" id="nav-6-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4">
+      Server
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Server" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-4">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Server
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/config/" title="Config">
+      Config
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/exception_handlers/" title="Exception handlers">
+      Exception handlers
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/exceptions/" title="Exceptions">
+      Exceptions
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/main/" title="Main">
+      Main
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/main_index/" title="Main index">
+      Main index
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/middleware/" title="Middleware">
+      Middleware
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/query_params/" title="Query params">
+      Query params
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-8" id="nav-6-4-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-8">
+      Entry collections
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Entry collections" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-8">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Entry collections
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/entry_collections/entry_collections/" title="Entry collections">
+      Entry collections
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/entry_collections/mongo/" title="Mongo">
+      Mongo
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-9" id="nav-6-4-9" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-9">
+      Mappers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Mappers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-9">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Mappers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/entries/" title="Entries">
+      Entries
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/mappers/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-10" id="nav-6-4-10" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-4-10">
+      Routers
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Routers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="nav-6-4-10">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Routers
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/index_info/" title="Index info">
+      Index info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/info/" title="Info">
+      Info
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/landing/" title="Landing">
+      Landing
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/links/" title="Links">
+      Links
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/references/" title="References">
+      References
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/structures/" title="Structures">
+      Structures
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../server/routers/utils/" title="Utils">
+      Utils
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" id="nav-6-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-6-5">
+      Validator
+      <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg>
+</span>
+</label>
+<nav aria-label="Validator" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-6-5">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+        Validator
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validator/validator/" title="Validator">
+      Validator
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validator/validator_model_patches/" title="Validator model patches">
+      Validator model patches
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures">
+    optimade.models.structures
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly">
+    Assembly
+  </a>
+<nav aria-label="Assembly" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly.group_probabilities">
+    group_probabilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Assembly.sites_in_groups">
+    sites_in_groups
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Periodicity">
+    Periodicity
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species">
+    Species
+  </a>
+<nav aria-label="Species" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.chemical_symbols">
+    chemical_symbols
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.concentration">
+    concentration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.mass">
+    mass
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.Species.original_name">
+    original_name
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource">
+    StructureResource
+  </a>
+<nav aria-label="StructureResource" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.id">
+    id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.links">
+    links
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.meta">
+    meta
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.relationships">
+    relationships
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResource.type">
+    type
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes">
+    StructureResourceAttributes
+  </a>
+<nav aria-label="StructureResourceAttributes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.assemblies">
+    assemblies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.cartesian_site_positions">
+    cartesian_site_positions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_anonymous">
+    chemical_formula_anonymous
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_descriptive">
+    chemical_formula_descriptive
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_hill">
+    chemical_formula_hill
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_reduced">
+    chemical_formula_reduced
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.dimension_types">
+    dimension_types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.elements">
+    elements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.elements_ratios">
+    elements_ratios
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.immutable_id">
+    immutable_id
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.last_modified">
+    last_modified
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.lattice_vectors">
+    lattice_vectors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.nelements">
+    nelements
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.nsites">
+    nsites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.species">
+    species
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.species_at_sites">
+    species_at_sites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.structures.StructureResourceAttributes.structure_features">
+    structure_features
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Materials-Consortia/optimade-python-tools/edit/master/docs/reference/models/structures.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1>Structures</h1>
+<div class="doc doc-object doc-module">
+<h2 class="hidden-toc" href="#optimade.models.structures" id="optimade.models.structures" style="visibility: hidden; width: 0; height: 0;">
+<a class="headerlink" href="#optimade.models.structures" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.structures.Assembly">
+<code>Assembly</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Assembly" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>A description of groups of sites that are statistically correlated.</p>
+<div class="codehilite">
+<pre><span></span><code><span class="nt">-</span> <span class="o">**</span><span class="nt">Examples</span><span class="o">**</span> <span class="o">(</span><span class="nt">for</span> <span class="nt">each</span> <span class="nt">entry</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">assemblies</span> <span class="nt">list</span><span class="o">):</span>
+
+    <span class="nt">-</span> <span class="p">:</span><span class="nd">val</span><span class="o">:</span><span class="err">`</span><span class="p">{</span><span class="err">"sites_in_groups":</span> <span class="cp">[</span><span class="err">[</span><span class="mi">0</span><span class="cp">]</span><span class="err">,</span> <span class="cp">[</span><span class="mi">1</span><span class="cp">]</span><span class="err">],</span> <span class="err">"</span><span class="n">group_probabilities</span><span class="p">:</span> <span class="cp">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="cp">]</span><span class="p">}</span><span class="err">`</span><span class="o">:</span> <span class="nt">the</span> <span class="nt">first</span> <span class="nt">site</span> <span class="nt">and</span> <span class="nt">the</span> <span class="nt">second</span> <span class="nt">site</span> <span class="nt">never</span> <span class="nt">occur</span> <span class="nt">at</span> <span class="nt">the</span> <span class="nt">same</span> <span class="nt">time</span> <span class="nt">in</span> <span class="nt">the</span> <span class="nt">unit</span> <span class="nt">cell</span><span class="o">.</span>
+        <span class="nt">Statistically</span><span class="o">,</span> <span class="nt">30</span> <span class="o">%</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">times</span> <span class="nt">the</span> <span class="nt">first</span> <span class="nt">site</span> <span class="nt">is</span> <span class="nt">present</span><span class="o">,</span> <span class="nt">while</span> <span class="nt">70</span> <span class="o">%</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">times</span> <span class="nt">the</span> <span class="nt">second</span> <span class="nt">site</span> <span class="nt">is</span> <span class="nt">present</span><span class="o">.</span>
+    <span class="nt">-</span> <span class="p">:</span><span class="nd">val</span><span class="o">:</span><span class="err">`</span><span class="p">{</span><span class="err">"sites_in_groups":</span> <span class="cp">[</span><span class="err">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="cp">]</span><span class="err">,</span> <span class="cp">[</span><span class="mi">3</span><span class="cp">]</span><span class="err">],</span> <span class="err">"</span><span class="n">group_probabilities</span><span class="p">:</span> <span class="cp">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="cp">]</span><span class="p">}</span><span class="err">`</span><span class="o">:</span> <span class="nt">the</span> <span class="nt">second</span> <span class="nt">and</span> <span class="nt">third</span> <span class="nt">site</span> <span class="nt">are</span> <span class="nt">either</span> <span class="nt">present</span> <span class="nt">together</span> <span class="nt">or</span> <span class="nt">not</span> <span class="nt">present</span><span class="o">;</span> <span class="nt">they</span> <span class="nt">form</span> <span class="nt">the</span> <span class="nt">first</span> <span class="nt">group</span> <span class="nt">of</span> <span class="nt">atoms</span> <span class="nt">for</span> <span class="nt">this</span> <span class="nt">assembly</span><span class="o">.</span>
+        <span class="nt">The</span> <span class="nt">second</span> <span class="nt">group</span> <span class="nt">is</span> <span class="nt">formed</span> <span class="nt">by</span> <span class="nt">the</span> <span class="nt">fourth</span> <span class="nt">site</span><span class="o">.</span>
+        <span class="nt">Sites</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">first</span> <span class="nt">group</span> <span class="o">(</span><span class="nt">the</span> <span class="nt">second</span> <span class="nt">and</span> <span class="nt">the</span> <span class="nt">third</span><span class="o">)</span> <span class="nt">are</span> <span class="nt">never</span> <span class="nt">present</span> <span class="nt">at</span> <span class="nt">the</span> <span class="nt">same</span> <span class="nt">time</span> <span class="nt">as</span> <span class="nt">the</span> <span class="nt">fourth</span> <span class="nt">site</span><span class="o">.</span>
+        <span class="nt">30</span> <span class="o">%</span> <span class="nt">of</span> <span class="nt">times</span> <span class="nt">sites</span> <span class="nt">1</span> <span class="nt">and</span> <span class="nt">2</span> <span class="nt">are</span> <span class="nt">present</span> <span class="o">(</span><span class="nt">and</span> <span class="nt">site</span> <span class="nt">3</span> <span class="nt">is</span> <span class="nt">absent</span><span class="o">);</span> <span class="nt">70</span> <span class="o">%</span> <span class="nt">of</span> <span class="nt">times</span> <span class="nt">site</span> <span class="nt">3</span> <span class="nt">is</span> <span class="nt">present</span> <span class="o">(</span><span class="nt">and</span> <span class="nt">sites</span> <span class="nt">1</span> <span class="nt">and</span> <span class="nt">2</span> <span class="nt">are</span> <span class="nt">absent</span><span class="o">).</span>
+</code></pre>
+</div>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Assembly.group_probabilities">
+<code class="highlight">
+group_probabilities: <span class="nb">float</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Assembly.group_probabilities" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Statistical probability of each group. It MUST have the same length as :property:<code>sites_in_groups</code>.
+It SHOULD sum to one.
+See below for examples of how to specify the probability of the occurrence of a vacancy.
+The possible reasons for the values not to sum to one are the same as already specified above for the :property:<code>concentration</code> of each :property:<code>species</code>, see property <code>species</code>_.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Assembly.sites_in_groups">
+<code class="highlight">
+sites_in_groups: <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Assembly.sites_in_groups" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Index of the sites (0-based) that belong to each group for each assembly.</p>
+<p>Example: :val:<code>[[1], [2]]</code>: two groups, one with the second site, one with the third.
+Example: :val:<code>[[1,2], [3]]</code>: one group with the second and third site, one with the fourth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.structures.Periodicity">
+<code>Periodicity</code>
+<a class="headerlink" href="#optimade.models.structures.Periodicity" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>An enumeration.</p>
+<div class="doc doc-children">
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.structures.Species">
+<code>Species</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Species" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>A list describing the species of the sites of this structure.
+    Species can be pure chemical elements, or virtual-crystal atoms representing a statistical occupation of a given site by multiple chemical elements.</p>
+<div class="codehilite">
+<pre><span></span><code><span class="o">-</span> <span class="o">**</span><span class="n">Examples</span><span class="o">**</span><span class="p">:</span>
+
+    <span class="o">-</span> <span class="p">:</span><span class="n">val</span><span class="p">:</span><span class="o">`</span><span class="p">[</span> <span class="err">{</span><span class="ss">"name"</span><span class="p">:</span> <span class="ss">"Ti"</span><span class="p">,</span> <span class="ss">"chemical_symbols"</span><span class="p">:</span> <span class="p">[</span><span class="ss">"Ti"</span><span class="p">],</span> <span class="ss">"concentration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span><span class="err">}</span> <span class="p">]</span><span class="o">`</span><span class="p">:</span> <span class="k">any</span> <span class="n">site</span> <span class="k">with</span> <span class="n">this</span> <span class="n">species</span> <span class="k">is</span> <span class="n">occupied</span> <span class="k">by</span> <span class="n">a</span> <span class="n">Ti</span> <span class="n">atom</span><span class="p">.</span>
+    <span class="o">-</span> <span class="p">:</span><span class="n">val</span><span class="p">:</span><span class="o">`</span><span class="p">[</span> <span class="err">{</span><span class="ss">"name"</span><span class="p">:</span> <span class="ss">"Ti"</span><span class="p">,</span> <span class="ss">"chemical_symbols"</span><span class="p">:</span> <span class="p">[</span><span class="ss">"Ti"</span><span class="p">,</span> <span class="ss">"vacancy"</span><span class="p">],</span> <span class="ss">"concentration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">]</span><span class="err">}</span> <span class="p">]</span><span class="o">`</span><span class="p">:</span> <span class="k">any</span> <span class="n">site</span> <span class="k">with</span> <span class="n">this</span> <span class="n">species</span> <span class="k">is</span> <span class="n">occupied</span> <span class="k">by</span> <span class="n">a</span> <span class="n">Ti</span> <span class="n">atom</span> <span class="k">with</span> <span class="mi">90</span> <span class="o">%</span> <span class="n">probability</span><span class="p">,</span> <span class="k">and</span> <span class="n">has</span> <span class="n">a</span> <span class="n">vacancy</span> <span class="k">with</span> <span class="mi">10</span> <span class="o">%</span> <span class="n">probability</span><span class="p">.</span>
+    <span class="o">-</span> <span class="p">:</span><span class="n">val</span><span class="p">:</span><span class="o">`</span><span class="p">[</span> <span class="err">{</span><span class="ss">"name"</span><span class="p">:</span> <span class="ss">"BaCa"</span><span class="p">,</span> <span class="ss">"chemical_symbols"</span><span class="p">:</span> <span class="p">[</span><span class="ss">"vacancy"</span><span class="p">,</span> <span class="ss">"Ba"</span><span class="p">,</span> <span class="ss">"Ca"</span><span class="p">],</span> <span class="ss">"concentration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">05</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">45</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">],</span> <span class="ss">"mass"</span><span class="p">:</span> <span class="mi">88</span><span class="p">.</span><span class="mi">5</span><span class="err">}</span> <span class="p">]</span><span class="o">`</span><span class="p">:</span> <span class="k">any</span> <span class="n">site</span> <span class="k">with</span> <span class="n">this</span> <span class="n">species</span> <span class="k">is</span> <span class="n">occupied</span> <span class="k">by</span> <span class="n">a</span> <span class="n">Ba</span> <span class="n">atom</span> <span class="k">with</span> <span class="mi">45</span> <span class="o">%</span> <span class="n">probability</span><span class="p">,</span> <span class="n">a</span> <span class="n">Ca</span> <span class="n">atom</span> <span class="k">with</span> <span class="mi">50</span> <span class="o">%</span> <span class="n">probability</span><span class="p">,</span> <span class="k">and</span> <span class="k">by</span> <span class="n">a</span> <span class="n">vacancy</span> <span class="k">with</span> <span class="mi">5</span> <span class="o">%</span> <span class="n">probability</span><span class="p">.</span> <span class="n">The</span> <span class="n">mass</span> <span class="k">of</span> <span class="n">this</span> <span class="n">site</span> <span class="k">is</span> <span class="p">(</span><span class="k">on</span> <span class="n">average</span><span class="p">)</span> <span class="mi">88</span><span class="p">.</span><span class="mi">5</span> <span class="n">a</span><span class="p">.</span><span class="n">m</span><span class="p">.</span><span class="n">u</span><span class="p">.</span>
+    <span class="o">-</span> <span class="p">:</span><span class="n">val</span><span class="p">:</span><span class="o">`</span><span class="p">[</span> <span class="err">{</span><span class="ss">"name"</span><span class="p">:</span> <span class="ss">"C12"</span><span class="p">,</span> <span class="ss">"chemical_symbols"</span><span class="p">:</span> <span class="p">[</span><span class="ss">"C"</span><span class="p">],</span> <span class="ss">"concentration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">],</span> <span class="ss">"mass"</span><span class="p">:</span> <span class="mi">12</span><span class="p">.</span><span class="mi">0</span><span class="err">}</span> <span class="p">]</span><span class="o">`</span><span class="p">:</span> <span class="k">any</span> <span class="n">site</span> <span class="k">with</span> <span class="n">this</span> <span class="n">species</span> <span class="k">is</span> <span class="n">occupied</span> <span class="k">by</span> <span class="n">a</span> <span class="n">carbon</span> <span class="n">isotope</span> <span class="k">with</span> <span class="n">mass</span> <span class="mi">12</span><span class="p">.</span>
+    <span class="o">-</span> <span class="p">:</span><span class="n">val</span><span class="p">:</span><span class="o">`</span><span class="p">[</span> <span class="err">{</span><span class="ss">"name"</span><span class="p">:</span> <span class="ss">"C13"</span><span class="p">,</span> <span class="ss">"chemical_symbols"</span><span class="p">:</span> <span class="p">[</span><span class="ss">"C"</span><span class="p">],</span> <span class="ss">"concentration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">],</span> <span class="ss">"mass"</span><span class="p">:</span> <span class="mi">13</span><span class="p">.</span><span class="mi">0</span><span class="err">}</span> <span class="p">]</span><span class="o">`</span><span class="p">:</span> <span class="k">any</span> <span class="n">site</span> <span class="k">with</span> <span class="n">this</span> <span class="n">species</span> <span class="k">is</span> <span class="n">occupied</span> <span class="k">by</span> <span class="n">a</span> <span class="n">carbon</span> <span class="n">isotope</span> <span class="k">with</span> <span class="n">mass</span> <span class="mi">13</span><span class="p">.</span>
+</code></pre>
+</div>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Species.chemical_symbols">
+<code class="highlight">
+chemical_symbols: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Species.chemical_symbols" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>MUST be a list of strings of all chemical elements composing this species.</p>
+<ul>
+<li>
+<p>It MUST be one of the following:</p>
+</li>
+<li>
+<p>a valid chemical-element name, or</p>
+</li>
+<li>the special value :val:<code>"X"</code> to represent a non-chemical element, or</li>
+<li>
+<p>the special value :val:<code>"vacancy"</code> to represent that this site has a non-zero probability of having a vacancy (the respective probability is indicated in the :property:<code>concentration</code> list, see below).</p>
+</li>
+<li>
+<p>If any one entry in the :property:<code>species</code> list has a :property:<code>chemical_symbols</code> list that is longer than 1 element, the correct flag MUST be set in the list :property:<code>structure_features</code> (see property <code>structure_features</code>_).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Species.concentration">
+<code class="highlight">
+concentration: <span class="nb">float</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Species.concentration" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>MUST be a list of floats, with same length as :property:<code>chemical_symbols</code>. The numbers represent the relative concentration of the corresponding chemical symbol in this species.
+The numbers SHOULD sum to one. Cases in which the numbers do not sum to one typically fall only in the following two categories:</p>
+<ul>
+<li>Numerical errors when representing float numbers in fixed precision, e.g. for two chemical symbols with concentrations :val:<code>1/3</code> and :val:<code>2/3</code>, the concentration might look something like :val:<code>[0.33333333333, 0.66666666666]</code>. If the client is aware that the sum is not one because of numerical precision, it can renormalize the values so that the sum is exactly one.</li>
+<li>Experimental errors in the data present in the database. In this case, it is the responsibility of the client to decide how to process the data.</li>
+</ul>
+<p>Note that concentrations are uncorrelated between different site (even of the same species).</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Species.mass">
+<code class="highlight">
+mass: <span class="nb">float</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Species.mass" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>If present MUST be a float expressed in a.m.u.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.Species.original_name">
+<code class="highlight">
+original_name: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.Species.original_name" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Can be any valid Unicode string, and SHOULD contain (if specified) the name of the species that is used internally in the source database.</p>
+<p>Note: With regards to "source database", we refer to the immediate source being queried via the OPTIMADE API implementation.
+The main use of this field is for source databases that use species names, containing characters that are not allowed (see description of the list property <code>species_at_sites</code>_).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.structures.StructureResource">
+<code>StructureResource</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Representing a structure.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResource.id">
+<code class="highlight">
+id: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource.id" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>An entry's ID as defined in section <code>Definition of Terms</code>_.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li><strong>Response</strong>: REQUIRED in the response.</li>
+<li>
+<p>See section <code>Definition of Terms</code>_.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"db/1234567"</code></p>
+</li>
+<li>:val:<code>"cod/2000000"</code></li>
+<li>:val:<code>"cod/2000000@1234567"</code></li>
+<li>:val:<code>"nomad/L1234567890"</code></li>
+<li>:val:<code>"42"</code></li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResource.links">
+<code class="highlight">
+links: <span class="n">ResourceLinks</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource.links" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a links object containing links related to the resource.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResource.meta">
+<code class="highlight">
+meta: <span class="n">Meta</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource.meta" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a meta object containing non-standard meta-information about a resource that can not be represented as an attribute or relationship.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResource.relationships">
+<code class="highlight">
+relationships: <span class="n">EntryRelationships</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource.relationships" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>a dictionary containing references to other entries according to the description in section <code>Relationships</code>_
+encoded as <code>JSON API Relationships &lt;https://jsonapi.org/format/1.0/#document-resource-object-relationships&gt;</code>__.
+The OPTIONAL human-readable description of the relationship MAY be provided in the :field:<code>description</code> field inside the :field:<code>meta</code> dictionary.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResource.type">
+<code class="highlight">
+type: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResource.type" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The name of the type of an entry. Any entry MUST be able to be fetched using the <code>base URL &lt;Base URL_&gt;</code>_ type and ID at the url :endpoint:<code>&lt;base URL&gt;/&lt;type&gt;/&lt;id&gt;</code>.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li><strong>Response</strong>: REQUIRED in the response.</li>
+<li>MUST be an existing entry type.</li>
+<li>
+<p>The entry of type <code>&lt;type&gt;</code> and ID <code>&lt;id&gt;</code> MUST be returned in response to a request for :endpoint:<code>/&lt;type&gt;/&lt;id&gt;</code> under the versioned base URL.</p>
+</li>
+<li>
+<p><strong>Example</strong>: :val:<code>"structures"</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes">
+<code>StructureResourceAttributes</code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>This class contains the Field for the attributes used to represent a structure, e.g. unit cell, atoms, positions.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.assemblies">
+<code class="highlight">
+assemblies: <span class="n">Assembly</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.assemblies" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A description of groups of sites that are statistically correlated.
+- <strong>Type</strong>: list of dictionary with keys:</p>
+<ul>
+<li>:property:<code>sites_in_groups</code>: list of list of integers (REQUIRED)</li>
+<li>
+<p>:property:<code>group_probabilities</code>: list of floats (REQUIRED)</p>
+</li>
+<li>
+<p><strong>Requirements/Conventions</strong>:</p>
+</li>
+<li>
+<p><strong>Support</strong>: OPTIONAL support in implementations, i.e., MAY be :val:<code>null</code>.</p>
+</li>
+<li><strong>Query</strong>: Support for queries on this property is OPTIONAL.
+    If supported, filters MAY support only a subset of comparison operators.</li>
+<li>If present, the correct flag MUST be set in the list :property:<code>structure_features</code> (see property <code>structure_features</code>_).</li>
+<li>Client implementations MUST check its presence (as its presence changes the interpretation of the structure).</li>
+<li>
+<p>If present, it MUST be a list of dictionaries, each of which represents an assembly and MUST have the following two keys:</p>
+<ul>
+<li><strong>sites_in_groups</strong>: Index of the sites (0-based) that belong to each group for each assembly.</li>
+</ul>
+<p>Example: :val:<code>[[1], [2]]</code>: two groups, one with the second site, one with the third.</p>
+<p>Example: :val:<code>[[1,2], [3]]</code>: one group with the second and third site, one with the fourth.</p>
+</li>
+<li>
+<p><strong>group_probabilities</strong>: Statistical probability of each group. It MUST have the same length as :property:<code>sites_in_groups</code>.
+     It SHOULD sum to one.
+     See below for examples of how to specify the probability of the occurrence of a vacancy.
+     The possible reasons for the values not to sum to one are the same as already specified above for the :property:<code>concentration</code> of each :property:<code>species</code>, see property <code>species</code>_.</p>
+</li>
+<li>
+<p>If a site is not present in any group, it means that it is present with 100 % probability (as if no assembly was specified).</p>
+</li>
+<li>
+<p>A site MUST NOT appear in more than one group.</p>
+</li>
+<li>
+<p><strong>Examples</strong> (for each entry of the assemblies list):</p>
+</li>
+<li>
+<p>:val:<code>{"sites_in_groups": [[0], [1]], "group_probabilities: [0.3, 0.7]}</code>: the first site and the second site never occur at the same time in the unit cell.
+    Statistically, 30 % of the times the first site is present, while 70 % of the times the second site is present.</p>
+</li>
+<li>
+<p>:val:<code>{"sites_in_groups": [[1,2], [3]], "group_probabilities: [0.3, 0.7]}</code>: the second and third site are either present together or not present; they form the first group of atoms for this assembly.
+    The second group is formed by the fourth site.
+    Sites of the first group (the second and the third) are never present at the same time as the fourth site.
+    30 % of times sites 1 and 2 are present (and site 3 is absent); 70 % of times site 3 is present (and sites 1 and 2 are absent).</p>
+</li>
+<li>
+<p><strong>Notes</strong>:</p>
+</li>
+<li>
+<p>Assemblies are essential to represent, for instance, the situation where an atom can statistically occupy two different positions (sites).</p>
+</li>
+<li>By defining groups, it is possible to represent, e.g., the case where a functional molecule (and not just one atom) is either present or absent (or the case where it it is present in two conformations)</li>
+<li>
+<p>Considerations on virtual alloys and on vacancies: In the special case of a virtual alloy, these specifications allow two different, equivalent ways of specifying them.
+    For instance, for a site at the origin with 30 % probability of being occupied by Si, 50 % probability of being occupied by Ge, and 20 % of being a vacancy, the following two representations are possible:</p>
+<ul>
+<li>Using a single species:</li>
+</ul>
+<p>.. code:: jsonc</p>
+<div class="codehilite">
+<pre><span></span><code><span class="err">   {</span>
+<span class="err">     "cartesian_site_positions": [[0,0,0]],</span>
+<span class="err">     "species_at_sites": ["SiGe-vac"],</span>
+<span class="err">     "species": [</span>
+<span class="err">         {</span>
+<span class="err">           "name": "SiGe-vac",</span>
+<span class="err">           "chemical_symbols": ["Si", "Ge", "vacancy"],</span>
+<span class="err">           "concentration": [0.3, 0.5, 0.2]</span>
+<span class="err">         }</span>
+<span class="err">     ]</span>
+<span class="err">     // ...</span>
+<span class="err">   }</span>
+</code></pre>
+</div>
+<ul>
+<li>Using multiple species and the assemblies:</li>
+</ul>
+<p>.. code:: jsonc</p>
+<div class="codehilite">
+<pre><span></span><code><span class="err">   {</span>
+<span class="err">     "cartesian_site_positions": [ [0,0,0], [0,0,0], [0,0,0] ],</span>
+<span class="err">     "species_at_sites": ["Si", "Ge", "vac"],</span>
+<span class="err">     "species": {</span>
+<span class="err">       "Si": { "chemical_symbols": ["Si"], "concentration": [1.0] },</span>
+<span class="err">       "Ge": { "chemical_symbols": ["Ge"], "concentration": [1.0] },</span>
+<span class="err">       "vac": { "chemical_symbols": ["vacancy"], "concentration": [1.0] }</span>
+<span class="err">     },</span>
+<span class="err">     "assemblies": [</span>
+<span class="err">       {</span>
+<span class="err">         "sites_in_groups": [ [0], [1], [2] ],</span>
+<span class="err">         "group_probabilities": [0.3, 0.5, 0.2]</span>
+<span class="err">       }</span>
+<span class="err">     ]</span>
+<span class="err">     // ...</span>
+<span class="err">   }</span>
+</code></pre>
+</div>
+</li>
+<li>
+<p>It is up to the database provider to decide which representation to use, typically depending on the internal format in which the structure is stored.
+    However, given a structure identified by a unique ID, the API implementation MUST always provide the same representation for it.</p>
+</li>
+<li>
+<p>The probabilities of occurrence of different assemblies are uncorrelated.
+    So, for instance in the following case with two assemblies:</p>
+<p>.. code:: jsonc</p>
+<div class="codehilite">
+<pre><span></span><code><span class="err"> {</span>
+<span class="err">   "assemblies": [</span>
+<span class="err">     {</span>
+<span class="err">       "sites_in_groups": [ [0], [1] ],</span>
+<span class="err">       "group_probabilities": [0.2, 0.8],</span>
+<span class="err">     },</span>
+<span class="err">     {</span>
+<span class="err">       "sites_in_groups": [ [2], [3] ],</span>
+<span class="err">       "group_probabilities": [0.3, 0.7]</span>
+<span class="err">     }</span>
+<span class="err">   ]</span>
+<span class="err"> }</span>
+</code></pre>
+</div>
+<p>Site 0 is present with a probability of 20 % and site 1 with a probability of 80 %. These two sites are correlated (either site 0 or 1 is present). Similarly, site 2 is present with a probability of 30 % and site 3 with a probability of 70 %.
+These two sites are correlated (either site 2 or 3 is present).
+However, the presence or absence of sites 0 and 1 is not correlated with the presence or absence of sites 2 and 3 (in the specific example, the pair of sites (0, 2) can occur with 0.2<em>0.3 = 6 % probability; the pair (0, 3) with 0.2</em>0.7 = 14 % probability; the pair (1, 2) with 0.8<em>0.3 = 24 % probability; and the pair (1, 3) with 0.8</em>0.7 = 56 % probability).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.cartesian_site_positions">
+<code class="highlight">
+cartesian_site_positions: <span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">]]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.cartesian_site_positions" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Cartesian positions of each site. A site is an atom, a site potentially occupied by an atom, or a placeholder for a virtual mixture of atoms (e.g., in a virtual crystal approximation).
+- <strong>Type</strong>: list of list of floats and/or unknown values
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: Support for queries on this property is OPTIONAL. If supported, filters MAY support only a subset of comparison operators.</li>
+<li>It MUST be a list of length N times 3, where N is the number of sites in the structure.</li>
+<li>An entry MAY have multiple sites at the same Cartesian position (for a relevant use of this, see e.g., the property <code>assemblies</code>_).</li>
+<li>If a component of the position is unknown, the :val:<code>null</code> value should be provided instead (see section <code>Properties with unknown value</code><em>).
+    Otherwise, it should be a float value, expressed in angstrom (Å).
+    If at least one of the coordinates is unknown, the correct flag in the list property <code>structure_features</code></em> MUST be set.</li>
+<li>
+<p><strong>Notes</strong>: (for implementers) While this is unrelated to this OPTIMADE specification: If you decide to store internally the :property: <code>cartesian_site_positions</code> as a float array, you might want to represent :val:<code>null</code> values with :field-val:<code>NaN</code> values.
+    The latter being valid float numbers in the IEEE 754 standard in <code>IEEE 754-1985 &lt;https://doi.org/10.1109/IEEESTD.1985.82928&gt;</code><strong> and in the updated version <code>IEEE 754-2008 &lt;https://doi.org/10.1109/IEEESTD.2008.4610935&gt;</code></strong>.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>[[0,0,0],[0,0,2]]</code> indicates a structure with two sites, one sitting at the origin and one along the (positive) <em>z</em>-axis, 2 Å away from the origin.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.chemical_formula_anonymous">
+<code class="highlight">
+chemical_formula_anonymous: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_anonymous" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The anonymous formula is the :property:<code>chemical_formula_reduced</code>, but where the elements are instead first ordered by their chemical proportion number, and then, in order left to right, replaced by anonymous symbols A, B, C, ..., Z, Aa, Ba, ..., Za, Ab, Bb, ... and so on.
+- <strong>Type</strong>: string
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li>
+<p><strong>Query</strong>: MUST be a queryable property. However, support for filters using partial string matching with this property is OPTIONAL (i.e., BEGINS WITH, ENDS WITH, and CONTAINS).</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"A2B"</code></p>
+</li>
+<li>
+<p>:val:<code>"A42B42C16D12E10F9G5"</code></p>
+</li>
+<li>
+<p><strong>Querying</strong>:</p>
+</li>
+<li>A filter that matches an exactly given formula is :filter:<code>chemical_formula_anonymous="A2B"</code>.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.chemical_formula_descriptive">
+<code class="highlight">
+chemical_formula_descriptive: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_descriptive" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The chemical formula for a structure as a string in a form chosen by the API implementation.
+- <strong>Type</strong>: string
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter operators.</li>
+<li>The chemical formula is given as a string consisting of properly capitalized element symbols followed by integers or decimal numbers, balanced parentheses, square, and curly brackets <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>, <code>{</code>, <code>}</code>, commas, the <code>+</code>, <code>-</code>, <code>:</code> and <code>=</code> symbols.
+    The parentheses are allowed to be followed by a number.
+    Spaces are allowed anywhere except within chemical symbols.
+    The order of elements and any groupings indicated by parentheses or brackets are chosen freely by the API implementation.</li>
+<li>The string SHOULD be arithmetically consistent with the element ratios in the :property:<code>chemical_formula_reduced</code> property.</li>
+<li>
+<p>It is RECOMMENDED, but not mandatory, that symbols, parentheses and brackets, if used, are used with the meanings prescribed by <code>IUPAC's Nomenclature of Organic Chemistry &lt;https://www.qmul.ac.uk/sbcs/iupac/bibliog/blue.html&gt;</code>__.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"(H2O)2 Na"</code></p>
+</li>
+<li>:val:<code>"NaCl"</code></li>
+<li>:val:<code>"CaCO3"</code></li>
+<li>:val:<code>"CCaO3"</code></li>
+<li>
+<p>:val:<code>"(CH3)3N+ - [CH2]2-OH = Me3N+ - CH2 - CH2OH"</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>
+<p>Note: the free-form nature of this property is likely to make queries on it across different databases inconsistent.</p>
+</li>
+<li>A filter that matches an exactly given formula: :filter:<code>chemical_formula_descriptive="(H2O)2 Na"</code>.</li>
+<li>A filter that does a partial match: :filter:<code>chemical_formula_descriptive CONTAINS "H2O"</code>.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.chemical_formula_hill">
+<code class="highlight">
+chemical_formula_hill: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_hill" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The chemical formula for a structure in <code>Hill form &lt;https://dx.doi.org/10.1021/ja02046a005&gt;</code>__ with element symbols followed by integer chemical proportion numbers.
+  The proportion number MUST be omitted if it is 1.
+- <strong>Type</strong>: string
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: OPTIONAL, i.e., MAY be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: Support for queries on these properties are OPTIONAL. If supported, only a subset of filter operators MAY be supported.</li>
+<li>The overall scale factor of the chemical proportions is chosen such that the resulting values are integers that indicate the most chemically relevant unit of which the system is composed.
+    For example, if the structure is a repeating unit cell with four hydrogens and four oxygens that represents two hydroperoxide molecules, :property:<code>chemical_formula_hill</code> is :val:<code>"H2O2"</code> (i.e., not :val:<code>"HO"</code>, nor :val:<code>"H4O4"</code>).</li>
+<li>If the chemical insight needed to ascribe a Hill formula to the system is not present, the property MUST be handled as unset.</li>
+<li>Element names MUST have proper capitalization (e.g., :val:<code>"Si"</code>, not :VAL:<code>"SI"</code> for "silicon").</li>
+<li>Elements MUST be placed in <code>Hill order &lt;https://dx.doi.org/10.1021/ja02046a005&gt;</code>__, followed by their integer chemical proportion number.
+    Hill order means: if carbon is present, it is placed first, and if also present, hydrogen is placed second.
+    After that, all other elements are ordered alphabetically.
+    If carbon is not present, all elements are ordered alphabetically.</li>
+<li>If the system has sites with partial occupation and the total occupations of each element do not all sum up to integers, then the Hill formula SHOULD be handled as unset.</li>
+<li>
+<p>No spaces or separators are allowed.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"H2O2"</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>
+<p>A filter that matches an exactly given formula is :filter:<code>chemical_formula_hill="H2O2"</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.chemical_formula_reduced">
+<code class="highlight">
+chemical_formula_reduced: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.chemical_formula_reduced" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The reduced chemical formula for a structure as a string with element symbols and integer chemical proportion numbers.
+  The proportion number MUST be omitted if it is 1.
+- <strong>Type</strong>: string
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property.
+    However, support for filters using partial string matching with this property is OPTIONAL (i.e., BEGINS WITH, ENDS WITH, and CONTAINS).
+    Intricate querying on formula components are instead recommended to be formulated using set-type filter operators on the multi valued :property:<code>elements</code> and :property:<code>elements_proportions</code> properties.</li>
+<li>Element names MUST have proper capitalization (e.g., :val:<code>"Si"</code>, not :VAL:<code>"SI"</code> for "silicon").</li>
+<li>Elements MUST be placed in alphabetical order, followed by their integer chemical proportion number.</li>
+<li>For structures with no partial occupation, the chemical proportion numbers are the smallest integers for which the chemical proportion is exactly correct.</li>
+<li>For structures with partial occupation, the chemical proportion numbers are integers that within reasonable approximation indicate the correct chemical proportions. The precise details of how to perform the rounding is chosen by the API implementation.</li>
+<li>
+<p>No spaces or separators are allowed.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"H2NaO"</code></p>
+</li>
+<li>:val:<code>"ClNa"</code></li>
+<li>
+<p>:val:<code>"CCaO3"</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>
+<p>A filter that matches an exactly given formula is :filter:<code>chemical_formula_reduced="H2NaO"</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.dimension_types">
+<code class="highlight">
+dimension_types: <span class="n">Tuple</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">structures</span><span class="o">.</span><span class="n">Periodicity</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">structures</span><span class="o">.</span><span class="n">Periodicity</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">structures</span><span class="o">.</span><span class="n">Periodicity</span><span class="p">]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.dimension_types" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>List of three integers.
+  For each of the three directions indicated by the three lattice vectors (see property <code>lattice_vectors</code><em>).
+  This list indicates if the direction is periodic (value :val:<code>1</code>) or non-periodic (value :val:<code>0</code>).
+  Note: the elements in this list each refer to the direction of the corresponding entry in property <code>lattice_vectors</code></em> and <em>not</em> the Cartesian x, y, z directions.
+- <strong>Type</strong>: list of integers.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property. Support for equality comparison is REQUIRED, support for other comparison operators are OPTIONAL.</li>
+<li>MUST be a list of length 3.</li>
+<li>
+<p>Each integer element MUST assume only the value 0 or 1.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>For a molecule: :val:<code>[0, 0, 0]</code></p>
+</li>
+<li>For a wire along the direction specified by the third lattice vector: :val:<code>[0, 0, 1]</code></li>
+<li>For a 2D surface/slab, periodic on the plane defined by the first and third lattice vectors: :val:<code>[1, 0, 1]</code></li>
+<li>For a bulk 3D system: :val:<code>[1, 1, 1]</code></li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.elements">
+<code class="highlight">
+elements: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.elements" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Names of the different elements present in the structure.
+- <strong>Type</strong>: list of strings.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter operators.</li>
+<li>The strings are the chemical symbols, written as uppercase letter plus optional lowercase letters.</li>
+<li>The order MUST be alphabetical.</li>
+<li>
+<p>Note: This may not contain the "x" that is suggested in chemical_symbols for the :property:<code>species</code> property.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>["Si"]</code></p>
+</li>
+<li>
+<p>:val:<code>["Al","O","Si"]</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>A filter that matches all records of structures that contain Si, Al <strong>and</strong> O, and possibly other elements: :filter:<code>elements HAS ALL "Si", "Al", "O"</code>.</li>
+<li>To match structures with exactly these three elements, use :filter:<code>elements HAS ALL "Si", "Al", "O" AND LENGTH elements = 3</code>.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.elements_ratios">
+<code class="highlight">
+elements_ratios: <span class="nb">float</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.elements_ratios" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Relative proportions of different elements in the structure.
+- <strong>Type</strong>: list of floats
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter operators.</li>
+<li>Composed by the proportions of elements in the structure as a list of floating point numbers.</li>
+<li>
+<p>The sum of the numbers MUST be 1.0 (within floating point accuracy)</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>[1.0]</code></p>
+</li>
+<li>
+<p>:val:<code>[0.3333333333333333, 0.2222222222222222, 0.4444444444444444]</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>
+<p>Note: useful filters can be formulated using the set operator syntax for correlated values. However, since the values are floating point values, the use of equality comparisons is generally not recommended.</p>
+</li>
+<li>A filter that matches structures where approximately 1/3 of the atoms in the structure are the element Al is: :filter:<code>elements:elements_ratios HAS ALL "Al":&gt;0.3333, "Al":&lt;0.3334</code>.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.immutable_id">
+<code class="highlight">
+immutable_id: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.immutable_id" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The entry's immutable ID (e.g., an UUID).
+This is important for databases having preferred IDs that point to "the latest version" of a record, but still offer access to older variants.
+This ID maps to the version-specific record, in case it changes in the future.
+- <strong>Type</strong>: string.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: OPTIONAL, i.e., MAY be :val:<code>null</code>.</li>
+<li>
+<p><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>"8bd3e750-b477-41a0-9b11-3a799f21b44f"</code></p>
+</li>
+<li>:val:<code>"fjeiwoj,54;@=%&lt;&gt;#32"</code> (Strings that are not URL-safe are allowed.)</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.last_modified">
+<code class="highlight">
+last_modified: <span class="n">datetime</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.last_modified" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Date and time representing when the entry was last modified.
+- <strong>Type</strong>: timestamp.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
+<li>
+<p><strong>Response</strong>: REQUIRED in the response unless the query parameter :query-param:<code>response_fields</code> is present and does not include this property.</p>
+</li>
+<li>
+<p><strong>Example</strong>:</p>
+</li>
+<li>
+<p>As part of JSON response format: :VAL:<code>"2007-04-05T14:30Z"</code> (i.e., encoded as an <code>RFC 3339 Internet Date/Time Format &lt;https://tools.ietf.org/html/rfc3339#section-5.6&gt;</code>__ string.)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.lattice_vectors">
+<code class="highlight">
+lattice_vectors: <span class="n">Tuple</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">]],</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">]],</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">NoneType</span><span class="p">],</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">]]]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.lattice_vectors" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>The three lattice vectors in Cartesian coordinates, in ångström (Å).
+- <strong>Type</strong>: list of list of floats.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: Support for queries on this property is OPTIONAL.
+    If supported, filters MAY support only a subset of comparison operators.</li>
+<li>MUST be a list of three vectors <em>a</em>, <em>b</em>, and <em>c</em>, where each of the vectors MUST BE a list of the vector's coordinates along the x, y, and z Cartesian coordinates.
+    (Therefore, the first index runs over the three lattice vectors and the second index runs over the x, y, z Cartesian coordinates).</li>
+<li>For databases that do not define an absolute Cartesian system (e.g., only defining the length and angles between vectors), the first lattice vector SHOULD be set along <em>x</em> and the second on the <em>xy</em>-plane.</li>
+<li>This property MUST be an array of dimensions 3 times 3 regardless of the elements of :property:<code>dimension_types</code>.
+    The vectors SHOULD by convention be chosen so the determinant of the :property:<code>lattice_vectors</code> matrix is different from zero.
+    The vectors in the non-periodic directions have no significance beyond fulfilling these requirements.</li>
+<li>
+<p>All three elements of the inner lists of floats MAY be :val:<code>null</code> for non-periodic dimensions, i.e., those dimensions for which :property:<code>dimension_types</code> is :val:<code>0</code>.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>[[4.0,0.0,0.0],[0.0,4.0,0.0],[0.0,1.0,4.0]]</code> represents a cell, where the first vector is :val:<code>(4, 0, 0)</code>, i.e., a vector aligned along the :val:<code>x</code> axis of length 4 Å; the second vector is :val:<code>(0, 4, 0)</code>; and the third vector is :val:<code>(0, 1, 4)</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.nelements">
+<code class="highlight">
+nelements: <span class="nb">int</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.nelements" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Number of different elements in the structure as an integer.
+- <strong>Type</strong>: integer
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li>
+<p><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter operators.</p>
+</li>
+<li>
+<p><strong>Example</strong>: :val:<code>3</code></p>
+</li>
+<li>
+<p><strong>Querying</strong>:</p>
+</li>
+<li>
+<p>Note: queries on this property can equivalently be formulated using :filter-fragment:<code>LENGTH elements</code>.</p>
+</li>
+<li>A filter that matches structures that have exactly 4 elements: :filter:<code>nelements=4</code>.</li>
+<li>A filter that matches structures that have between 2 and 7 elements: :filter:<code>nelements&gt;=2 AND nelements&lt;=7</code>.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.nsites">
+<code class="highlight">
+nsites: <span class="nb">int</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.nsites" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>An integer specifying the length of the :property:<code>cartesian_site_positions</code> property.
+- <strong>Type</strong>: integer
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li>
+<p><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter operators.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>42</code></p>
+</li>
+<li>
+<p><strong>Query examples</strong>:</p>
+</li>
+<li>
+<p>Match only structures with exactly 4 sites: :filter:<code>nsites=4</code></p>
+</li>
+<li>Match structures that have between 2 and 7 sites: :filter:<code>nsites&gt;=2 AND nsites&lt;=7</code></li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.species">
+<code class="highlight">
+species: <span class="n">Species</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.species" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A list describing the species of the sites of this structure. Species can be pure chemical elements, or virtual-crystal atoms representing a statistical occupation of a given site by multiple chemical elements.
+- <strong>Type</strong>: list of dictionary with keys:</p>
+<ul>
+<li>:property:<code>name</code>: string (REQUIRED)</li>
+<li>:property:<code>chemical_symbols</code>: list of strings (REQUIRED)</li>
+<li>:property:<code>concentration</code>: list of float (REQUIRED)</li>
+<li>:property:<code>mass</code>: float (OPTIONAL)</li>
+<li>
+<p>:property:<code>original_name</code>: string (OPTIONAL).</p>
+</li>
+<li>
+<p><strong>Requirements/Conventions</strong>:</p>
+</li>
+<li>
+<p><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</p>
+</li>
+<li><strong>Query</strong>: Support for queries on this property is OPTIONAL.
+    If supported, filters MAY support only a subset of comparison operators.</li>
+<li>
+<p>Each list member MUST be a dictionary with the following keys:</p>
+<ul>
+<li>
+<p><strong>name</strong>: REQUIRED; gives the name of the species; the <strong>name</strong> value MUST be unique in the :property:<code>species</code> list;</p>
+</li>
+<li>
+<p><strong>chemical_symbols</strong>: REQUIRED; MUST be a list of strings of all chemical elements composing this species.</p>
+</li>
+<li>
+<p>It MUST be one of the following:</p>
+<ul>
+<li>a valid chemical-element name, or</li>
+<li>the special value :val:<code>"X"</code> to represent a non-chemical element, or</li>
+<li>the special value :val:<code>"vacancy"</code> to represent that this site has a non-zero probability of having a vacancy (the respective probability is indicated in the :property:<code>concentration</code> list, see below).</li>
+</ul>
+</li>
+<li>
+<p>If any one entry in the :property:<code>species</code> list has a :property:<code>chemical_symbols</code> list that is longer than 1 element, the correct flag MUST be set in the list :property:<code>structure_features</code> (see property <code>structure_features</code>_).</p>
+</li>
+<li>
+<p><strong>concentration</strong>: REQUIRED; MUST be a list of floats, with same length as :property:<code>chemical_symbols</code>. The numbers represent the relative concentration of the corresponding chemical symbol in this species.
+  The numbers SHOULD sum to one. Cases in which the numbers do not sum to one typically fall only in the following two categories:</p>
+</li>
+<li>
+<p>Numerical errors when representing float numbers in fixed precision, e.g. for two chemical symbols with concentrations :val:<code>1/3</code> and :val:<code>2/3</code>, the concentration might look something like :val:<code>[0.33333333333, 0.66666666666]</code>. If the client is aware that the sum is not one because of numerical precision, it can renormalize the values so that the sum is exactly one.</p>
+</li>
+<li>Experimental errors in the data present in the database. In this case, it is the responsibility of the client to decide how to process the data.</li>
+</ul>
+<p>Note that concentrations are uncorrelated between different site (even of the same species).</p>
+<ul>
+<li><strong>mass</strong>: OPTIONAL. If present MUST be a float expressed in a.m.u.</li>
+<li>
+<p><strong>original_name</strong>: OPTIONAL. Can be any valid Unicode string, and SHOULD contain (if specified) the name of the species that is used internally in the source database.</p>
+<div class="admonition note">
+<p class="admonition-title">With regards to "source database", we refer to the immediate source being queried via the OPTIMADE API implementation.</p>
+<p>The main use of this field is for source databases that use species names, containing characters that are not allowed (see description of the list property <code>species_at_sites</code>_).</p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>For systems that have only species formed by a single chemical symbol, and that have at most one species per chemical symbol, SHOULD use the chemical symbol as species name (e.g., :val:<code>"Ti"</code> for titanium, :val:<code>"O"</code> for oxygen, etc.)
+    However, note that this is OPTIONAL, and client implementations MUST NOT assume that the key corresponds to a chemical symbol, nor assume that if the species name is a valid chemical symbol, that it represents a species with that chemical symbol.
+    This means that a species :val:<code>{"name": "C", "chemical_symbols": ["Ti"], "concentration": [1.0]}</code> is valid and represents a titanium species (and <em>not</em> a carbon species).</p>
+</li>
+<li>
+<p>It is NOT RECOMMENDED that a structure includes species that do not have at least one corresponding site.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>[ {"name": "Ti", "chemical_symbols": ["Ti"], "concentration": [1.0]} ]</code>: any site with this species is occupied by a Ti atom.</p>
+</li>
+<li>:val:<code>[ {"name": "Ti", "chemical_symbols": ["Ti", "vacancy"], "concentration": [0.9, 0.1]} ]</code>: any site with this species is occupied by a Ti atom with 90 % probability, and has a vacancy with 10 % probability.</li>
+<li>:val:<code>[ {"name": "BaCa", "chemical_symbols": ["vacancy", "Ba", "Ca"], "concentration": [0.05, 0.45, 0.5], "mass": 88.5} ]</code>: any site with this species is occupied by a Ba atom with 45 % probability, a Ca atom with 50 % probability, and by a vacancy with 5 % probability. The mass of this site is (on average) 88.5 a.m.u.</li>
+<li>:val:<code>[ {"name": "C12", "chemical_symbols": ["C"], "concentration": [1.0], "mass": 12.0} ]</code>: any site with this species is occupied by a carbon isotope with mass 12.</li>
+<li>:val:<code>[ {"name": "C13", "chemical_symbols": ["C"], "concentration": [1.0], "mass": 13.0} ]</code>: any site with this species is occupied by a carbon isotope with mass 13.</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.species_at_sites">
+<code class="highlight">
+species_at_sites: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.species_at_sites" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Name of the species at each site (where values for sites are specified with the same order of the property <code>cartesian_site_positions</code><em>).
+  The properties of the species are found in the property <code>species</code></em>.
+- <strong>Type</strong>: list of strings.
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: SHOULD be supported, i.e., SHOULD NOT be :val:<code>null</code>. Is REQUIRED in this implementation, i.e., MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: Support for queries on this property is OPTIONAL. If supported, filters MAY support only a subset of comparison operators.</li>
+<li>MUST have length equal to the number of sites in the structure (first dimension of the list property <code>cartesian_site_positions</code>_).</li>
+<li>Each species MUST have a unique name.</li>
+<li>Each species name mentioned in the :property:<code>species_at_sites</code> list MUST be described in the list property <code>species</code>_ (i.e. for each value in the :property:<code>species_at_sites</code> list there MUST exist exactly one dictionary in the :property:<code>species</code> list with the :property:<code>name</code> attribute equal to the corresponding :property:<code>species_at_sites</code> value).</li>
+<li>
+<p>Each site MUST be associated only to a single species.
+    <strong>Note</strong>: However, species can represent mixtures of atoms, and multiple species MAY be defined for the same chemical element.
+    This latter case is useful when different atoms of the same type need to be grouped or distinguished, for instance in simulation codes to assign different initial spin states.</p>
+</li>
+<li>
+<p><strong>Examples</strong>:</p>
+</li>
+<li>
+<p>:val:<code>["Ti","O2"]</code> indicates that the first site is hosting a species labeled :val:<code>"Ti"</code> and the second a species labeled :val:<code>"O2"</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.structures.StructureResourceAttributes.structure_features">
+<code class="highlight">
+structure_features: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-field"><code>field</code></small>
+<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-required"><code>required</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.structures.StructureResourceAttributes.structure_features" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A list of strings that flag which special features are used by the structure.
+- <strong>Type</strong>: list of strings
+- <strong>Requirements/Conventions</strong>:</p>
+<ul>
+<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
+<li><strong>Query</strong>: MUST be a queryable property. Filters on the list MUST support all mandatory HAS-type queries. Filter operators for comparisons on the string components MUST support equality, support for other comparison operators are OPTIONAL.</li>
+<li>MUST be an empty list if no special features are used.</li>
+<li>MUST be sorted alphabetically.</li>
+<li>If a special feature listed below is used, the list MUST contain the corresponding string.</li>
+<li>If a special feature listed below is not used, the list MUST NOT contain the corresponding string.</li>
+<li>
+<p><strong>List of strings used to indicate special structure features</strong>:</p>
+<ul>
+<li>:val:<code>disorder</code>: This flag MUST be present if any one entry in the :property:<code>species</code> list has a :property:<code>chemical_symbols</code> list that is longer than 1 element.</li>
+<li>:val:<code>unknown_positions</code>: This flag MUST be present if at least one component of the :property:<code>cartesian_site_positions</code> list of lists has value :val:<code>null</code>.</li>
+<li>:val:<code>assemblies</code>: This flag MUST be present if the property <code>assemblies</code>_ is present.</li>
+</ul>
+</li>
+<li>
+<p><strong>Examples</strong>: A structure having unknown positions and using assemblies: :val:<code>["assemblies", "unknown_positions"]</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../responses/" rel="prev" title="Responses">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Responses
+              </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../utils/" rel="next" title="Utils">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Utils
+              </div>
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Built by OPTIMADE Development Team
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>
