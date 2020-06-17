@@ -179,8 +179,13 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#unreleased">
-    Unreleased
+<a class="md-nav__link" href="#v091-2020-06-17">
+    v0.9.1 (2020-06-17)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#v090-2020-06-17">
+    v0.9.0 (2020-06-17)
   </a>
 </li>
 <li class="md-nav__item">
@@ -620,8 +625,13 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#unreleased">
-    Unreleased
+<a class="md-nav__link" href="#v091-2020-06-17">
+    v0.9.1 (2020-06-17)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#v090-2020-06-17">
+    v0.9.0 (2020-06-17)
   </a>
 </li>
 <li class="md-nav__item">
@@ -710,14 +720,20 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">¶</a></h1>
-<h2 id="unreleased"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/HEAD">Unreleased</a><a class="headerlink" href="#unreleased" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.8.1...HEAD">Full Changelog</a></p>
+<h2 id="v091-2020-06-17"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.9.1">v0.9.1</a> (2020-06-17)<a class="headerlink" href="#v091-2020-06-17" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.9.0...v0.9.1">Full Changelog</a></p>
+<h2 id="v090-2020-06-17"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.9.0">v0.9.0</a> (2020-06-17)<a class="headerlink" href="#v090-2020-06-17" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.8.1...v0.9.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
+<li>Breaking up the python tools into seperable packages <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/255">#255</a></li>
 <li>Run both servers as standard <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/238">#238</a></li>
 </ul>
 <p><strong>Fixed bugs:</strong></p>
 <ul>
+<li>Non-running CI job <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/331">#331</a></li>
+<li>Special species "X" not tested for non-disordered structures <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/304">#304</a></li>
+<li>Standardize timezone of datetime responses <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/288">#288</a></li>
 <li>Queries on aliased/provider fields are broken for nested properties <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/282">#282</a></li>
 <li>General exceptions not being put into response <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/281">#281</a></li>
 <li>Issue with CIF export <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/271">#271</a></li>
@@ -729,9 +745,12 @@
 </ul>
 <p><strong>Closed issues:</strong></p>
 <ul>
+<li>Update links resources <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/299">#299</a></li>
 <li>Need to set up mkdocs <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/289">#289</a></li>
 <li>Need to add custom schema entries for unit/sortable (and eventually type) <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/278">#278</a></li>
 <li>/info/\&lt;entry-endpoint&gt; missing <code>sortable</code> key under each property <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/273">#273</a></li>
+<li>Make CI linting more useful <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/269">#269</a></li>
+<li>[PR SPECIFIC] Reminder: Validator test pinned to specific commit <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/268">#268</a></li>
 <li>Validator does not check that pagination links work <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/265">#265</a></li>
 <li>available_api_versions is not correctly validated <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/261">#261</a></li>
 <li>Implementation model should allow for any URL type in <code>source\_url</code> <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/260">#260</a></li>
@@ -739,10 +758,29 @@
 <li>Wrong response structure at info endpoint @ cod <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/258">#258</a></li>
 <li>Missing base url for api's docs @ materialscloud <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/257">#257</a></li>
 <li>Handling of KNOWN in mongo backend <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/254">#254</a></li>
+<li><code>None</code> values in <code>lattice\_vectors</code> <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/170">#170</a></li>
+<li>Make sure that the PyPI distribution works <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/143">#143</a></li>
 <li>Move run.sh to a python file to be environment-agnostic <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/81">#81</a></li>
 </ul>
 <p><strong>Merged pull requests:</strong></p>
 <ul>
+<li>Another fix for release pipeline <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/355">#355</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
+<li>Fix publish workflow <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/354">#354</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Fix publish workflow <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/352">#352</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Update publish workflow <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/340">#340</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
+<li>Remove test publish action <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/338">#338</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
+<li>Fix 'publish_TestPyPI' CI job <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/337">#337</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Specify versions for all setup.py deps <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/336">#336</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Represent the datetime objects as UTC in RFC3339 format <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/333">#333</a> (<a href="https://github.com/fekad">fekad</a>)</li>
+<li>dependamat: Bump \&lt;package_name&gt; v x.y.z to vx.y.(z+1) <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/330">#330</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
+<li>Bump fastapi from 0.53.1 to 0.56.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/324">#324</a> (<a href="https://github.com/apps/dependabot">dependabot[bot]</a>)</li>
+<li>Bump pydantic from 1.4 to 1.5.1 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/320">#320</a> (<a href="https://github.com/apps/dependabot">dependabot[bot]</a>)</li>
+<li>Update links resources <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/306">#306</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Add special species for adapters testing <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/305">#305</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Clean Up Build Environment <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/301">#301</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
+<li>Enable CI failures for linting <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/300">#300</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
+<li>Adding jarvis-tools structures <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/297">#297</a> (<a href="https://github.com/knc6">knc6</a>)</li>
+<li>Update Docs <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/295">#295</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
 <li>Setup MKDocs for Documentation <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/294">#294</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
 <li>Fix filters on nested provider/aliased fields <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/285">#285</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Use heroku-shields instead of heroku-badge <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/284">#284</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
@@ -753,9 +791,11 @@
 <li>Not so quick fix to allow "/" at end of validator URL, plus fixes and tests for --as_type <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/267">#267</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Check pagination links-&gt;next with validator <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/266">#266</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Relax HTTP URL constraints on meta-&gt;implementation-&gt;source_url field. <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/262">#262</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
+<li>Up to v0.8.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/251">#251</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
+<li>Validate lattice_vectors for all null or all float <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/171">#171</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 </ul>
-<h2 id="v081-2020-04-25"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.8.1">v0.8.1</a> (2020-04-25)<a class="headerlink" href="#v081-2020-04-25" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.8.0...v0.8.1">Full Changelog</a></p>
+<h2 id="v081-2020-04-25"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.8.1">v0.8.1</a> (2020-04-25)<a class="headerlink" href="#v081-2020-04-25" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.8.0...v0.8.1">Full Changelog</a></p>
 <p><strong>Fixed bugs:</strong></p>
 <ul>
 <li>Pip install missing some files <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/252">#252</a></li>
@@ -765,8 +805,8 @@
 <li>v0.8.1 hotfix <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/256">#256</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Fix 252 missing landing page <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/253">#253</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
 </ul>
-<h2 id="v080-2020-04-22"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.8.0">v0.8.0</a> (2020-04-22)<a class="headerlink" href="#v080-2020-04-22" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.7.1...v0.8.0">Full Changelog</a></p>
+<h2 id="v080-2020-04-22"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.8.0">v0.8.0</a> (2020-04-22)<a class="headerlink" href="#v080-2020-04-22" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.7.1...v0.8.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Switch to pydantic's BaseSettings for the config file? <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/152">#152</a></li>
@@ -791,7 +831,6 @@
 </ul>
 <p><strong>Merged pull requests:</strong></p>
 <ul>
-<li>Up to v0.8.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/251">#251</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Remove old commented GH Action job <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/250">#250</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Use Path.home() instead of <code>~</code> <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/246">#246</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Fix path in default config <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/243">#243</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
@@ -801,8 +840,8 @@
 <li>Update filter examples and validate optional cases <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/227">#227</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Switch from config init to BaseSettings <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/226">#226</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
 </ul>
-<h2 id="v071-2020-03-16"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.7.1">v0.7.1</a> (2020-03-16)<a class="headerlink" href="#v071-2020-03-16" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.7.0...v0.7.1">Full Changelog</a></p>
+<h2 id="v071-2020-03-16"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.7.1">v0.7.1</a> (2020-03-16)<a class="headerlink" href="#v071-2020-03-16" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.7.0...v0.7.1">Full Changelog</a></p>
 <p><strong>Closed issues:</strong></p>
 <ul>
 <li>Fix all capitalisation of OPTIMADE <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/232">#232</a></li>
@@ -814,8 +853,8 @@
 <li>Update OPTIMADE capitalisation <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/233">#233</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Update mentions of action in readme <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/231">#231</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 </ul>
-<h2 id="v070-2020-03-13"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.7.0">v0.7.0</a> (2020-03-13)<a class="headerlink" href="#v070-2020-03-13" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.6.0...v0.7.0">Full Changelog</a></p>
+<h2 id="v070-2020-03-13"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.7.0">v0.7.0</a> (2020-03-13)<a class="headerlink" href="#v070-2020-03-13" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.6.0...v0.7.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Validate all non-optional :filter: examples from the spec <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/213">#213</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
@@ -838,8 +877,8 @@
 <li>Update django requirement from &gt;=2.2.9,~=2.2 to &gt;=2.2,\&lt;4.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/219">#219</a> (<a href="https://github.com/apps/dependabot-preview">dependabot-preview[bot]</a>)</li>
 <li>Update elasticsearch-dsl requirement from ~=6.4 to &gt;=6.4,\&lt;8.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/218">#218</a> (<a href="https://github.com/apps/dependabot-preview">dependabot-preview[bot]</a>)</li>
 </ul>
-<h2 id="v060-2020-03-06"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.6.0">v0.6.0</a> (2020-03-06)<a class="headerlink" href="#v060-2020-03-06" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.5.0...v0.6.0">Full Changelog</a></p>
+<h2 id="v060-2020-03-06"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.6.0">v0.6.0</a> (2020-03-06)<a class="headerlink" href="#v060-2020-03-06" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.5.0...v0.6.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Possibly add CORS middleware <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/159">#159</a></li>
@@ -882,8 +921,8 @@
 <li>Fix errors parsing IDs that contain slashes <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/183">#183</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Added default mongo implementations for HAS ALL/ANY/ONLY <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/173">#173</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 </ul>
-<h2 id="v050-2020-02-13"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.5.0">v0.5.0</a> (2020-02-13)<a class="headerlink" href="#v050-2020-02-13" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.4.0...v0.5.0">Full Changelog</a></p>
+<h2 id="v050-2020-02-13"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.5.0">v0.5.0</a> (2020-02-13)<a class="headerlink" href="#v050-2020-02-13" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.4.0...v0.5.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Implement a landing page for requests to the base URL <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/169">#169</a></li>
@@ -905,8 +944,8 @@
 <li>Implement <code>include</code> query parameter <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/163">#163</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Add docker for index meta-database <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/140">#140</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 </ul>
-<h2 id="v040-2020-02-06"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.4.0">v0.4.0</a> (2020-02-06)<a class="headerlink" href="#v040-2020-02-06" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.3.4...v0.4.0">Full Changelog</a></p>
+<h2 id="v040-2020-02-06"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.4.0">v0.4.0</a> (2020-02-06)<a class="headerlink" href="#v040-2020-02-06" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.3.4...v0.4.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>switch to pipenv? <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/37">#37</a></li>
@@ -933,8 +972,8 @@
 <li>Redirect slashed URLs <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/160">#160</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>New REQUIRED level properties <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/153">#153</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 </ul>
-<h2 id="v034-2020-02-04"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.3.4">v0.3.4</a> (2020-02-04)<a class="headerlink" href="#v034-2020-02-04" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.3.3...v0.3.4">Full Changelog</a></p>
+<h2 id="v034-2020-02-04"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.3.4">v0.3.4</a> (2020-02-04)<a class="headerlink" href="#v034-2020-02-04" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.3.3...v0.3.4">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Include <code>develop</code> or not? Default branch? - Create INSTALL.md <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/136">#136</a></li>
@@ -957,8 +996,8 @@
 <li>Extend OpenAPI/spec description <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/151">#151</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Non Local Mongo <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/150">#150</a> (<a href="https://github.com/shyamd">shyamd</a>)</li>
 </ul>
-<h2 id="v033-2020-01-24"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.3.3">v0.3.3</a> (2020-01-24)<a class="headerlink" href="#v033-2020-01-24" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.3.2...v0.3.3">Full Changelog</a></p>
+<h2 id="v033-2020-01-24"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.3.3">v0.3.3</a> (2020-01-24)<a class="headerlink" href="#v033-2020-01-24" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.3.2...v0.3.3">Full Changelog</a></p>
 <p><strong>Fixed bugs:</strong></p>
 <ul>
 <li>Lark files not being distributed <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/141">#141</a></li>
@@ -975,8 +1014,8 @@
 <li>Fix root_validator issues with optional fields and made meta optional <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/145">#145</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Handle <code>JSONDecodeError</code>s in validator <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/144">#144</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 </ul>
-<h2 id="v032-2020-01-20"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.3.2">v0.3.2</a> (2020-01-20)<a class="headerlink" href="#v032-2020-01-20" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.3.1...v0.3.2">Full Changelog</a></p>
+<h2 id="v032-2020-01-20"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.3.2">v0.3.2</a> (2020-01-20)<a class="headerlink" href="#v032-2020-01-20" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.3.1...v0.3.2">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Add base URL to configuration file <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/135">#135</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
@@ -990,14 +1029,14 @@
 <li>Make sure relevant package data is included in distributions <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/142">#142</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 <li>Add database page limit <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/139">#139</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 </ul>
-<h2 id="v031-2020-01-17"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.3.1">v0.3.1</a> (2020-01-17)<a class="headerlink" href="#v031-2020-01-17" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.3.0...v0.3.1">Full Changelog</a></p>
+<h2 id="v031-2020-01-17"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.3.1">v0.3.1</a> (2020-01-17)<a class="headerlink" href="#v031-2020-01-17" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.3.0...v0.3.1">Full Changelog</a></p>
 <p><strong>Merged pull requests:</strong></p>
 <ul>
 <li>Update requirements <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/138">#138</a> (<a href="https://github.com/CasperWA">CasperWA</a>)</li>
 </ul>
-<h2 id="v030-2020-01-14"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.3.0">v0.3.0</a> (2020-01-14)<a class="headerlink" href="#v030-2020-01-14" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.1.2...v0.3.0">Full Changelog</a></p>
+<h2 id="v030-2020-01-14"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.3.0">v0.3.0</a> (2020-01-14)<a class="headerlink" href="#v030-2020-01-14" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.1.2...v0.3.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
 <li>Implement optional <code>implementation</code> in top-level meta response <a href="https://github.com/Materials-Consortia/optimade-python-tools/issues/117">#117</a></li>
@@ -1075,12 +1114,12 @@
 <li>Updates to README and docs for v0.10.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/68">#68</a> (<a href="https://github.com/ml-evs">ml-evs</a>)</li>
 <li>Adding grammar for v0.10.0 <a href="https://github.com/Materials-Consortia/optimade-python-tools/pull/66">#66</a> (<a href="https://github.com/fekad">fekad</a>)</li>
 </ul>
-<h2 id="v012-2018-06-14"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.1.2">v0.1.2</a> (2018-06-14)<a class="headerlink" href="#v012-2018-06-14" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.1.1...v0.1.2">Full Changelog</a></p>
-<h2 id="v011-2018-06-13"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.1.1">v0.1.1</a> (2018-06-13)<a class="headerlink" href="#v011-2018-06-13" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/v0.1.0...v0.1.1">Full Changelog</a></p>
-<h2 id="v010-2018-06-05"><a href="https://github.com/materials-consortia/optimade-python-tools/tree/v0.1.0">v0.1.0</a> (2018-06-05)<a class="headerlink" href="#v010-2018-06-05" title="Permanent link">¶</a></h2>
-<p><a href="https://github.com/materials-consortia/optimade-python-tools/compare/6680fb28a60ec4ff43a303b7b4dbf41e159a25b6...v0.1.0">Full Changelog</a></p>
+<h2 id="v012-2018-06-14"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.1.2">v0.1.2</a> (2018-06-14)<a class="headerlink" href="#v012-2018-06-14" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.1.1...v0.1.2">Full Changelog</a></p>
+<h2 id="v011-2018-06-13"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.1.1">v0.1.1</a> (2018-06-13)<a class="headerlink" href="#v011-2018-06-13" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/v0.1.0...v0.1.1">Full Changelog</a></p>
+<h2 id="v010-2018-06-05"><a href="https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.1.0">v0.1.0</a> (2018-06-05)<a class="headerlink" href="#v010-2018-06-05" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/Materials-Consortia/optimade-python-tools/compare/6680fb28a60ec4ff43a303b7b4dbf41e159a25b6...v0.1.0">Full Changelog</a></p>
 <p>* <em>This Changelog was automatically generated by <a href="https://github.com/github-changelog-generator/github-changelog-generator">github_changelog_generator</a></em></p>
 </article>
 </div>

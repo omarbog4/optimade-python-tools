@@ -1502,10 +1502,7 @@ get_endpoint<span class="p">(</span><span class="bp">self</span><span class="p">
 628
 629
 630
-631
-632
-633
-634</pre>
+631</pre>
 </div>
 </td>
 <td class="code">
@@ -1518,15 +1515,12 @@ get_endpoint<span class="p">(</span><span class="bp">self</span><span class="p">
     <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">request_str</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="n">error_titles</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="n">error</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"title"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"errors"</span><span class="p">,</span> <span class="p">[])</span>
-        <span class="p">]</span>
-        <span class="n">error_details</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="n">error</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"detail"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"errors"</span><span class="p">,</span> <span class="p">[])</span>
-        <span class="p">]</span>
-        <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Request to '</span><span class="si">{</span><span class="n">request_str</span><span class="si">}</span><span class="s2">' returned HTTP code </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">. Errors:</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="k">for</span> <span class="n">error_title</span><span class="p">,</span> <span class="n">error_detail</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">error_titles</span><span class="p">,</span> <span class="n">error_details</span><span class="p">):</span>
-            <span class="n">message</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">error_title</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">error_details</span><span class="si">}</span><span class="s2">"</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"Request to '</span><span class="si">{</span><span class="n">request_str</span><span class="si">}</span><span class="s2">' returned HTTP code </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">."</span>
+        <span class="p">)</span>
+        <span class="n">message</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">Error(s):"</span>
+        <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"errors"</span><span class="p">,</span> <span class="p">[]):</span>
+            <span class="n">message</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">'</span><span class="se">\n</span><span class="s1">  </span><span class="si">{</span><span class="n">error</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"title"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">)</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">error</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"detail"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">)</span><span class="si">}</span><span class="s1"> (</span><span class="si">{</span><span class="n">error</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"source"</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"pointer"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">)</span><span class="si">}</span><span class="s1">)'</span>
         <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">response</span><span class="p">,</span> <span class="s2">"request successful."</span>
@@ -2117,7 +2111,10 @@ for that endpoint, where the queries do not include the
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>636
+<pre><span></span>633
+634
+635
+636
 637
 638
 639
@@ -2131,10 +2128,7 @@ for that endpoint, where the queries do not include the
 647
 648
 649
-650
-651
-652
-653</pre>
+650</pre>
 </div>
 </td>
 <td class="code">
