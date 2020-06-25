@@ -8,9 +8,9 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/models/baseinfo/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.3.2" name="generator"/>
 <title>Baseinfo - OPTIMADE-Python-Tools Documentation</title>
-<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -332,30 +332,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoAttributes.is_index">
     is_index
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource">
-    BaseInfoResource
-  </a>
-<nav aria-label="BaseInfoResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.relationships">
-    relationships
   </a>
 </li>
 </ul>
@@ -709,30 +685,6 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource">
-    BaseInfoResource
-  </a>
-<nav aria-label="BaseInfoResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.baseinfo.BaseInfoResource.relationships">
-    relationships
-  </a>
-</li>
-</ul>
-</nav>
-</li>
 </ul>
 </nav>
 </div>
@@ -753,7 +705,7 @@
 <h2 class="doc doc-heading" id="optimade.models.baseinfo.AvailableApiVersion">
 <code>AvailableApiVersion</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.AvailableApiVersion" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -764,27 +716,25 @@
 <code class="highlight">
 url: <span class="n">AnyHttpUrl</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.AvailableApiVersion.url" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>a string specifying a versioned base URL that MUST adhere to the rules in section Base URL</p>
+<p>A string specifying a versioned base URL that MUST adhere to the rules in section Base URL</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.baseinfo.AvailableApiVersion.version">
 <code class="highlight">
-version: <span class="n">ConstrainedStrValue</span> </code>
+version: <span class="n">SemanticVersion</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.AvailableApiVersion.version" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>a string containing the full version number of the API served at that versioned base URL. The version number string MUST NOT be prefixed by, e.g., 'v'.</p>
+<p>A string containing the full version number of the API served at that versioned base URL. The version number string MUST NOT be prefixed by, e.g., 'v'.</p>
 </div>
 </div>
 <div class="doc doc-object doc-method">
@@ -817,7 +767,12 @@ crosscheck_url_and_version<span class="p">(</span><span class="n">values</span><
 47
 48
 49
-50</pre>
+50
+51
+52
+53
+54
+55</pre>
 </div>
 </td>
 <td class="code">
@@ -830,8 +785,13 @@ crosscheck_url_and_version<span class="p">(</span><span class="n">values</span><
         <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span> <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="s2">"url"</span><span class="p">]</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
         <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"v"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
     <span class="p">)</span>
-    <span class="n">url_version</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">url_version</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">))</span>
-    <span class="n">api_version</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">"version"</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">))</span>
+    <span class="c1"># as with version urls, we need to split any release tags or build metadata out of these URLs</span>
+    <span class="n">url_version</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">url_version</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"-"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"+"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">api_version</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">"version"</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"-"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"+"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">)</span>
+    <span class="p">)</span>
     <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">url_version</span><span class="p">,</span> <span class="n">api_version</span><span class="p">)):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
             <span class="sa">f</span><span class="s2">"API version </span><span class="si">{</span><span class="n">api_version</span><span class="si">}</span><span class="s2"> is not compatible with url version </span><span class="si">{</span><span class="n">url_version</span><span class="si">}</span><span class="s2">."</span>
@@ -892,7 +852,7 @@ url_must_be_versioned_base_url<span class="p">(</span><span class="n">v</span><s
 <h2 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoAttributes">
 <code>BaseInfoAttributes</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -901,10 +861,9 @@ url_must_be_versioned_base_url<span class="p">(</span><span class="n">v</span><s
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoAttributes.api_version">
 <code class="highlight">
-api_version: <span class="nb">str</span> </code>
+api_version: <span class="n">SemanticVersion</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.api_version" title="Permanent link">¶</a></h3>
@@ -917,8 +876,7 @@ api_version: <span class="nb">str</span> </code>
 <code class="highlight">
 available_api_versions: <span class="n">AvailableApiVersion</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.available_api_versions" title="Permanent link">¶</a></h3>
@@ -931,8 +889,7 @@ available_api_versions: <span class="n">AvailableApiVersion</span> </code>
 <code class="highlight">
 available_endpoints: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.available_endpoints" title="Permanent link">¶</a></h3>
@@ -945,8 +902,7 @@ available_endpoints: <span class="nb">str</span> </code>
 <code class="highlight">
 entry_types_by_format: <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.entry_types_by_format" title="Permanent link">¶</a></h3>
@@ -959,8 +915,7 @@ entry_types_by_format: <span class="n">List</span><span class="p">[</span><span 
 <code class="highlight">
 formats: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.formats" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -972,63 +927,11 @@ formats: <span class="nb">str</span> </code>
 <code class="highlight">
 is_index: <span class="nb">bool</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.baseinfo.BaseInfoAttributes.is_index" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>If true, this is an index meta-database base URL (see section Index Meta-Database). If this member is not provided, the client MUST assume this is not an index meta-database base URL (i.e., the default is for is_index to be false).</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-class">
-<h2 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoResource">
-<code>BaseInfoResource</code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.baseinfo.BaseInfoResource" title="Permanent link">¶</a></h2>
-<div class="doc doc-contents">
-<div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoResource.links">
-<code class="highlight">
-links: <span class="n">ResourceLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.baseinfo.BaseInfoResource.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a links object containing links related to the resource.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoResource.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.baseinfo.BaseInfoResource.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object containing non-standard meta-information about a resource that can not be represented as an attribute or relationship.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.baseinfo.BaseInfoResource.relationships">
-<code class="highlight">
-relationships: <span class="n">Relationships</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.baseinfo.BaseInfoResource.relationships" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a relationships object describing relationships between the resource and other JSON:API resources.</p>
+<p>If true, this is an index meta-database base URL (see section Index Meta-Database). If this member is not provided, the client MUST assume this is not an index meta-database base URL (i.e., the default is for <code>is_index</code> to be <code>false</code>).</p>
 </div>
 </div>
 </div>
@@ -1089,13 +992,13 @@ relationships: <span class="n">Relationships</span> </code>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

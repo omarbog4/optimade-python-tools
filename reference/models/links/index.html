@@ -8,9 +8,9 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/models/links/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.3.2" name="generator"/>
 <title>Links - OPTIMADE-Python-Tools Documentation</title>
-<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -290,43 +290,14 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.Aggregate">
+    Aggregate
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResource">
     LinksResource
   </a>
-<nav aria-label="LinksResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.attributes">
-    attributes
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.relationships">
-    relationships
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.type">
-    type
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes">
@@ -334,6 +305,11 @@
   </a>
 <nav aria-label="LinksResourceAttributes" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.aggregate">
+    aggregate
+  </a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.base_url">
     base_url
@@ -359,8 +335,18 @@
     name
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.no_aggregate_reason">
+    no_aggregate_reason
+  </a>
+</li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinkType">
+    LinkType
+  </a>
 </li>
 </ul>
 </nav>
@@ -623,43 +609,14 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.Aggregate">
+    Aggregate
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResource">
     LinksResource
   </a>
-<nav aria-label="LinksResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.attributes">
-    attributes
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.relationships">
-    relationships
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.links.LinksResource.type">
-    type
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes">
@@ -667,6 +624,11 @@
   </a>
 <nav aria-label="LinksResourceAttributes" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.aggregate">
+    aggregate
+  </a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.base_url">
     base_url
@@ -692,8 +654,18 @@
     name
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinksResourceAttributes.no_aggregate_reason">
+    no_aggregate_reason
+  </a>
+</li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.links.LinkType">
+    LinkType
+  </a>
 </li>
 </ul>
 </nav>
@@ -712,117 +684,25 @@
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.links.Aggregate">
+<code>Aggregate</code>
+<a class="headerlink" href="#optimade.models.links.Aggregate" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Enumeration of aggregate values</p>
+<div class="doc doc-children">
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="optimade.models.links.LinksResource">
 <code>LinksResource</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResource" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>A Links endpoint resource object</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.attributes">
-<code class="highlight">
-attributes: <span class="n">LinksResourceAttributes</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.attributes" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a dictionary containing key-value pairs representing the entry's properties.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.id">
-<code class="highlight">
-id: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.id" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>An entry's ID as defined in section <code>Definition of Terms</code>_.
-- <strong>Type</strong>: string.
-- <strong>Requirements/Conventions</strong>:</p>
-<ul>
-<li><strong>Support</strong>: REQUIRED, MUST NOT be :val:<code>null</code>.</li>
-<li><strong>Query</strong>: MUST be a queryable property with support for all mandatory filter features.</li>
-<li><strong>Response</strong>: REQUIRED in the response.</li>
-<li>
-<p>See section <code>Definition of Terms</code>_.</p>
-</li>
-<li>
-<p><strong>Examples</strong>:</p>
-</li>
-<li>
-<p>:val:<code>"db/1234567"</code></p>
-</li>
-<li>:val:<code>"cod/2000000"</code></li>
-<li>:val:<code>"cod/2000000@1234567"</code></li>
-<li>:val:<code>"nomad/L1234567890"</code></li>
-<li>:val:<code>"42"</code></li>
-</ul>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.links">
-<code class="highlight">
-links: <span class="n">ResourceLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a links object containing links related to the resource.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object containing non-standard meta-information about a resource that can not be represented as an attribute or relationship.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.relationships">
-<code class="highlight">
-relationships: <span class="n">EntryRelationships</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.relationships" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a dictionary containing references to other entries according to the description in section <code>Relationships</code>_
-encoded as <code>JSON API Relationships &lt;https://jsonapi.org/format/1.0/#document-resource-object-relationships&gt;</code>__.
-The OPTIONAL human-readable description of the relationship MAY be provided in the :field:<code>description</code> field inside the :field:<code>meta</code> dictionary.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.links.LinksResource.type">
-<code class="highlight">
-type: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.links.LinksResource.type" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>These objects are described in detail in the section Links Endpoint</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -830,19 +710,36 @@ type: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.links.LinksResourceAttributes">
 <code>LinksResourceAttributes</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>Links endpoint resource object attributes</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.links.LinksResourceAttributes.aggregate">
+<code class="highlight">
+aggregate: <span class="n">Aggregate</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.aggregate" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A string indicating whether a client that is following links to aggregate results from different OPTIMADE implementations should follow this link or not.
+This flag SHOULD NOT be indicated for links where <code>link_type</code> is not <code>child</code>.</p>
+<p>If not specified, clients MAY assume that the value is <code>ok</code>.
+If specified, and the value is anything different than <code>ok</code>, the client MUST assume that the server is suggesting not to follow the link during aggregation by default (also if the value is not among the known ones, in case a future specification adds new accepted values).</p>
+<p>Specific values indicate the reason why the server is providing the suggestion.
+A client MAY follow the link anyway if it has reason to do so (e.g., if the client is looking for all test databases, it MAY follow the links marked with <code>aggregate</code>=<code>test</code>).</p>
+<p>If specified, it MUST be one of the values listed in section Link Aggregate Options.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.links.LinksResourceAttributes.base_url">
 <code class="highlight">
 base_url: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.base_url" title="Permanent link">¶</a></h3>
@@ -855,13 +752,12 @@ base_url: <span class="n">Optional</span><span class="p">[</span><span class="n"
 <code class="highlight">
 description: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.description" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>Human-readable description for the OPTIMADE API implementation a client may provide in a list to an end-user.</p>
+<p>Human-readable description for the OPTIMADE API implementation, e.g., for use in clients to show a description to the end-user.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -869,8 +765,7 @@ description: <span class="nb">str</span> </code>
 <code class="highlight">
 homepage: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.homepage" title="Permanent link">¶</a></h3>
@@ -881,15 +776,15 @@ homepage: <span class="n">Optional</span><span class="p">[</span><span class="n"
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.links.LinksResourceAttributes.link_type">
 <code class="highlight">
-link_type: <span class="nb">str</span> </code>
+link_type: <span class="n">LinkType</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.link_type" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>The link type of the represented resource in relation to this implementation. MUST be one of these values: 'child', 'root', 'external', 'providers'.</p>
+<p>The type of the linked relation.
+MUST be one of these values: 'child', 'root', 'external', 'providers'.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -897,15 +792,37 @@ link_type: <span class="nb">str</span> </code>
 <code class="highlight">
 name: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.name" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>Human-readable name for the OPTIMADE API implementation a client may provide in a list to an end-user.</p>
+<p>Human-readable name for the OPTIMADE API implementation, e.g., for use in clients to show the name to the end-user.</p>
 </div>
 </div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.links.LinksResourceAttributes.no_aggregate_reason">
+<code class="highlight">
+no_aggregate_reason: <span class="nb">str</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.links.LinksResourceAttributes.no_aggregate_reason" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>An OPTIONAL human-readable string indicating the reason for suggesting not to aggregate results following the link.
+It SHOULD NOT be present if <code>aggregate</code>=<code>ok</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.links.LinkType">
+<code>LinkType</code>
+<a class="headerlink" href="#optimade.models.links.LinkType" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Enumeration of link_type values</p>
+<div class="doc doc-children">
 </div>
 </div>
 </div>
@@ -964,13 +881,13 @@ name: <span class="nb">str</span> </code>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

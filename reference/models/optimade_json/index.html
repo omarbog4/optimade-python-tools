@@ -8,9 +8,9 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/models/optimade_json/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.3.2" name="generator"/>
 <title>Optimade json - OPTIMADE-Python-Tools Documentation</title>
-<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -315,22 +315,17 @@
 <nav aria-label="BaseRelationshipResource" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.meta">
     meta
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.type">
-    type
-  </a>
-</li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.DataType">
+    DataType
+  </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Implementation">
@@ -379,50 +374,6 @@
 <a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError">
     OptimadeError
   </a>
-<nav aria-label="OptimadeError" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.code">
-    code
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.detail">
-    detail
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.source">
-    source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.status">
-    status
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.title">
-    title
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Provider">
@@ -462,25 +413,6 @@
 <a class="md-nav__link" href="#optimade.models.optimade_json.Relationship">
     Relationship
   </a>
-<nav aria-label="Relationship" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.data">
-    data
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.meta">
-    meta
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta">
@@ -567,36 +499,6 @@
 <nav aria-label="Success" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.data">
-    data
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.errors">
-    errors
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.included">
-    included
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.jsonapi">
-    jsonapi
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Success.__json_encoder__">
     __json_encoder__()
   </a>
@@ -615,46 +517,6 @@
   </a>
 <nav aria-label="Warnings" class="md-nav">
 <ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.code">
-    code
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.detail">
-    detail
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.source">
-    source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.status">
-    status
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.title">
-    title
-  </a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.type">
     type
@@ -939,22 +801,17 @@
 <nav aria-label="BaseRelationshipResource" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.meta">
     meta
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.BaseRelationshipResource.type">
-    type
-  </a>
-</li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.DataType">
+    DataType
+  </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Implementation">
@@ -1003,50 +860,6 @@
 <a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError">
     OptimadeError
   </a>
-<nav aria-label="OptimadeError" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.code">
-    code
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.detail">
-    detail
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.source">
-    source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.status">
-    status
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.OptimadeError.title">
-    title
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Provider">
@@ -1086,25 +899,6 @@
 <a class="md-nav__link" href="#optimade.models.optimade_json.Relationship">
     Relationship
   </a>
-<nav aria-label="Relationship" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.data">
-    data
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Relationship.meta">
-    meta
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta">
@@ -1191,36 +985,6 @@
 <nav aria-label="Success" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.data">
-    data
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.errors">
-    errors
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.included">
-    included
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.jsonapi">
-    jsonapi
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Success.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Success.__json_encoder__">
     __json_encoder__()
   </a>
@@ -1239,46 +1003,6 @@
   </a>
 <nav aria-label="Warnings" class="md-nav">
 <ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.code">
-    code
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.detail">
-    detail
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.id">
-    id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.source">
-    source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.status">
-    status
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.title">
-    title
-  </a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Warnings.type">
     type
@@ -1308,7 +1032,7 @@
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.BaseRelationshipMeta">
 <code>BaseRelationshipMeta</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipMeta" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1319,8 +1043,7 @@
 <code class="highlight">
 description: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipMeta.description" title="Permanent link">¶</a></h3>
@@ -1335,53 +1058,35 @@ description: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.BaseRelationshipResource">
 <code>BaseRelationshipResource</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipResource" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>Minimum requirements to represent a relationship resource</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.BaseRelationshipResource.id">
-<code class="highlight">
-id: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipResource.id" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Resource ID</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.BaseRelationshipResource.meta">
 <code class="highlight">
 meta: <span class="n">BaseRelationshipMeta</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipResource.meta" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
 <p>Relationship meta field. MUST contain 'description' if supplied.</p>
 </div>
 </div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.BaseRelationshipResource.type">
-<code class="highlight">
-type: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.BaseRelationshipResource.type" title="Permanent link">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.optimade_json.DataType">
+<code>DataType</code>
+<a class="headerlink" href="#optimade.models.optimade_json.DataType" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
-<p>Resource type</p>
-</div>
-</div>
+<p>Optimade Data Types</p>
+<p>See the section "Data types" in the OPTIMADE API specification for more information.</p>
+<div class="doc doc-children">
 </div>
 </div>
 </div>
@@ -1389,7 +1094,7 @@ type: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.Implementation">
 <code>Implementation</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1400,8 +1105,7 @@ type: <span class="nb">str</span> </code>
 <code class="highlight">
 maintainer: <span class="n">ImplementationMaintainer</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation.maintainer" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1413,8 +1117,7 @@ maintainer: <span class="n">ImplementationMaintainer</span> </code>
 <code class="highlight">
 name: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation.name" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1426,8 +1129,7 @@ name: <span class="nb">str</span> </code>
 <code class="highlight">
 source_url: <span class="n">AnyUrl</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation.source_url" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1439,8 +1141,7 @@ source_url: <span class="n">AnyUrl</span> </code>
 <code class="highlight">
 version: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation.version" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1454,7 +1155,7 @@ version: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.ImplementationMaintainer">
 <code>ImplementationMaintainer</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ImplementationMaintainer" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1465,8 +1166,7 @@ version: <span class="nb">str</span> </code>
 <code class="highlight">
 email: <span class="n">EmailStr</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ImplementationMaintainer.email" title="Permanent link">¶</a></h3>
@@ -1481,117 +1181,12 @@ email: <span class="n">EmailStr</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError">
 <code>OptimadeError</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.OptimadeError" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>detail MUST be present</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.code">
-<code class="highlight">
-code: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.code" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>an application-specific error code, expressed as a string value.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.detail">
-<code class="highlight">
-detail: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.detail" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A human-readable explanation specific to this occurrence of the problem.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.id">
-<code class="highlight">
-id: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.id" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A unique identifier for this particular occurrence of the problem.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.links">
-<code class="highlight">
-links: <span class="n">ErrorLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A links object storing about</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object containing non-standard meta-information about the error.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.source">
-<code class="highlight">
-source: <span class="n">ErrorSource</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.source" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>An object containing references to the source of the error</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.status">
-<code class="highlight">
-status: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.status" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>the HTTP status code applicable to this problem, expressed as a string value.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.OptimadeError.title">
-<code class="highlight">
-title: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.OptimadeError.title" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A short, human-readable summary of the problem. It <strong>SHOULD NOT</strong> change from occurrence to occurrence of the problem, except for purposes of localization.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1599,7 +1194,7 @@ title: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.Provider">
 <code>Provider</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1610,8 +1205,7 @@ title: <span class="nb">str</span> </code>
 <code class="highlight">
 description: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.description" title="Permanent link">¶</a></h3>
@@ -1624,8 +1218,7 @@ description: <span class="nb">str</span> </code>
 <code class="highlight">
 homepage: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyHttpUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.homepage" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1637,8 +1230,7 @@ homepage: <span class="n">Optional</span><span class="p">[</span><span class="n"
 <code class="highlight">
 index_base_url: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyHttpUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.index_base_url" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1650,8 +1242,7 @@ index_base_url: <span class="n">Optional</span><span class="p">[</span><span cla
 <code class="highlight">
 name: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.name" title="Permanent link">¶</a></h3>
@@ -1664,8 +1255,7 @@ name: <span class="nb">str</span> </code>
 <code class="highlight">
 prefix: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.prefix" title="Permanent link">¶</a></h3>
@@ -1680,51 +1270,12 @@ prefix: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.Relationship">
 <code>Relationship</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Relationship" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>Similar to normal JSON API relationship, but with addition of OPTIONAL meta field for a resource</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Relationship.data">
-<code class="highlight">
-data: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">optimade_json</span><span class="o">.</span><span class="n">BaseRelationshipResource</span><span class="p">]]]</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Relationship.data" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Resource linkage</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Relationship.links">
-<code class="highlight">
-links: <span class="n">RelationshipLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Relationship.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a links object containing at least one of the following: self, related</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Relationship.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Relationship.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object that contains non-standard meta-information about the relationship.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1732,7 +1283,7 @@ meta: <span class="n">Meta</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.ResponseMeta">
 <code>ResponseMeta</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1746,15 +1297,14 @@ database-provider-specific prefix.</p>
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.ResponseMeta.api_version">
 <code class="highlight">
-api_version: <span class="nb">str</span> </code>
+api_version: <span class="n">SemanticVersion</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.api_version" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>a string containing the version of the API implementation, e.g. v0.9.5</p>
+<p>A string containing the version of the API implementation.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1762,12 +1312,11 @@ api_version: <span class="nb">str</span> </code>
 <code class="highlight">
 data_available: <span class="nb">int</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.data_available" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>an integer containing the total number of data objects available in the database</p>
+<p>An integer containing the total number of data resource objects available in the database for the endpoint.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1775,13 +1324,12 @@ data_available: <span class="nb">int</span> </code>
 <code class="highlight">
 data_returned: <span class="n">ConstrainedIntValue</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.data_returned" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>an integer containing the number of data objects returned for the query.</p>
+<p>An integer containing the total number of data resource objects returned for the current <code>filter</code> query, independent of pagination.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1789,8 +1337,7 @@ data_returned: <span class="n">ConstrainedIntValue</span> </code>
 <code class="highlight">
 implementation: <span class="n">Implementation</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.implementation" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1802,8 +1349,7 @@ implementation: <span class="n">Implementation</span> </code>
 <code class="highlight">
 last_id: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.last_id" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1815,13 +1361,12 @@ last_id: <span class="nb">str</span> </code>
 <code class="highlight">
 more_data_available: <span class="nb">bool</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.more_data_available" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p><code>false</code> if all data has been returned, and <code>true</code> if not.</p>
+<p><code>false</code> if all data resource objects for this <code>filter</code> query have been returned in the response or if it is the last page of a paginated response, and <code>true</code> otherwise.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1829,8 +1374,7 @@ more_data_available: <span class="nb">bool</span> </code>
 <code class="highlight">
 provider: <span class="n">Provider</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.provider" title="Permanent link">¶</a></h3>
@@ -1843,13 +1387,12 @@ provider: <span class="n">Provider</span> </code>
 <code class="highlight">
 query: <span class="n">ResponseMetaQuery</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.query" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>information on the query that was requested</p>
+<p>Information on the Query that was requested</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1857,8 +1400,7 @@ query: <span class="n">ResponseMetaQuery</span> </code>
 <code class="highlight">
 response_message: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.response_message" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1870,13 +1412,12 @@ response_message: <span class="nb">str</span> </code>
 <code class="highlight">
 time_stamp: <span class="n">datetime</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.time_stamp" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>a string containing the date and time at which the query was exexcuted</p>
+<p>A timestamp containing the date and time at which the query was executed.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1884,12 +1425,15 @@ time_stamp: <span class="n">datetime</span> </code>
 <code class="highlight">
 warnings: <span class="n">Warnings</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.warnings" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>List of warning resource objects representing non-critical errors or warnings. A warning resource object is defined similarly to a JSON API error object, but MUST also include the field type, which MUST have the value "warning". The field detail MUST be present and SHOULD contain a non-critical message, e.g., reporting unrecognized search attributes or deprecated features. The field status, representing a HTTP response status code, MUST NOT be present for a warning resource object. This is an exclusive field for error resource objects.</p>
+<p>A list of warning resource objects representing non-critical errors or warnings.
+A warning resource object is defined similarly to a <a href="http://jsonapi.org/format/1.0/#error-objects">JSON API error object</a>, but MUST also include the field <code>type</code>, which MUST have the value <code>"warning"</code>.
+The field <code>detail</code> MUST be present and SHOULD contain a non-critical message, e.g., reporting unrecognized search attributes or deprecated features.
+The field <code>status</code>, representing a HTTP response status code, MUST NOT be present for a warning resource object.
+This is an exclusive field for error resource objects.</p>
 </div>
 </div>
 </div>
@@ -1899,7 +1443,7 @@ warnings: <span class="n">Warnings</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.ResponseMetaQuery">
 <code>ResponseMetaQuery</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMetaQuery" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -1910,8 +1454,7 @@ warnings: <span class="n">Warnings</span> </code>
 <code class="highlight">
 representation: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMetaQuery.representation" title="Permanent link">¶</a></h3>
@@ -1926,90 +1469,12 @@ representation: <span class="nb">str</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.Success">
 <code>Success</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Success" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>errors are not allowed</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.data">
-<code class="highlight">
-data: <span class="n">Union</span><span class="p">[</span><span class="n">NoneType</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Resource</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Resource</span><span class="p">]]</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.data" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Outputted Data</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.errors">
-<code class="highlight">
-errors: <span class="n">Error</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.errors" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A list of unique errors</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.included">
-<code class="highlight">
-included: <span class="n">Resource</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.included" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A list of unique included resources</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.jsonapi">
-<code class="highlight">
-jsonapi: <span class="n">JsonApi</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.jsonapi" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Information about the JSON API used</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.links">
-<code class="highlight">
-links: <span class="n">ToplevelLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Links associated with the primary data or errors</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.meta">
-<code class="highlight">
-meta: <span class="n">ResponseMeta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Success.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A meta object containing non-standard information</p>
-</div>
-</div>
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.Success.__json_encoder__">
 <code class="highlight language-python">
@@ -2040,20 +1505,20 @@ either_data_meta_or_errors_must_be_set<span class="p">(</span><span class="n">va
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213</pre>
+<pre><span></span>295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308</pre>
 </div>
 </td>
 <td class="code">
@@ -2087,135 +1552,22 @@ either_data_meta_or_errors_must_be_set<span class="p">(</span><span class="n">va
 <h2 class="doc doc-heading" id="optimade.models.optimade_json.Warnings">
 <code>Warnings</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Warnings" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
-<p>OPTIMADE-specific warning class based on OPTIMADE-specific JSON API Error.
-    From the specification:</p>
-<div class="codehilite">
-<pre><span></span><code>    <span class="n">A</span> <span class="n">warning</span> <span class="n">resource</span> <span class="k">object</span> <span class="k">is</span> <span class="k">defined</span> <span class="n">similarly</span> <span class="k">to</span> <span class="n">a</span> <span class="n">JSON</span> <span class="n">API</span>
-    <span class="n">error</span> <span class="k">object</span><span class="p">,</span> <span class="n">but</span> <span class="n">MUST</span> <span class="n">also</span> <span class="n">include</span> <span class="n">the</span> <span class="n">field</span> <span class="k">type</span><span class="p">,</span> <span class="n">which</span> <span class="n">MUST</span>
-    <span class="n">have</span> <span class="n">the</span> <span class="n">value</span> <span class="ss">"warning"</span><span class="p">.</span> <span class="n">The</span> <span class="n">field</span> <span class="n">detail</span> <span class="n">MUST</span> <span class="n">be</span> <span class="n">present</span> <span class="k">and</span>
-    <span class="n">SHOULD</span> <span class="n">contain</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">critical</span> <span class="n">message</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="k">g</span><span class="p">.,</span> <span class="n">reporting</span>
-    <span class="n">unrecognized</span> <span class="k">search</span> <span class="n">attributes</span> <span class="k">or</span> <span class="n">deprecated</span> <span class="n">features</span><span class="p">.</span>
-
-<span class="n">Note</span><span class="p">:</span> <span class="n">Must</span> <span class="n">be</span> <span class="n">named</span> <span class="ss">"Warnings"</span><span class="p">,</span> <span class="n">since</span> <span class="ss">"Warning"</span> <span class="k">is</span> <span class="n">a</span> <span class="n">built</span><span class="o">-</span><span class="k">in</span> <span class="n">Python</span> <span class="k">class</span><span class="p">.</span>
-</code></pre>
-</div>
+<p>OPTIMADE-specific warning class based on OPTIMADE-specific JSON API Error.</p>
+<p>From the specification:</p>
+<p>A warning resource object is defined similarly to a JSON API error object, but MUST also include the field type, which MUST have the value "warning".
+The field detail MUST be present and SHOULD contain a non-critical message, e.g., reporting unrecognized search attributes or deprecated features.</p>
+<p>Note: Must be named "Warnings", since "Warning" is a built-in Python class.</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.code">
-<code class="highlight">
-code: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.code" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>an application-specific error code, expressed as a string value.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.detail">
-<code class="highlight">
-detail: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.detail" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A human-readable explanation specific to this occurrence of the problem.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.id">
-<code class="highlight">
-id: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.id" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A unique identifier for this particular occurrence of the problem.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.links">
-<code class="highlight">
-links: <span class="n">ErrorLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A links object storing about</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object containing non-standard meta-information about the error.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.source">
-<code class="highlight">
-source: <span class="n">ErrorSource</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.source" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>An object containing references to the source of the error</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.status">
-<code class="highlight">
-status: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.status" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>the HTTP status code applicable to this problem, expressed as a string value.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.title">
-<code class="highlight">
-title: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Warnings.title" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A short, human-readable summary of the problem. It <strong>SHOULD NOT</strong> change from occurrence to occurrence of the problem, except for purposes of localization.</p>
-</div>
-</div>
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.Warnings.type">
 <code class="highlight">
 type: <span class="nb">str</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Warnings.type" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -2280,13 +1632,13 @@ type: <span class="nb">str</span> </code>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

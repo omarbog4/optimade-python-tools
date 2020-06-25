@@ -8,9 +8,9 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/INSTALL/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.3.2" name="generator"/>
 <title>Installation - OPTIMADE-Python-Tools Documentation</title>
-<link href="../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -579,11 +579,11 @@ Second, and the preferred method of configuring the server, is to use a <a href=
 <p>For any configuration parameters not set by the above two, the defaults in built into <code>ServerConfig</code> in <code>optimade.server.config</code> will be used.</p>
 <p>There is a built-in index meta-database set up to populate a <code>mongomock</code> in-memory database with resources from a static <code>json</code> file containing the <code>child</code> resources you, as a database provider, want to serve under this index meta-database. The location of that <code>json</code> file is controllable using the <code>index_links_path</code> property of the configuration or setting via the environment variable <code>optimade_index_links_path</code>.</p>
 <p>Running the index meta-database is then as simple as writing <code>./run.sh index</code> in a terminal from the root of this package.
-You can find it at the base URL: <a href="http://localhost:5001/v0.10.1">http://localhost:5001/v0.10.1</a>.</p>
-<p>Here is an example of how it may look to start your server:
+You can find it at the base URL: <a href="http://localhost:5001/v1">http://localhost:5001/v1</a>.</p>
+<p>Here is an example of how it may look to start your server:</p>
 <div class="highlight"><pre><span></span><code>:~$ <span class="nb">export</span> <span class="nv">OPTIMADE_CONFIG_FILE</span><span class="o">=</span>/home/optimade_server/config.json
 :~$ ./path/to/optimade/run.sh index
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="full-development-installation">Full development installation<a class="headerlink" href="#full-development-installation" title="Permanent link">¶</a></h2>
 <p>The dependencies of this package can be found in <code>setup.py</code> with their latest supported versions.
 By default, a minimal set of requirements are installed to work with the filter language and the <code>pydantic</code> models.
@@ -630,7 +630,7 @@ Running the following:</p>
 <span class="c1"># or</span>
 uvicorn optimade.server.main_index:app --reload --port <span class="m">5001</span>
 </code></pre></div>
-<p>will run the index meta-database server at <a href="http://localhost:5001/v0.10.1">http://localhost:5001/v0.10.1</a>.</p>
+<p>will run the index meta-database server at <a href="http://localhost:5001/v1">http://localhost:5001/v1</a>.</p>
 </article>
 </div>
 </div>
@@ -683,13 +683,13 @@ uvicorn optimade.server.main_index:app --reload --port <span class="m">5001</spa
 </footer>
 </div>
 <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

@@ -8,9 +8,9 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/models/index_metadb/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.2" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.3.2" name="generator"/>
 <title>Index metadb - OPTIMADE-Python-Tools Documentation</title>
-<link href="../../../assets/stylesheets/main.a2408e81.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -280,67 +280,19 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.index_metadb.DefaultRelationship">
+    DefaultRelationship
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes">
     IndexInfoAttributes
   </a>
-<nav aria-label="IndexInfoAttributes" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.api_version">
-    api_version
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.available_api_versions">
-    available_api_versions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.available_endpoints">
-    available_endpoints
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.entry_types_by_format">
-    entry_types_by_format
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.formats">
-    formats
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.is_index">
-    is_index
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource">
     IndexInfoResource
   </a>
-<nav aria-label="IndexInfoResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.relationships">
-    relationships
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexRelationship">
@@ -360,15 +312,6 @@
 <a class="md-nav__link" href="#optimade.models.index_metadb.RelatedLinksResource">
     RelatedLinksResource
   </a>
-<nav aria-label="RelatedLinksResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.RelatedLinksResource.id">
-    id
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -641,67 +584,19 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.index_metadb.DefaultRelationship">
+    DefaultRelationship
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes">
     IndexInfoAttributes
   </a>
-<nav aria-label="IndexInfoAttributes" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.api_version">
-    api_version
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.available_api_versions">
-    available_api_versions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.available_endpoints">
-    available_endpoints
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.entry_types_by_format">
-    entry_types_by_format
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.formats">
-    formats
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoAttributes.is_index">
-    is_index
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource">
     IndexInfoResource
   </a>
-<nav aria-label="IndexInfoResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.links">
-    links
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.meta">
-    meta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.IndexInfoResource.relationships">
-    relationships
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.index_metadb.IndexRelationship">
@@ -721,15 +616,6 @@
 <a class="md-nav__link" href="#optimade.models.index_metadb.RelatedLinksResource">
     RelatedLinksResource
   </a>
-<nav aria-label="RelatedLinksResource" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.index_metadb.RelatedLinksResource.id">
-    id
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -748,97 +634,25 @@
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.models.index_metadb.DefaultRelationship">
+<code>DefaultRelationship</code>
+<a class="headerlink" href="#optimade.models.index_metadb.DefaultRelationship" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Enumeration of key(s) for relationship dictionary in IndexInfoResource</p>
+<div class="doc doc-children">
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes">
 <code>IndexInfoAttributes</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>Attributes for Base URL Info endpoint for an Index Meta-Database</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.api_version">
-<code class="highlight">
-api_version: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.api_version" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Presently used version of the OPTIMADE API</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.available_api_versions">
-<code class="highlight">
-available_api_versions: <span class="n">AvailableApiVersion</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.available_api_versions" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>A list of dictionaries of available API versions at other base URLs</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.available_endpoints">
-<code class="highlight">
-available_endpoints: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.available_endpoints" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>List of available endpoints (i.e., the string to be appended to the versioned base URL).</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.entry_types_by_format">
-<code class="highlight">
-entry_types_by_format: <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.entry_types_by_format" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Available entry endpoints as a function of output formats.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.formats">
-<code class="highlight">
-formats: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.formats" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>List of available output formats.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoAttributes.is_index">
-<code class="highlight">
-is_index: <span class="nb">bool</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoAttributes.is_index" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>If true, this is an index meta-database base URL (see section Index Meta-Database). If this member is not provided, the client MUST assume this is not an index meta-database base URL (i.e., the default is for is_index to be false).</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -846,52 +660,12 @@ is_index: <span class="nb">bool</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoResource">
 <code>IndexInfoResource</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.index_metadb.IndexInfoResource" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>Index Meta-Database Base URL Info endpoint resource</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoResource.links">
-<code class="highlight">
-links: <span class="n">ResourceLinks</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoResource.links" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a links object containing links related to the resource.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoResource.meta">
-<code class="highlight">
-meta: <span class="n">Meta</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoResource.meta" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a meta object containing non-standard meta-information about a resource that can not be represented as an attribute or relationship.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.IndexInfoResource.relationships">
-<code class="highlight">
-relationships: <span class="n">IndexRelationship</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.IndexInfoResource.relationships" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Reference to the child identifier object under the links endpoint that the provider has chosen as their 'default' OPTIMADE API database. A client SHOULD present this database as the first choice when an end-user chooses this provider.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -899,7 +673,7 @@ relationships: <span class="n">IndexRelationship</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.index_metadb.IndexRelationship">
 <code>IndexRelationship</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.index_metadb.IndexRelationship" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
@@ -910,13 +684,13 @@ relationships: <span class="n">IndexRelationship</span> </code>
 <code class="highlight">
 data: <span class="n">RelatedLinksResource</span> </code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 <small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.index_metadb.IndexRelationship.data" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>JSON API resource linkage. It MUST be either null or contain a single Links identifier object with the fields 'id' and 'type'</p>
+<p><a href="http://jsonapi.org/format/1.0/#document-links">JSON API resource linkage</a>.
+It MUST be either <code>null</code> or contain a single Links identifier object with the fields <code>id</code> and <code>type</code></p>
 </div>
 </div>
 </div>
@@ -926,26 +700,12 @@ data: <span class="n">RelatedLinksResource</span> </code>
 <h2 class="doc doc-heading" id="optimade.models.index_metadb.RelatedLinksResource">
 <code>RelatedLinksResource</code>
 <span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
+<small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.index_metadb.RelatedLinksResource" title="Permanent link">¶</a></h2>
 <div class="doc doc-contents">
 <p>A related Links resource object</p>
 <div class="doc doc-children">
-<div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.index_metadb.RelatedLinksResource.id">
-<code class="highlight">
-id: <span class="nb">str</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-field"><code>field</code></small>
-<small class="doc doc-property doc-property-pydantic"><code>pydantic</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.index_metadb.RelatedLinksResource.id" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>Resource ID</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1004,13 +764,13 @@ id: <span class="nb">str</span> </code>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
