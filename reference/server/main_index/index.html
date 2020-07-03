@@ -8,7 +8,7 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/server/main_index/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.3.3" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.4.0" name="generator"/>
 <title>Main index - OPTIMADE-Python-Tools Documentation</title>
 <link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -359,6 +359,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.main_index.add_major_version_base_url">
+    add_major_version_base_url()
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.main_index.add_optional_versioned_base_urls">
     add_optional_versioned_base_urls()
   </a>
@@ -555,6 +560,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.main_index.add_major_version_base_url">
+    add_major_version_base_url()
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.main_index.add_optional_versioned_base_urls">
     add_optional_versioned_base_urls()
   </a>
@@ -576,6 +586,39 @@
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.server.main_index.add_major_version_base_url">
+<code class="highlight language-python">
+add_major_version_base_url<span class="p">(</span><span class="n">app</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.server.main_index.add_major_version_base_url" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Add mandatory endpoints to <code>/vMAJOR</code> base URL. </p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/main_index.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>81
+82
+83
+84</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_major_version_base_url</span><span class="p">(</span><span class="n">app</span><span class="p">:</span> <span class="n">FastAPI</span><span class="p">):</span>
+    <span class="sd">""" Add mandatory endpoints to `/vMAJOR` base URL. """</span>
+    <span class="k">for</span> <span class="n">endpoint</span> <span class="ow">in</span> <span class="p">(</span><span class="n">index_info</span><span class="p">,</span> <span class="n">links</span><span class="p">):</span>
+        <span class="n">app</span><span class="o">.</span><span class="n">include_router</span><span class="p">(</span><span class="n">links</span><span class="o">.</span><span class="n">router</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">BASE_URL_PREFIXES</span><span class="p">[</span><span class="s2">"major"</span><span class="p">])</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
 <h2 class="doc doc-heading" id="optimade.server.main_index.add_optional_versioned_base_urls">
 <code class="highlight language-python">
 add_optional_versioned_base_urls<span class="p">(</span><span class="n">app</span><span class="p">)</span> </code>
@@ -594,16 +637,16 @@ add_optional_versioned_base_urls<span class="p">(</span><span class="n">app</spa
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>81
-82
-83
-84
-85
-86
-87
+<pre><span></span>87
 88
 89
-90</pre>
+90
+91
+92
+93
+94
+95
+96</pre>
 </div>
 </td>
 <td class="code">
@@ -681,13 +724,13 @@ add_optional_versioned_base_urls<span class="p">(</span><span class="n">app</spa
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

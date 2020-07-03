@@ -8,7 +8,7 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/server/config/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.3.3" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.4.0" name="generator"/>
 <title>Config - OPTIMADE-Python-Tools Documentation</title>
 <link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -380,6 +380,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.config.ServerConfig.index_base_url">
+    index_base_url
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.config.ServerConfig.index_links_path">
     index_links_path
   </a>
@@ -442,6 +447,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.config.ServerConfig.load_default_settings">
     load_default_settings()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.config.ServerConfig.set_implementation_version">
+    set_implementation_version()
   </a>
 </li>
 </ul>
@@ -700,6 +710,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.config.ServerConfig.index_base_url">
+    index_base_url
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.config.ServerConfig.index_links_path">
     index_links_path
   </a>
@@ -762,6 +777,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.server.config.ServerConfig.load_default_settings">
     load_default_settings()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.server.config.ServerConfig.set_implementation_version">
+    set_implementation_version()
   </a>
 </li>
 </ul>
@@ -872,6 +892,18 @@ implementation: <span class="n">Implementation</span> </code>
 <a class="headerlink" href="#optimade.server.config.ServerConfig.implementation" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
 <p>Introspective information about this OPTIMADE implementation</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.server.config.ServerConfig.index_base_url">
+<code class="highlight">
+index_base_url: <span class="n">AnyHttpUrl</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
+</span>
+<a class="headerlink" href="#optimade.server.config.ServerConfig.index_base_url" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>An optional link to the base URL for the index meta-database of the provider.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1035,28 +1067,28 @@ place of built in defaults</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
+<pre><span></span>129
 130
 131
 132
 133
-134</pre>
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150</pre>
 </div>
 </td>
 <td class="code">
@@ -1083,6 +1115,46 @@ place of built in defaults</p>
     <span class="n">new_values</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">new_values</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="optimade.server.config.ServerConfig.set_implementation_version">
+<code class="highlight language-python">
+set_implementation_version<span class="p">(</span><span class="n">v</span><span class="p">)</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+</span>
+<a class="headerlink" href="#optimade.server.config.ServerConfig.set_implementation_version" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>Set defaults and modify by passed value(s)</p>
+<details class="quote">
+<summary>Source code in <code>optimade/server/config.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>122
+123
+124
+125
+126
+127</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="nd">@validator</span><span class="p">(</span><span class="s2">"implementation"</span><span class="p">,</span> <span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">set_implementation_version</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+    <span class="sd">"""Set defaults and modify by passed value(s)"""</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"version"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">}</span>
+    <span class="n">res</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">res</span>
 </code></pre>
 </div>
 </td>
@@ -1149,13 +1221,13 @@ place of built in defaults</p>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

@@ -8,7 +8,7 @@
 <meta content="Documentation for the OPTIMADE-Python-Tools" name="description"/>
 <link href="https://www.optimade.org/optimade-python-tools/reference/models/optimade_json/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.3.3" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.4.0" name="generator"/>
 <title>Optimade json - OPTIMADE-Python-Tools Documentation</title>
 <link href="../../../assets/stylesheets/main.fe0cca5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -334,6 +334,11 @@
 <nav aria-label="Implementation" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.Implementation.homepage">
+    homepage
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Implementation.maintainer">
     maintainer
   </a>
@@ -392,11 +397,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Provider.index_base_url">
-    index_base_url
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Provider.name">
     name
   </a>
@@ -448,6 +448,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta.more_data_available">
     more_data_available
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta.optimade_schema">
+    optimade_schema
   </a>
 </li>
 <li class="md-nav__item">
@@ -820,6 +825,11 @@
 <nav aria-label="Implementation" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.Implementation.homepage">
+    homepage
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Implementation.maintainer">
     maintainer
   </a>
@@ -878,11 +888,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#optimade.models.optimade_json.Provider.index_base_url">
-    index_base_url
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.Provider.name">
     name
   </a>
@@ -934,6 +939,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta.more_data_available">
     more_data_available
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.models.optimade_json.ResponseMeta.optimade_schema">
+    optimade_schema
   </a>
 </li>
 <li class="md-nav__item">
@@ -1101,6 +1111,18 @@ meta: <span class="n">BaseRelationshipMeta</span> </code>
 <p>Information on the server implementation</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.optimade_json.Implementation.homepage">
+<code class="highlight">
+homepage: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyHttpUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.optimade_json.Implementation.homepage" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A <a href="http://jsonapi.org/format/1.0/#document-links">JSON API links object</a> pointing to the homepage of the implementation.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.Implementation.maintainer">
 <code class="highlight">
 maintainer: <span class="n">ImplementationMaintainer</span> </code>
@@ -1127,13 +1149,13 @@ name: <span class="nb">str</span> </code>
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.Implementation.source_url">
 <code class="highlight">
-source_url: <span class="n">AnyUrl</span> </code>
+source_url: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Implementation.source_url" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>URL of the implementation source, either downloadable archive or version control system</p>
+<p>A <a href="http://jsonapi.org/format/1.0/#document-links">JSON API links object</a> pointing to the implementation source, either downloadable archive or version control system.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1226,18 +1248,6 @@ homepage: <span class="n">Optional</span><span class="p">[</span><span class="n"
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h3 class="doc doc-heading" id="optimade.models.optimade_json.Provider.index_base_url">
-<code class="highlight">
-index_base_url: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyHttpUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
-</span>
-<a class="headerlink" href="#optimade.models.optimade_json.Provider.index_base_url" title="Permanent link">¶</a></h3>
-<div class="doc doc-contents">
-<p>a <a href="http://jsonapi.org/format/1.0#document-links">JSON API links object</a> pointing to the base URL for the <code>index</code> meta-database as specified in Appendix 1, either directly as a string, or as a link object.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="optimade.models.optimade_json.Provider.name">
 <code class="highlight">
 name: <span class="nb">str</span> </code>
@@ -1260,7 +1270,7 @@ prefix: <span class="nb">str</span> </code>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.Provider.prefix" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>database-provider-specific prefix as found in Appendix 1.</p>
+<p>database-provider-specific prefix as found in section Database-Provider-Specific Namespace Prefixes.</p>
 </div>
 </div>
 </div>
@@ -1304,7 +1314,9 @@ api_version: <span class="n">SemanticVersion</span> </code>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.api_version" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>A string containing the version of the API implementation.</p>
+<p>Presently used full version of the OPTIMADE API.
+The version number string MUST NOT be prefixed by, e.g., "v".
+Examples: <code>1.0.0</code>, <code>1.0.0-rc.2</code>.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1325,7 +1337,6 @@ data_available: <span class="nb">int</span> </code>
 data_returned: <span class="n">ConstrainedIntValue</span> </code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.data_returned" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1366,7 +1377,22 @@ more_data_available: <span class="nb">bool</span> </code>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.more_data_available" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p><code>false</code> if all data resource objects for this <code>filter</code> query have been returned in the response or if it is the last page of a paginated response, and <code>true</code> otherwise.</p>
+<p><code>false</code> if the response contains all data for the request (e.g., a request issued to a single entry endpoint, or a <code>filter</code> query at the last page of a paginated response) and <code>true</code> if the response is incomplete in the sense that multiple objects match the request, and not all of them have been included in the response (e.g., a query with multiple pages that is not at the last page).</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="optimade.models.optimade_json.ResponseMeta.optimade_schema">
+<code class="highlight">
+optimade_schema: <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">pydantic</span><span class="o">.</span><span class="n">networks</span><span class="o">.</span><span class="n">AnyHttpUrl</span><span class="p">,</span> <span class="n">optimade</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">jsonapi</span><span class="o">.</span><span class="n">Link</span><span class="p">]]</span> </code>
+<span class="doc doc-properties">
+<small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
+</span>
+<a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.optimade_schema" title="Permanent link">¶</a></h3>
+<div class="doc doc-contents">
+<p>A <a href="http://jsonapi.org/format/1.0/#document-links">JSON API links object</a> that points to a schema for the response.
+If it is a string, or a dictionary containing no <code>meta</code> field, the provided URL MUST point at an <a href="https://swagger.io/specification/">OpenAPI</a> schema.
+It is possible that future versions of this specification allows for alternative schema types.
+Hence, if the <code>meta</code> field of the JSON API links object is provided and contains a field <code>schema_type</code> that is not equal to the string <code>OpenAPI</code> the client MUST not handle failures to parse the schema or to validate the response against the schema as errors.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
@@ -1375,7 +1401,6 @@ more_data_available: <span class="nb">bool</span> </code>
 provider: <span class="n">Provider</span> </code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.provider" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1413,7 +1438,6 @@ response_message: <span class="nb">str</span> </code>
 time_stamp: <span class="n">datetime</span> </code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-pydantic-field"><code>pydantic-field</code></small>
-<small class="doc doc-property doc-property-required"><code>required</code></small>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMeta.time_stamp" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
@@ -1459,7 +1483,10 @@ representation: <span class="nb">str</span> </code>
 </span>
 <a class="headerlink" href="#optimade.models.optimade_json.ResponseMetaQuery.representation" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
-<p>a string with the part of the URL that follows the base URL. Example: '/structures?'</p>
+<p>A string with the part of the URL following the versioned or unversioned base URL that serves the API.
+Query parameters that have not been used in processing the request MAY be omitted.
+In particular, if no query parameters have been involved in processing the request, the query part of the URL MAY be excluded.
+Example: <code>/structures?filter=nelements=2</code></p>
 </div>
 </div>
 </div>
@@ -1505,20 +1532,20 @@ either_data_meta_or_errors_must_be_set<span class="p">(</span><span class="n">va
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308</pre>
+<pre><span></span>310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323</pre>
 </div>
 </td>
 <td class="code">
@@ -1632,13 +1659,13 @@ type: <span class="nb">str</span> </code>
 </footer>
 </div>
 <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-<script src="../../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
