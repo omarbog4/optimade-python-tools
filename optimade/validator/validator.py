@@ -3,29 +3,25 @@ at an OPTIMADE implementation and validated against the pydantic
 models in this package.
 
 """
-# pylint: disable=import-outside-toplevel
 
-import time
-import requests
 import sys
 import logging
 import urllib.parse
-import traceback as tb
+from typing import Union
 
 try:
     import simplejson as json
 except ImportError:
     import json
 
-from typing import Union
 
-from pydantic import ValidationError
+import requests
 from fastapi.testclient import TestClient
 
 from optimade.models import InfoResponse, EntryInfoResponse, IndexInfoResponse
 
 from .data import MANDATORY_FILTER_EXAMPLES, OPTIONAL_FILTER_EXAMPLES
-from .validator_model_patches import (
+from .utils import (
     ValidatorLinksResponse,
     ValidatorEntryResponseOne,
     ValidatorEntryResponseMany,
@@ -33,6 +29,13 @@ from .validator_model_patches import (
     ValidatorReferenceResponseMany,
     ValidatorStructureResponseOne,
     ValidatorStructureResponseMany,
+    print_notify,
+    print_failure,
+    print_success,
+    print_warning,
+    ResponseError,
+    ValidatorClient,
+    test_case,
 )
 
 
@@ -295,7 +298,7 @@ class ImplementationValidator:
 
     def __init__(  # pylint: disable=too-many-arguments
         self,
-        client: Union[Client, TestClient] = None,
+        client: Union[ValidatorClient, TestClient] = None,
         base_url: str = None,
         verbosity: int = 0,
         page_limit: int = 5,
@@ -343,7 +346,7 @@ class ImplementationValidator:
             while base_url.endswith("/"):
                 base_url = base_url[:-1]
             self.base_url = base_url
-            self.client = Client(base_url, max_retries=self.max_retries)
+            self.client = ValidatorClient(base_url, max_retries=self.max_retries)
 
         self.test_id_by_type = {}
         self._setup_log()
