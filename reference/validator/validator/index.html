@@ -598,6 +598,11 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.validator.validator.InternalError">
+    InternalError
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.validator.validator.ResponseError">
     ResponseError
   </a>
@@ -605,6 +610,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.validator.validator.print_failure">
     print_failure()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.validator.validator.print_notify">
+    print_notify()
   </a>
 </li>
 <li class="md-nav__item">
@@ -741,6 +751,11 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.validator.validator.InternalError">
+    InternalError
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.validator.validator.ResponseError">
     ResponseError
   </a>
@@ -748,6 +763,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#optimade.validator.validator.print_failure">
     print_failure()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optimade.validator.validator.print_notify">
+    print_notify()
   </a>
 </li>
 <li class="md-nav__item">
@@ -855,23 +875,23 @@ if it is valid.</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span> 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
+<pre><span></span>101
 102
 103
-104</pre>
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117</pre>
 </div>
 </td>
 <td class="code">
@@ -978,20 +998,7 @@ the <code>MAX_RETRIES</code> attempts.</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
+<pre><span></span>119
 120
 121
 122
@@ -1025,7 +1032,20 @@ the <code>MAX_RETRIES</code> attempts.</p>
 150
 151
 152
-153</pre>
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166</pre>
 </div>
 </td>
 <td class="code">
@@ -1105,7 +1125,7 @@ the <code>MAX_RETRIES</code> attempts.</p>
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="optimade.validator.validator.ImplementationValidator.__init__">
 <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">page_limit</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_retries</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">as_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> </code>
+__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">page_limit</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_retries</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">run_optional_tests</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fail_fast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">as_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> </code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-special"><code>special</code></small>
 </span>
@@ -1119,55 +1139,7 @@ for required endpoints.</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
-268
-269
-270
-271
-272
-273
-274
-275
-276
-277
-278
-279
-280
-281
-282
-283
-284
-285
-286
-287
-288
-289
-290
-291
-292
-293
-294
-295
-296
+<pre><span></span>296
 297
 298
 299
@@ -1203,7 +1175,61 @@ for required endpoints.</p>
 329
 330
 331
-332</pre>
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386</pre>
 </div>
 </td>
 <td class="code">
@@ -1215,6 +1241,8 @@ for required endpoints.</p>
     <span class="n">verbosity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="n">page_limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
     <span class="n">max_retries</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="n">run_optional_tests</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">fail_fast</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">as_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">index</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <span class="p">):</span>
@@ -1227,6 +1255,8 @@ for required endpoints.</p>
     <span class="bp">self</span><span class="o">.</span><span class="n">max_retries</span> <span class="o">=</span> <span class="n">max_retries</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">page_limit</span> <span class="o">=</span> <span class="n">page_limit</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">index</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">run_optional_tests</span> <span class="o">=</span> <span class="n">run_optional_tests</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">fail_fast</span> <span class="o">=</span> <span class="n">fail_fast</span>
 
     <span class="k">if</span> <span class="n">as_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">as_type_cls</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1290,9 +1320,11 @@ for required endpoints.</p>
 
     <span class="bp">self</span><span class="o">.</span><span class="n">success_count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">failure_count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">internal_failure_count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">optional_success_count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">optional_failure_count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">failure_messages</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">internal_failure_messages</span> <span class="o">=</span> <span class="p">[]</span>
 </code></pre>
 </div>
 </td>
@@ -1314,15 +1346,25 @@ deserialize_response<span class="p">(</span><span class="bp">self</span><span cl
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>552
-553
-554
-555
-556
-557
-558
-559
-560</pre>
+<pre><span></span>641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659</pre>
 </div>
 </td>
 <td class="code">
@@ -1332,8 +1374,18 @@ deserialize_response<span class="p">(</span><span class="bp">self</span><span cl
     <span class="sd">""" Try to create the appropriate pydantic model from the response. """</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">response</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span><span class="s2">"Request failed"</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">json_response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"Unable to decode response as JSON. Response: </span><span class="si">{</span><span class="n">response</span><span class="si">}</span><span class="s2">"</span>
+        <span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">"Deserializing </span><span class="si">{</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">json_response</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> as model </span><span class="si">{</span><span class="n">response_cls</span><span class="si">}</span><span class="s2">"</span>
+    <span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span>
-        <span class="n">response_cls</span><span class="p">(</span><span class="o">**</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()),</span>
+        <span class="n">response_cls</span><span class="p">(</span><span class="o">**</span><span class="n">json_response</span><span class="p">),</span>
         <span class="s2">"deserialized correctly as object of type </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response_cls</span><span class="p">),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1357,58 +1409,58 @@ get_available_endpoints<span class="p">(</span><span class="bp">self</span><span
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>562
-563
-564
-565
-566
-567
-568
-569
-570
-571
-572
-573
-574
-575
-576
-577
-578
-579
-580
-581
-582
-583
-584
-585
-586
-587
-588
-589
-590
-591
-592
-593
-594
-595
-596
-597
-598
-599
-600
-601
-602
-603
-604
-605
-606
-607
-608
-609
-610
-611
-612
-613</pre>
+<pre><span></span>661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712</pre>
 </div>
 </td>
 <td class="code">
@@ -1486,23 +1538,23 @@ get_endpoint<span class="p">(</span><span class="bp">self</span><span class="p">
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>615
-616
-617
-618
-619
-620
-621
-622
-623
-624
-625
-626
-627
-628
-629
-630
-631</pre>
+<pre><span></span>714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730</pre>
 </div>
 </td>
 <td class="code">
@@ -1546,25 +1598,28 @@ for single entry endpoint.</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550</pre>
+<pre><span></span>618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639</pre>
 </div>
 </td>
 <td class="code">
@@ -1583,7 +1638,10 @@ for single entry endpoint.</p>
             <span class="n">deserialized</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
         <span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span><span class="s2">"No entries found under endpoint to scrape ID from."</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span>
+            <span class="s2">"No entries found under endpoint to scrape ID from. "</span>
+            <span class="s2">"This may be caused by previous errors, if e.g. the endpoint failed deserialization."</span>
+        <span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">test_id_by_type</span><span class="p">[</span><span class="n">deserialized</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">type</span><span class="p">],</span>
         <span class="sa">f</span><span class="s2">"successfully scraped test ID from </span><span class="si">{</span><span class="n">deserialized</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">type</span><span class="si">}</span><span class="s2"> endpoint"</span><span class="p">,</span>
@@ -1609,61 +1667,7 @@ main<span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>350
-351
-352
-353
-354
-355
-356
-357
-358
-359
-360
-361
-362
-363
-364
-365
-366
-367
-368
-369
-370
-371
-372
-373
-374
-375
-376
-377
-378
-379
-380
-381
-382
-383
-384
-385
-386
-387
-388
-389
-390
-391
-392
-393
-394
-395
-396
-397
-398
-399
-400
-401
-402
-403
-404
+<pre><span></span>404
 405
 406
 407
@@ -1679,7 +1683,48 @@ main<span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 417
 418
 419
-420</pre>
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461</pre>
 </div>
 </td>
 <td class="code">
@@ -1727,34 +1772,21 @@ main<span class="p">(</span><span class="bp">self</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Testing </span><span class="si">%s</span><span class="s2"> endpoint"</span><span class="p">,</span> <span class="n">LINKS_ENDPOINT</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">test_info_or_links_endpoints</span><span class="p">(</span><span class="n">LINKS_ENDPOINT</span><span class="p">)</span>
 
-    <span class="bp">self</span><span class="o">.</span><span class="n">valid</span> <span class="o">=</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">failure_count</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">valid</span> <span class="o">=</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">failure_count</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">internal_failure_count</span><span class="p">))</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Optional tests:"</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">endp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_optional_queries</span><span class="p">:</span>
-        <span class="c1"># skip empty endpoint query lists</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_mandatory_queries</span><span class="p">[</span><span class="n">endp</span><span class="p">]:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Testing optional query syntax on endpoint </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="n">endp</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">test_query_syntax</span><span class="p">(</span>
-                <span class="n">endp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_optional_queries</span><span class="p">[</span><span class="n">endp</span><span class="p">],</span> <span class="n">optional</span><span class="o">=</span><span class="kc">True</span>
-            <span class="p">)</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_optional_tests</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Optional tests:"</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">endp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_optional_queries</span><span class="p">:</span>
+            <span class="c1"># skip empty endpoint query lists</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_mandatory_queries</span><span class="p">[</span><span class="n">endp</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+                    <span class="s2">"Testing optional query syntax on endpoint </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="n">endp</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">test_query_syntax</span><span class="p">(</span>
+                    <span class="n">endp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">endpoint_optional_queries</span><span class="p">[</span><span class="n">endp</span><span class="p">],</span> <span class="n">optional</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">FAILURES</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">failure_messages</span><span class="p">:</span>
-            <span class="n">print_failure</span><span class="p">(</span><span class="n">message</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="n">print_warning</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span> <span class="o">+</span> <span class="n">line</span><span class="p">)</span>
-
-    <span class="n">final_message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">Passed </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">success_count</span><span class="si">}</span><span class="s2"> out of </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">success_count</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">failure_count</span><span class="si">}</span><span class="s2"> tests."</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid</span><span class="p">:</span>
-        <span class="n">print_failure</span><span class="p">(</span><span class="n">final_message</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">print_success</span><span class="p">(</span><span class="n">final_message</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">"Additionally passed </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">optional_success_count</span><span class="si">}</span><span class="s2"> out of "</span>
-        <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">optional_success_count</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">optional_failure_count</span><span class="si">}</span><span class="s2"> optional tests."</span>
-    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">print_summary</span><span class="p">()</span>
 </code></pre>
 </div>
 </td>
@@ -1776,17 +1808,17 @@ test_info_or_links_endpoints<span class="p">(</span><span class="bp">self</span>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>422
-423
-424
-425
-426
-427
-428
-429
-430
-431
-432</pre>
+<pre><span></span>500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510</pre>
 </div>
 </td>
 <td class="code">
@@ -1823,21 +1855,21 @@ test_multi_entry_endpoint<span class="p">(</span><span class="bp">self</span><sp
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>452
-453
-454
-455
-456
-457
-458
-459
-460
-461
-462
-463
-464
-465
-466</pre>
+<pre><span></span>530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544</pre>
 </div>
 </td>
 <td class="code">
@@ -1868,7 +1900,7 @@ test_multi_entry_endpoint<span class="p">(</span><span class="bp">self</span><sp
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="optimade.validator.validator.ImplementationValidator.test_page_limit">
 <code class="highlight language-python">
-test_page_limit<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> </code>
+test_page_limit<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> </code>
 <a class="headerlink" href="#optimade.validator.validator.ImplementationValidator.test_page_limit" title="Permanent link">¶</a></h3>
 <div class="doc doc-contents">
 <p>Test that a multi-entry endpoint obeys the page limit.</p>
@@ -1895,8 +1927,8 @@ compliance.</p>
 </tbody>
 </table>
 <p>Keyword arguments:
-    check_next (bool): whether or not to recursively follow and test any
-        pagination links provided under <code>links-&gt;next</code>.</p>
+    check_next_link (int): maximum recursion depth for following
+        pagination links.</p>
 <p><strong>Exceptions:</strong></p>
 <table>
 <thead>
@@ -1938,69 +1970,77 @@ compliance.</p>
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>474
-475
-476
-477
-478
-479
-480
-481
-482
-483
-484
-485
-486
-487
-488
-489
-490
-491
-492
-493
-494
-495
-496
-497
-498
-499
-500
-501
-502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530</pre>
+<pre><span></span>552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616</pre>
 </div>
 </td>
 <td class="code">
 <div class="highlight">
 <pre><span></span><code><span class="nd">@test_case</span>
-<span class="k">def</span> <span class="nf">test_page_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">test_page_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
     <span class="sd">""" Test that a multi-entry endpoint obeys the page limit.</span>
 
 <span class="sd">    Parameters:</span>
@@ -2008,8 +2048,8 @@ compliance.</p>
 <span class="sd">            compliance.</span>
 
 <span class="sd">    Keyword arguments:</span>
-<span class="sd">        check_next (bool): whether or not to recursively follow and test any</span>
-<span class="sd">            pagination links provided under `links-&gt;next`.</span>
+<span class="sd">        check_next_link (int): maximum recursion depth for following</span>
+<span class="sd">            pagination links.</span>
 
 <span class="sd">    Raises:</span>
 <span class="sd">        ResponseError: if test fails in a predictable way.</span>
@@ -2041,16 +2081,24 @@ compliance.</p>
     <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span><span class="s2">"Field `meta-&gt;more_data_available` was missing."</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">more_data_available</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">more_data_available</span> <span class="ow">and</span> <span class="n">check_next_link</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">next_link</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s2">"links"</span><span class="p">][</span><span class="s2">"next"</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">next_link</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">next_link</span> <span class="o">=</span> <span class="n">next_link</span><span class="p">[</span><span class="s2">"href"</span><span class="p">]</span>
         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span>
-                <span class="s2">"Endpoint suggested more data was available but provided no links-&gt;next link."</span>
+                <span class="s2">"Endpoint suggested more data was available but provided no valid links-&gt;next link."</span>
             <span class="p">)</span>
 
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">next_link</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ResponseError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">"Unable to parse links-&gt;next </span><span class="si">{</span><span class="n">next_link</span><span class="si">!r}</span><span class="s2"> as a link."</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Following pagination link to </span><span class="si">%r</span><span class="s2">."</span><span class="p">,</span> <span class="n">next_link</span><span class="p">)</span>
         <span class="n">next_response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_endpoint</span><span class="p">(</span><span class="n">next_link</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">test_page_limit</span><span class="p">(</span><span class="n">next_response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">test_page_limit</span><span class="p">(</span><span class="n">next_response</span><span class="p">,</span> <span class="n">check_next_link</span><span class="o">=</span><span class="n">check_next_link</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="p">(</span>
         <span class="kc">True</span><span class="p">,</span>
@@ -2111,24 +2159,24 @@ for that endpoint, where the queries do not include the
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>633
-634
-635
-636
-637
-638
-639
-640
-641
-642
-643
-644
-645
-646
-647
-648
-649
-650</pre>
+<pre><span></span>732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749</pre>
 </div>
 </td>
 <td class="code">
@@ -2172,23 +2220,23 @@ test_single_entry_endpoint<span class="p">(</span><span class="bp">self</span><s
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>434
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450</pre>
+<pre><span></span>512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528</pre>
 </div>
 </td>
 <td class="code">
@@ -2222,6 +2270,15 @@ test_single_entry_endpoint<span class="p">(</span><span class="bp">self</span><s
 </div>
 </div>
 <div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="optimade.validator.validator.InternalError">
+<code>InternalError</code>
+<a class="headerlink" href="#optimade.validator.validator.InternalError" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>This exception should be raised when validation throws an unexpected error.
+   These should be counted separately from <code>ResponseError</code>'s and <code>ValidationError</code>'s.</p>
+</div>
+</div>
+<div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="optimade.validator.validator.ResponseError">
 <code>ResponseError</code>
 <a class="headerlink" href="#optimade.validator.validator.ResponseError" title="Permanent link">¶</a></h2>
@@ -2242,16 +2299,47 @@ print_failure<span class="p">(</span><span class="n">string</span><span class="p
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>73
-74
-75</pre>
+<pre><span></span>79
+80
+81</pre>
 </div>
 </td>
 <td class="code">
 <div class="highlight">
 <pre><span></span><code><span class="k">def</span> <span class="nf">print_failure</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">""" Print but sad. """</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\033</span><span class="s2">[91m</span><span class="se">\033</span><span class="s2">[4m</span><span class="si">{</span><span class="n">string</span><span class="si">}</span><span class="se">\033</span><span class="s2">[0m"</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\033</span><span class="s2">[91m</span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{</span><span class="n">string</span><span class="si">}</span><span class="se">\033</span><span class="s2">[0m"</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre>
+</div>
+</td>
+</tr>
+</table>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="optimade.validator.validator.print_notify">
+<code class="highlight language-python">
+print_notify<span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> </code>
+<a class="headerlink" href="#optimade.validator.validator.print_notify" title="Permanent link">¶</a></h2>
+<div class="doc doc-contents">
+<p>Print but louder. </p>
+<details class="quote">
+<summary>Source code in <code>optimade/validator/validator.py</code></summary>
+<table class="highlighttable">
+<tr>
+<td class="linenos">
+<div class="linenodiv">
+<pre><span></span>74
+75
+76</pre>
+</div>
+</td>
+<td class="code">
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">print_notify</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">""" Print but louder. """</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\033</span><span class="s2">[94m</span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{</span><span class="n">string</span><span class="si">}</span><span class="se">\033</span><span class="s2">[0m"</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre>
 </div>
 </td>
@@ -2273,9 +2361,9 @@ print_success<span class="p">(</span><span class="n">string</span><span class="p
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>78
-79
-80</pre>
+<pre><span></span>84
+85
+86</pre>
 </div>
 </td>
 <td class="code">
@@ -2304,9 +2392,9 @@ print_warning<span class="p">(</span><span class="n">string</span><span class="p
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>68
-69
-70</pre>
+<pre><span></span>69
+70
+71</pre>
 </div>
 </td>
 <td class="code">
@@ -2361,20 +2449,7 @@ and a message to print upon success. Should raise <code>ResponseError</code>,
 <tr>
 <td class="linenos">
 <div class="linenodiv">
-<pre><span></span>156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
+<pre><span></span>169
 170
 171
 172
@@ -2437,7 +2512,55 @@ and a message to print upon success. Should raise <code>ResponseError</code>,
 229
 230
 231
-232</pre>
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280</pre>
 </div>
 </td>
 <td class="code">
@@ -2460,63 +2583,98 @@ and a message to print upon success. Should raise <code>ResponseError</code>,
     <span class="nd">@wraps</span><span class="p">(</span><span class="n">test_fn</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="n">validator</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">optional</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">result</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">test_fn</span><span class="p">(</span><span class="n">validator</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="s2">"Critical: unable to parse server response as JSON. "</span>
-                <span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
-            <span class="p">)</span>
-        <span class="k">except</span> <span class="p">(</span><span class="n">ResponseError</span><span class="p">,</span> <span class="n">ValidationError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">test_fn</span><span class="p">(</span><span class="n">validator</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="s2">"Critical: unable to parse server response as JSON. "</span>
+                    <span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
+                <span class="p">)</span>
+                <span class="k">raise</span> <span class="n">exc</span>
+            <span class="k">except</span> <span class="p">(</span><span class="n">ResponseError</span><span class="p">,</span> <span class="n">ValidationError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
+                <span class="k">raise</span> <span class="n">exc</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
+                <span class="k">raise</span> <span class="n">InternalError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">request</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">last_request</span>
-        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
-            <span class="n">request</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">base_url</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">exc</span>
+            <span class="n">traceback</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
 
-        <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">optional</span><span class="p">:</span>
-                <span class="n">validator</span><span class="o">.</span><span class="n">success_count</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">validator</span><span class="o">.</span><span class="n">optional_success_count</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"✔: </span><span class="si">{</span><span class="n">request</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">"</span>
-            <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">optional</span><span class="p">:</span>
-                    <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">request</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">last_request</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="n">request</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">base_url</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">optional</span><span class="p">:</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">success_count</span> <span class="o">+=</span> <span class="mi">1</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="n">print_success</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">optional</span><span class="p">:</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">optional_success_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"✔: </span><span class="si">{</span><span class="n">request</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">"</span>
+                <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">optional</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">print_success</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">optional</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">"."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">print_success</span><span class="p">(</span><span class="s2">"."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">optional</span><span class="p">:</span>
-                <span class="n">validator</span><span class="o">.</span><span class="n">failure_count</span> <span class="o">+=</span> <span class="mi">1</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="n">validator</span><span class="o">.</span><span class="n">optional_failure_count</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">request</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
-            <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">"</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-            <span class="n">summary</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"✖: </span><span class="si">{</span><span class="n">request</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">test_fn</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> - failed with error"</span>
-            <span class="n">validator</span><span class="o">.</span><span class="n">failure_messages</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">summary</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
-            <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">optional</span><span class="p">:</span>
-                    <span class="nb">print</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
-                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
-                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\t</span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">print_failure</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
-                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
-                        <span class="n">print_warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\t</span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">optional</span><span class="p">:</span>
-                    <span class="nb">print</span><span class="p">(</span><span class="s2">"✖"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">print_failure</span><span class="p">(</span><span class="s2">"✖"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                <span class="n">internal_error</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="n">request</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+                <span class="n">message</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="c1"># ValidationErrors from pydantic already include very detailed errors</span>
+                    <span class="c1"># that get duplicated in the traceback</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">ValidationError</span><span class="p">):</span>
+                        <span class="n">message</span> <span class="o">+=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="n">result</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">InternalError</span><span class="p">):</span>
+                    <span class="n">internal_error</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">internal_failure_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">summary</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"!: </span><span class="si">{</span><span class="n">request</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">test_fn</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> - failed with internal error"</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">internal_failure_messages</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">summary</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">optional</span><span class="p">:</span>
+                        <span class="n">validator</span><span class="o">.</span><span class="n">failure_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">validator</span><span class="o">.</span><span class="n">optional_failure_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">summary</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"✖: </span><span class="si">{</span><span class="n">request</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">test_fn</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> - failed with error"</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">failure_messages</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">summary</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">internal_error</span><span class="p">:</span>
+                        <span class="n">print_notify</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+                            <span class="n">print_warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\t</span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">optional</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\t</span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">print_failure</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+                            <span class="n">print_warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\t</span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">internal_error</span><span class="p">:</span>
+                        <span class="n">print_notify</span><span class="p">(</span><span class="s2">"!"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">optional</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">"✖"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">print_failure</span><span class="p">(</span><span class="s2">"✖"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+                <span class="c1"># set failure result to None as this is expected by other functions</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+
+                <span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">fail_fast</span><span class="p">:</span>
+                    <span class="n">validator</span><span class="o">.</span><span class="n">print_summary</span><span class="p">()</span>
+                    <span class="k">raise</span> <span class="ne">SystemExit</span>
+
+            <span class="k">return</span> <span class="n">result</span>
 
     <span class="k">return</span> <span class="n">wrapper</span>
 </code></pre>
