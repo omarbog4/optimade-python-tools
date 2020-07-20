@@ -5,17 +5,18 @@ models in this package.
 """
 # pylint: disable=import-outside-toplevel
 
-import requests
+import re
 import sys
 import logging
 import urllib.parse
-from typing import Union
+from typing import Union, Tuple
 
 try:
     import simplejson as json
 except ImportError:
     import json
 
+import requests
 from fastapi.testclient import TestClient
 
 from optimade.models import InfoResponse, EntryInfoResponse, IndexInfoResponse
@@ -40,6 +41,8 @@ from .utils import (
 
 BASE_INFO_ENDPOINT = "info"
 LINKS_ENDPOINT = "links"
+VERSIONS_ENDPOINT = "versions"
+NON_ENTRY_ENDPOINTS = (BASE_INFO_ENDPOINT, LINKS_ENDPOINT, VERSIONS_ENDPOINT)
 REQUIRED_ENTRY_ENDPOINTS = ["references", "structures"]
 
 RESPONSE_CLASSES = {
@@ -55,7 +58,10 @@ RESPONSE_CLASSES.update(
 )
 
 REQUIRED_ENTRY_ENDPOINTS_INDEX = []
-RESPONSE_CLASSES_INDEX = {"info": IndexInfoResponse, "links": ValidatorLinksResponse}
+RESPONSE_CLASSES_INDEX = {
+    BASE_INFO_ENDPOINT: IndexInfoResponse,
+    LINKS_ENDPOINT: ValidatorLinksResponse,
+}
 
 
 class ImplementationValidator:
@@ -135,15 +141,10 @@ class ImplementationValidator:
         )
 
         # some simple checks on base_url
-        base_url = urllib.parse.urlparse(self.base_url)
+        self.base_url_parsed = urllib.parse.urlparse(self.base_url)
         # only allow filters/endpoints if we are working in "as_type" mode
-        if self.as_type_cls is None and (
-            base_url.query
-            or any(endp in base_url.path for endp in self.expected_entry_endpoints)
-        ):
-            raise SystemExit(
-                "Base URL not appropriate: should not contain an endpoint or filter."
-            )
+        if self.as_type_cls is None and self.base_url_parsed.query:
+            raise SystemExit("Base URL not appropriate: should not contain a filter.")
 
         # if valid is True on exit, script returns 0 to shell
         # if valid is False on exit, script returns 1 to shell
@@ -192,8 +193,13 @@ class ImplementationValidator:
         print(f"Testing entire implementation at {self.base_url}...")
         print("\nMandatory tests:")
         self._log.debug("Testing base info endpoint of %s", BASE_INFO_ENDPOINT)
+
         base_info = self.test_info_or_links_endpoints(BASE_INFO_ENDPOINT)
-        self.get_available_endpoints(base_info)
+        self.base_info = base_info.dict()
+
+        self.test_versions_endpoint(VERSIONS_ENDPOINT)
+
+        self.available_json_endpoints = self.get_available_endpoints(base_info)
 
         for endp in self.test_entry_endpoints:
             entry_info_endpoint = f"{BASE_INFO_ENDPOINT}/{endp}"
@@ -297,6 +303,69 @@ class ImplementationValidator:
         deserialized = self.deserialize_response(response, response_cls)
         self.test_page_limit(response)
         self.get_single_id_from_multi_endpoint(deserialized)
+
+    def test_versions_endpoint(self, request_str):
+        """ Runs the test cases for the versions endpoint, which MUST exist for unversioned
+        base URLs and MUST NOT exist for versioned base URLs.
+
+        """
+        expected_status_code = 200
+        if (
+            re.match(r"/v[0-9]+(\.[0-9]+){,2}/.*", self.base_url_parsed.path)
+            is not None
+        ):
+            expected_status_code = 404
+
+        response = self.get_endpoint(
+            request_str, expected_status_code=expected_status_code
+        )
+        if expected_status_code == 200:
+            self.test_versions_endpoint_content(response, request=request_str)
+
+    @test_case
+    def test_versions_endpoint_content(self, response):
+        """ Check the content of the versions endpoint complies with the specification. """
+
+        text_content = response.text.split("\n")
+        headers = response.headers
+        print(headers)
+        print(text_content)
+
+        if text_content[0] != "version":
+            raise ResponseError(
+                f"First line of `/versions` response must be 'version', not {text_content[0]}"
+            )
+
+        if len(text_content) <= 1:
+            raise ResponseError(
+                f"No version numbers found in `/versions` response, only {text_content}"
+            )
+
+        for version in text_content[1:]:
+            try:
+                int(version)
+            except ValueError:
+                raise ResponseError(
+                    f"Version numbers reported by `/versions` must be integers specifying the major version, not {version}"
+                )
+
+        content_type = headers.get("content-type")
+        if content_type is not None:
+            content_type = [_.replace(" ", "") for _ in content_type.split(";")]
+        if not content_type or content_type[0].strip() != "text/csv":
+            raise ResponseError(
+                f"Incorrect content-type header {content_type} instead of 'text/csv'"
+            )
+
+        for type_parameter in content_type:
+            if type_parameter == "header=present":
+                break
+        else:
+            raise ResponseError(
+                f"Missing 'header=present' parameter in content-type {content_type}"
+            )
+
+        return response, "`/versions` endpoint responded correctly."
 
     def test_as_type(self):
         response = self.get_endpoint("")
@@ -455,9 +524,8 @@ class ImplementationValidator:
                 "No entry endpoint are allowed for an Index meta-database"
             )
 
-        self.test_entry_endpoints |= set(available_json_entry_endpoints)
-        for non_entry_endpoint in ("info", "links"):
-            if non_entry_endpoint in self.test_entry_endpoints:
+        for non_entry_endpoint in NON_ENTRY_ENDPOINTS:
+            if non_entry_endpoint in available_json_entry_endpoints:
                 raise ResponseError(
                     f'Illegal entry "{non_entry_endpoint}" was found in entry_types_by_format"'
                 )
@@ -467,8 +535,25 @@ class ImplementationValidator:
         )
 
     @test_case
-    def get_endpoint(self, request_str, optional=False):
-        """ Gets the response from the endpoint specified by `request_str`. """
+    def get_endpoint(
+        self, request_str: str, expected_status_code: int = 200, optional: bool = False
+    ) -> Tuple[requests.Response, str]:
+        """ Gets the response from the endpoint specified by `request_str`.
+        function is wrapped by the `test_case` decorator
+
+        Parameters:
+            request_str (str): the request to make to the client.
+
+        Keyword arguments:
+            expected_status_code (int): if the request responds with a different
+                status code to this one, raise a ResponseError.
+            optional (bool): whether the success of this test is optional.
+
+        Returns:
+            requests.Response: the response to the request (the `test_case` decorator
+                swallows the success message returned in this function directly).
+
+        """
 
         request_str = request_str.replace("\n", "")
         response = self.client.get(request_str)
