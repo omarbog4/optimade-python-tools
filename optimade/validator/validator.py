@@ -20,7 +20,6 @@ from fastapi.testclient import TestClient
 
 from optimade.models import InfoResponse, EntryInfoResponse, IndexInfoResponse
 
-from .data import MANDATORY_FILTER_EXAMPLES, OPTIONAL_FILTER_EXAMPLES
 from .utils import (
     ValidatorLinksResponse,
     ValidatorEntryResponseOne,
@@ -42,16 +41,6 @@ from .utils import (
 BASE_INFO_ENDPOINT = "info"
 LINKS_ENDPOINT = "links"
 REQUIRED_ENTRY_ENDPOINTS = ["references", "structures"]
-
-ENDPOINT_MANDATORY_QUERIES = {
-    "structures": MANDATORY_FILTER_EXAMPLES,
-    "references": [],
-}
-
-ENDPOINT_OPTIONAL_QUERIES = {
-    "structures": OPTIONAL_FILTER_EXAMPLES,
-    "references": [],
-}
 
 RESPONSE_CLASSES = {
     "references": ValidatorReferenceResponseMany,
@@ -140,11 +129,6 @@ class ImplementationValidator:
             REQUIRED_ENTRY_ENDPOINTS_INDEX if self.index else REQUIRED_ENTRY_ENDPOINTS
         )
         self.test_entry_endpoints = set(self.expected_entry_endpoints)
-        self.endpoint_mandatory_queries = (
-            {} if self.index else ENDPOINT_MANDATORY_QUERIES
-        )
-
-        self.endpoint_optional_queries = {} if self.index else ENDPOINT_OPTIONAL_QUERIES
 
         self.response_classes = (
             RESPONSE_CLASSES_INDEX if self.index else RESPONSE_CLASSES
@@ -224,28 +208,10 @@ class ImplementationValidator:
             self._log.debug("Testing single entry request of type %s", endp)
             self.test_single_entry_endpoint(endp)
 
-        for endp in self.endpoint_mandatory_queries:
-            # skip empty endpoint query lists
-            if self.endpoint_mandatory_queries[endp]:
-                self._log.debug("Testing mandatory query syntax on endpoint %s", endp)
-                self.test_query_syntax(endp, self.endpoint_mandatory_queries[endp])
-
         self._log.debug("Testing %s endpoint", LINKS_ENDPOINT)
         self.test_info_or_links_endpoints(LINKS_ENDPOINT)
 
         self.valid = not (bool(self.failure_count) or bool(self.internal_failure_count))
-
-        if self.run_optional_tests:
-            print("\nOptional tests:")
-            for endp in self.endpoint_optional_queries:
-                # skip empty endpoint query lists
-                if self.endpoint_mandatory_queries[endp]:
-                    self._log.debug(
-                        "Testing optional query syntax on endpoint %s", endp
-                    )
-                    self.test_query_syntax(
-                        endp, self.endpoint_optional_queries[endp], optional=True
-                    )
 
         self.print_summary()
 
@@ -516,22 +482,3 @@ class ImplementationValidator:
             raise ResponseError(message)
 
         return response, "request successful."
-
-    def test_query_syntax(self, endpoint, endpoint_queries, optional=False):
-        """Execute a list of valid queries agains the endpoint and assert
-        that no errors are raised.
-
-        Parameters:
-            endpoint (str): the endpoint to query (e.g. "structures").
-            endpoint_queries (list): the list of valid mandatory queries
-                for that endpoint, where the queries do not include the
-                "?filter=" prefix, e.g. ['elements HAS "Na"'].
-
-        Keyword arguments:
-            optional (bool): treat the success of the queries as optional.
-
-        """
-
-        valid_queries = [f"{endpoint}?filter={query}" for query in endpoint_queries]
-        for query in valid_queries:
-            self.get_endpoint(query, optional=optional)
