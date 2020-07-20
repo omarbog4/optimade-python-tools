@@ -139,13 +139,14 @@ def test_case(test_fn):
             `ValidationError` or `ManualValidationError` if the test case has failed.
 
     Keyword arguments:
+        request (str): the request made by the wrapped function.
         optional (bool): whether or not to treat the test as optional.
 
     """
     from functools import wraps
 
     @wraps(test_fn)
-    def wrapper(validator, *args, optional=False, **kwargs):
+    def wrapper(validator, *args, request=None, optional=False, **kwargs):
         try:
             try:
                 result, msg = test_fn(validator, *args, **kwargs)
@@ -170,7 +171,10 @@ def test_case(test_fn):
             try:
                 request = validator.client.last_request
             except AttributeError:
-                request = validator.base_url
+                _request = validator.base_url
+                if request is not None:
+                    _request += request
+                request = _request
 
             if not isinstance(result, Exception):
                 if not optional:
