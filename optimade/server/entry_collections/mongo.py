@@ -10,6 +10,7 @@ from optimade.filtertransformers.mongo import MongoTransformer
 from optimade.server.config import CONFIG
 from optimade.models import EntryResource
 from optimade.server.mappers import BaseResourceMapper
+from optimade.server.exceptions import BadRequest
 from optimade.server.query_params import EntryListingQueryParams, SingleEntryQueryParams
 from .entry_collections import EntryCollection
 
@@ -155,6 +156,22 @@ class MongoCollection(EntryCollection):
                 aliased_field = self.resource_mapper.alias_for(field)
                 sort_spec.append((aliased_field, sort_dir))
             cursor_kwargs["sort"] = sort_spec
+
+            unknown_fields = [
+                field
+                for field, _ in sort_spec
+                if self.resource_mapper.alias_of(field) not in fields
+            ]
+            if unknown_fields:
+                raise BadRequest(
+                    status_code=400,
+                    detail=(
+                        "Unable to sort on unknown field{} '{}'".format(
+                            "s" if len(unknown_fields) > 1 else "",
+                            "', '".join(unknown_fields),
+                        )
+                    ),
+                )
 
         if getattr(params, "page_offset", False):
             cursor_kwargs["skip"] = params.page_offset

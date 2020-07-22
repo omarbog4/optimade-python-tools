@@ -90,3 +90,27 @@ def test_datetime_desc(get_good_response):
         struct.get("attributes", {}).get("last_modified") for struct in response["data"]
     ]
     assert last_modified_list == expected_last_modified
+
+
+def test_unknown_field(check_error_response):
+    """Sorting on non-existent field should return 400."""
+    limit = 5
+    request = f"/structures?sort=field_that_does_not_exist&page_limit={limit}"
+    check_error_response(
+        request,
+        expected_status=400,
+        expected_title="Bad Request",
+        expected_detail="Unable to sort on unknown field 'field_that_does_not_exist'",
+    )
+
+
+def test_unknown_fields(check_error_response):
+    """Sorting on non-existent field should return 400."""
+    limit = 5
+    request = f"/structures?sort=field_that_does_not_exist,-other_field_that_does_not_exist&page_limit={limit}"
+    check_error_response(
+        request,
+        expected_status=400,
+        expected_title="Bad Request",
+        expected_detail="Unable to sort on unknown fields 'field_that_does_not_exist', 'other_field_that_does_not_exist'",
+    )
