@@ -175,10 +175,10 @@ class ImplementationValidator:
         else:
             self._log.setLevel(logging.DEBUG)
 
-    def main(self):
+    def validate_implementation(self):
         """ Run all the test cases of the implementation, or the single type test. """
 
-        # if single type has been set, only run that test
+        # If a single "as type" has been set, only run that test
         if self.as_type_cls is not None:
             self._log.info(
                 "Validating response of %s with model %s",
@@ -189,11 +189,12 @@ class ImplementationValidator:
             self.valid = not bool(self.failure_count)
             return
 
-        # test entire implementation
+        # Test entire implementation
         print(f"Testing entire implementation at {self.base_url}...")
         print("\nMandatory tests:")
         self._log.debug("Testing base info endpoint of %s", BASE_INFO_ENDPOINT)
 
+        # Save base info to construct new queries
         base_info = self.test_info_or_links_endpoints(BASE_INFO_ENDPOINT)
         self.base_info = base_info.dict()
 
@@ -201,19 +202,27 @@ class ImplementationValidator:
 
         self.available_json_endpoints = self.get_available_endpoints(base_info)
 
+        # Test that entry info endpoints deserialize correctly
         for endp in self.test_entry_endpoints:
             entry_info_endpoint = f"{BASE_INFO_ENDPOINT}/{endp}"
             self._log.debug("Testing expected info endpoint %s", entry_info_endpoint)
             self.test_info_or_links_endpoints(entry_info_endpoint)
 
+        # Test that the results from multi-entry-endpoints obey e.g. page limits
+        # and that all entries can be deserialized with the patched models
+        #
+        # These methods also set the test_ids for each type of entry, which are validated
+        # in the next loop.
         for endp in self.test_entry_endpoints:
             self._log.debug("Testing multiple entry endpoint of %s", endp)
             self.test_multi_entry_endpoint(f"{endp}?page_limit={self.page_limit}")
 
+        # Test that the single IDs scraped earlier work with the single entry endpoint
         for endp in self.test_entry_endpoints:
             self._log.debug("Testing single entry request of type %s", endp)
             self.test_single_entry_endpoint(endp)
 
+        # Test that the links endpoint can be serialized correctly
         self._log.debug("Testing %s endpoint", LINKS_ENDPOINT)
         self.test_info_or_links_endpoints(LINKS_ENDPOINT)
 
@@ -319,7 +328,7 @@ class ImplementationValidator:
         response = self.get_endpoint(
             request_str, expected_status_code=expected_status_code
         )
-        if expected_status_code == 200:
+        if response and expected_status_code == 200:
             self.test_versions_endpoint_content(response, request=request_str)
 
     @test_case
@@ -328,8 +337,6 @@ class ImplementationValidator:
 
         text_content = response.text.split("\n")
         headers = response.headers
-        print(headers)
-        print(text_content)
 
         if text_content[0] != "version":
             raise ResponseError(
@@ -375,7 +382,8 @@ class ImplementationValidator:
 
     @test_case
     def test_page_limit(self, response, check_next_link: int = 5):
-        """ Test that a multi-entry endpoint obeys the page limit.
+        """ Test that a multi-entry endpoint obeys the page limit by
+        following pagination links up to a depth of `check_next_link`.
 
         Parameters:
             response (requests.Response): the response to test for page limit
@@ -567,4 +575,4 @@ class ImplementationValidator:
                 message += f'\n  {error.get("title", "N/A")}: {error.get("detail", "N/A")} ({error.get("source", {}).get("pointer", "N/A")})'
             raise ResponseError(message)
 
-        return response, "request successful."
+        return response, f"received expected response: {response}."

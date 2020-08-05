@@ -13,7 +13,7 @@ def test_with_validator(both_clients):
         client=both_clients, index=both_clients.app == app,
     )
     try:
-        validator.main()
+        validator.validate_implementation()
     except Exception:
         print_exc()
     assert validator.valid
@@ -57,7 +57,7 @@ def test_as_type_with_validator(client):
                 base_url=url, as_type=as_type, verbosity=5
             )
             try:
-                validator.main()
+                validator.validate_implementation()
             except Exception:
                 print_exc()
             assert validator.valid
