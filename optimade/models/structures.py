@@ -450,7 +450,7 @@ Note: the elements in this list each refer to the direction of the corresponding
     - Match all structures with 2 or fewer periodic dimensions: `nperiodic_dimensions<=2`""",
     )
 
-    lattice_vectors: conlist(Vector3D_unknown, min_items=3, max_items=3) = Field(
+    lattice_vectors: conlist(Vector3D_unknown, min_items=3, max_items=3) = OptimadeField(
         ...,
         description="""The three lattice vectors in Cartesian coordinates, in ångström (Å).
 
@@ -476,7 +476,7 @@ Note: the elements in this list each refer to the direction of the corresponding
         queryable=SupportLevel.OPTIONAL,
     )
 
-    cartesian_site_positions: List[Vector3D] = Field(
+    cartesian_site_positions: List[Vector3D] = OptimadeField(
         ...,
         description="""Cartesian positions of each site in the structure.
 A site is usually used to describe positions of atoms; what atoms can be encountered at a given site is conveyed by the `species_at_sites` property, and the species themselves are described in the `species` property.
