@@ -319,6 +319,7 @@ class ImplementationValidator:
 
         """
         expected_status_code = 200
+        print(self.base_url_parsed.path)
         if (
             re.match(r"/v[0-9]+(\.[0-9]+){,2}/.*", self.base_url_parsed.path)
             is not None
@@ -565,7 +566,7 @@ class ImplementationValidator:
         request_str = request_str.replace("\n", "")
         response = self.client.get(request_str)
 
-        if response.status_code != 200:
+        if response.status_code != expected_status_code:
             message = (
                 f"Request to '{request_str}' returned HTTP code {response.status_code}."
             )
