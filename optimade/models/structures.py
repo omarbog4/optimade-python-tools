@@ -429,8 +429,8 @@ Note: the elements in this list each refer to the direction of the corresponding
         queryable=SupportLevel.OPTIONAL,
     )
 
-    nperiodic_dimensions: Optional[int] = OptimadeField(
-        None,
+    nperiodic_dimensions: int = OptimadeField(
+        ...,
         description="""An integer specifying the number of periodic dimensions in the structure, equivalent to the number of non-zero entries in `dimension_types`.
 
 - **Type**: integer
@@ -449,10 +449,10 @@ Note: the elements in this list each refer to the direction of the corresponding
     - Match all structures with 2 or fewer periodic dimensions: `nperiodic_dimensions<=2`""",
     )
 
-    lattice_vectors: Optional[
-        Tuple[Vector3D_unknown, Vector3D_unknown, Vector3D_unknown]
+    lattice_vectors: Tuple[
+        Vector3D_unknown, Vector3D_unknown, Vector3D_unknown
     ] = Field(
-        None,
+        ...,
         description="""The three lattice vectors in Cartesian coordinates, in ångström (Å).
 
 - **Type**: list of list of floats or unknown values.
