@@ -8,21 +8,27 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the OPTIMADE-Python-Tools">
+        <meta name="description" content="Documentation for the OPTIMADE Python tools">
       
       
       
-      <link rel="shortcut icon" href="/optimade-python-tools/assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <link rel="shortcut icon" href="/optimade-python-tools/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
     
     
       
-        <title>OPTIMADE-Python-Tools Documentation</title>
+        <title>OPTIMADE Python tools</title>
       
     
     
-      <link rel="stylesheet" href="/optimade-python-tools/assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="/optimade-python-tools/assets/stylesheets/main.947af8d5.min.css">
       
+        <link rel="stylesheet" href="/optimade-python-tools/assets/stylesheets/palette.7f672a1f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
       
     
     
@@ -35,6 +41,8 @@
     
     
     
+      <link rel="stylesheet" href="/optimade-python-tools/css/reference.css">
+    
     
       
     
@@ -42,7 +50,10 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -57,10 +68,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation" class="md-header-nav__button md-logo" aria-label="OPTIMADE-Python-Tools Documentation">
+    <a href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE Python tools" class="md-header-nav__button md-logo" aria-label="OPTIMADE Python tools">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="/optimade-python-tools/images/optimade_logo_180x180.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -70,7 +80,7 @@
       
         <div class="md-header-nav__ellipsis">
           <span class="md-header-nav__topic md-ellipsis">
-            OPTIMADE-Python-Tools Documentation
+            OPTIMADE Python tools
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
@@ -114,13 +124,13 @@
     
       <div class="md-header-nav__source">
         
-<a href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository" class="md-source">
+<a href="https://github.com/Materials-Consortia/optimade-python-tools" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    optimade-python-tools
   </div>
 </a>
       </div>
@@ -144,24 +154,23 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE-Python-Tools Documentation" class="md-nav__button md-logo" aria-label="OPTIMADE-Python-Tools Documentation">
+    <a href="https://www.optimade.org/optimade-python-tools/" title="OPTIMADE Python tools" class="md-nav__button md-logo" aria-label="OPTIMADE Python tools">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="/optimade-python-tools/images/optimade_logo_180x180.svg" alt="logo">
 
     </a>
-    OPTIMADE-Python-Tools Documentation
+    OPTIMADE Python tools
   </label>
   
     <div class="md-nav__source">
       
-<a href="https://github.com/Materials-Consortia/optimade-python-tools/" title="Go to repository" class="md-source">
+<a href="https://github.com/Materials-Consortia/optimade-python-tools" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    optimade-python-tools
   </div>
 </a>
     </div>
@@ -186,8 +195,20 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/INSTALL/" title="Installation" class="md-nav__link">
+    <a href="/optimade-python-tools/install/" title="Installation" class="md-nav__link">
       Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
     </a>
   </li>
 
@@ -211,16 +232,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Use Cases
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Use Cases" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -235,8 +256,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/use_cases/single_db/" title="OPTIMADE API for a single database" class="md-nav__link">
-      OPTIMADE API for a single database
+    <a href="/optimade-python-tools/use_cases/single_db/" title="A single database" class="md-nav__link">
+      A single database
     </a>
   </li>
 
@@ -247,8 +268,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/use_cases/multi_db/" title="OPTIMADE API for multiple databases" class="md-nav__link">
-      OPTIMADE API for multiple databases
+    <a href="/optimade-python-tools/use_cases/multi_db/" title="Multiple databases" class="md-nav__link">
+      Multiple databases
     </a>
   </li>
 
@@ -259,8 +280,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/use_cases/dynamic_db/" title="OPTIMADE API for dynamic databases" class="md-nav__link">
-      OPTIMADE API for dynamic databases
+    <a href="/optimade-python-tools/use_cases/dynamic_db/" title="Dynamic databases" class="md-nav__link">
+      Dynamic databases
     </a>
   </li>
 
@@ -287,18 +308,30 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/all_models/" title="All models" class="md-nav__link">
+      All models
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-8">
       API Reference
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="API Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -312,9 +345,58 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-1" type="checkbox" id="nav-8-1">
+    
+    <label class="md-nav__link" for="nav-8-1">
+      adapters
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="adapters" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        adapters
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/" title="Models" class="md-nav__link">
-      Models
+    <a href="/optimade-python-tools/api_reference/adapters/base/" title="base" class="md-nav__link">
+      base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/adapters/exceptions/" title="exceptions" class="md-nav__link">
+      exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/adapters/logger/" title="logger" class="md-nav__link">
+      logger
     </a>
   </li>
 
@@ -326,20 +408,20 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-1-4" type="checkbox" id="nav-8-1-4">
     
-    <label class="md-nav__link" for="nav-6-2">
-      Filtertransformers
+    <label class="md-nav__link" for="nav-8-1-4">
+      references
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Filtertransformers" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-2">
+    <nav class="md-nav" aria-label="references" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-1-4">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        Filtertransformers
+        references
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -350,56 +432,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/filtertransformers/debug/" title="Debug" class="md-nav__link">
-      Debug
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/filtertransformers/django/" title="Django" class="md-nav__link">
-      Django
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/filtertransformers/elasticsearch/" title="Elasticsearch" class="md-nav__link">
-      Elasticsearch
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/filtertransformers/json/" title="Json" class="md-nav__link">
-      Json
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/filtertransformers/mongo/" title="Mongo" class="md-nav__link">
-      Mongo
+    <a href="/optimade-python-tools/api_reference/adapters/references/adapter/" title="adapter" class="md-nav__link">
+      adapter
     </a>
   </li>
 
@@ -416,20 +450,20 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-1-5" type="checkbox" id="nav-8-1-5">
     
-    <label class="md-nav__link" for="nav-6-3">
-      Models
+    <label class="md-nav__link" for="nav-8-1-5">
+      structures
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Models" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-3">
+    <nav class="md-nav" aria-label="structures" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-1-5">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        Models
+        structures
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -440,8 +474,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/baseinfo/" title="Baseinfo" class="md-nav__link">
-      Baseinfo
+    <a href="/optimade-python-tools/api_reference/adapters/structures/adapter/" title="adapter" class="md-nav__link">
+      adapter
     </a>
   </li>
 
@@ -452,8 +486,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/entries/" title="Entries" class="md-nav__link">
-      Entries
+    <a href="/optimade-python-tools/api_reference/adapters/structures/aiida/" title="aiida" class="md-nav__link">
+      aiida
     </a>
   </li>
 
@@ -464,8 +498,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/index_metadb/" title="Index metadb" class="md-nav__link">
-      Index metadb
+    <a href="/optimade-python-tools/api_reference/adapters/structures/ase/" title="ase" class="md-nav__link">
+      ase
     </a>
   </li>
 
@@ -476,8 +510,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/jsonapi/" title="Jsonapi" class="md-nav__link">
-      Jsonapi
+    <a href="/optimade-python-tools/api_reference/adapters/structures/cif/" title="cif" class="md-nav__link">
+      cif
     </a>
   </li>
 
@@ -488,8 +522,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/links/" title="Links" class="md-nav__link">
-      Links
+    <a href="/optimade-python-tools/api_reference/adapters/structures/jarvis/" title="jarvis" class="md-nav__link">
+      jarvis
     </a>
   </li>
 
@@ -500,8 +534,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/optimade_json/" title="Optimade json" class="md-nav__link">
-      Optimade json
+    <a href="/optimade-python-tools/api_reference/adapters/structures/proteindatabank/" title="proteindatabank" class="md-nav__link">
+      proteindatabank
     </a>
   </li>
 
@@ -512,8 +546,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/references/" title="References" class="md-nav__link">
-      References
+    <a href="/optimade-python-tools/api_reference/adapters/structures/pymatgen/" title="pymatgen" class="md-nav__link">
+      pymatgen
     </a>
   </li>
 
@@ -524,387 +558,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/responses/" title="Responses" class="md-nav__link">
-      Responses
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/structures/" title="Structures" class="md-nav__link">
-      Structures
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/models/utils/" title="Utils" class="md-nav__link">
-      Utils
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
-    
-    <label class="md-nav__link" for="nav-6-4">
-      Server
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Server" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Server
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/config/" title="Config" class="md-nav__link">
-      Config
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/exception_handlers/" title="Exception handlers" class="md-nav__link">
-      Exception handlers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/exceptions/" title="Exceptions" class="md-nav__link">
-      Exceptions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/main/" title="Main" class="md-nav__link">
-      Main
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/main_index/" title="Main index" class="md-nav__link">
-      Main index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/middleware/" title="Middleware" class="md-nav__link">
-      Middleware
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/query_params/" title="Query params" class="md-nav__link">
-      Query params
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-8" type="checkbox" id="nav-6-4-8">
-    
-    <label class="md-nav__link" for="nav-6-4-8">
-      Entry collections
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Entry collections" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-4-8">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Entry collections
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/entry_collections/entry_collections/" title="Entry collections" class="md-nav__link">
-      Entry collections
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/entry_collections/mongo/" title="Mongo" class="md-nav__link">
-      Mongo
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-9" type="checkbox" id="nav-6-4-9">
-    
-    <label class="md-nav__link" for="nav-6-4-9">
-      Mappers
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Mappers" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-4-9">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Mappers
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/mappers/entries/" title="Entries" class="md-nav__link">
-      Entries
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/mappers/links/" title="Links" class="md-nav__link">
-      Links
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/mappers/references/" title="References" class="md-nav__link">
-      References
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/mappers/structures/" title="Structures" class="md-nav__link">
-      Structures
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-4-10" type="checkbox" id="nav-6-4-10">
-    
-    <label class="md-nav__link" for="nav-6-4-10">
-      Routers
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Routers" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-4-10">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Routers
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/index_info/" title="Index info" class="md-nav__link">
-      Index info
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/info/" title="Info" class="md-nav__link">
-      Info
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/landing/" title="Landing" class="md-nav__link">
-      Landing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/links/" title="Links" class="md-nav__link">
-      Links
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/references/" title="References" class="md-nav__link">
-      References
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/structures/" title="Structures" class="md-nav__link">
-      Structures
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/server/routers/utils/" title="Utils" class="md-nav__link">
-      Utils
+    <a href="/optimade-python-tools/api_reference/adapters/structures/utils/" title="utils" class="md-nav__link">
+      utils
     </a>
   </li>
 
@@ -926,20 +581,20 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
     
-    <label class="md-nav__link" for="nav-6-5">
-      Validator
+    <label class="md-nav__link" for="nav-8-2">
+      filterparser
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Validator" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-5">
+    <nav class="md-nav" aria-label="filterparser" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-2">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        Validator
+        filterparser
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -950,8 +605,50 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/validator/validator/" title="Validator" class="md-nav__link">
-      Validator
+    <a href="/optimade-python-tools/api_reference/filterparser/lark_parser/" title="lark_parser" class="md-nav__link">
+      lark_parser
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3">
+    
+    <label class="md-nav__link" for="nav-8-3">
+      filtertransformers
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="filtertransformers" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        filtertransformers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/filtertransformers/debug/" title="debug" class="md-nav__link">
+      debug
     </a>
   </li>
 
@@ -962,8 +659,644 @@
 
 
   <li class="md-nav__item">
-    <a href="/optimade-python-tools/reference/validator/validator_model_patches/" title="Validator model patches" class="md-nav__link">
-      Validator model patches
+    <a href="/optimade-python-tools/api_reference/filtertransformers/django/" title="django" class="md-nav__link">
+      django
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/filtertransformers/elasticsearch/" title="elasticsearch" class="md-nav__link">
+      elasticsearch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/filtertransformers/json/" title="json" class="md-nav__link">
+      json
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/filtertransformers/mongo/" title="mongo" class="md-nav__link">
+      mongo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4">
+    
+    <label class="md-nav__link" for="nav-8-4">
+      models
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="models" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        models
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/baseinfo/" title="baseinfo" class="md-nav__link">
+      baseinfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/entries/" title="entries" class="md-nav__link">
+      entries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/index_metadb/" title="index_metadb" class="md-nav__link">
+      index_metadb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/jsonapi/" title="jsonapi" class="md-nav__link">
+      jsonapi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/links/" title="links" class="md-nav__link">
+      links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/optimade_json/" title="optimade_json" class="md-nav__link">
+      optimade_json
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/references/" title="references" class="md-nav__link">
+      references
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/responses/" title="responses" class="md-nav__link">
+      responses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/structures/" title="structures" class="md-nav__link">
+      structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/models/utils/" title="utils" class="md-nav__link">
+      utils
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      server
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="server" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/config/" title="config" class="md-nav__link">
+      config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/exception_handlers/" title="exception_handlers" class="md-nav__link">
+      exception_handlers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/exceptions/" title="exceptions" class="md-nav__link">
+      exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/logger/" title="logger" class="md-nav__link">
+      logger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/main/" title="main" class="md-nav__link">
+      main
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/main_index/" title="main_index" class="md-nav__link">
+      main_index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/middleware/" title="middleware" class="md-nav__link">
+      middleware
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/query_params/" title="query_params" class="md-nav__link">
+      query_params
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/warnings/" title="warnings" class="md-nav__link">
+      warnings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5-10" type="checkbox" id="nav-8-5-10">
+    
+    <label class="md-nav__link" for="nav-8-5-10">
+      entry_collections
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="entry_collections" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-5-10">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        entry_collections
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/entry_collections/entry_collections/" title="entry_collections" class="md-nav__link">
+      entry_collections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/entry_collections/mongo/" title="mongo" class="md-nav__link">
+      mongo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5-11" type="checkbox" id="nav-8-5-11">
+    
+    <label class="md-nav__link" for="nav-8-5-11">
+      mappers
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="mappers" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-5-11">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        mappers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/mappers/entries/" title="entries" class="md-nav__link">
+      entries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/mappers/links/" title="links" class="md-nav__link">
+      links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/mappers/references/" title="references" class="md-nav__link">
+      references
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/mappers/structures/" title="structures" class="md-nav__link">
+      structures
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5-12" type="checkbox" id="nav-8-5-12">
+    
+    <label class="md-nav__link" for="nav-8-5-12">
+      routers
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="routers" data-md-level="3">
+      <label class="md-nav__title" for="nav-8-5-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        routers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/index_info/" title="index_info" class="md-nav__link">
+      index_info
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/info/" title="info" class="md-nav__link">
+      info
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/landing/" title="landing" class="md-nav__link">
+      landing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/links/" title="links" class="md-nav__link">
+      links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/references/" title="references" class="md-nav__link">
+      references
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/structures/" title="structures" class="md-nav__link">
+      structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/utils/" title="utils" class="md-nav__link">
+      utils
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/server/routers/versions/" title="versions" class="md-nav__link">
+      versions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-6" type="checkbox" id="nav-8-6">
+    
+    <label class="md-nav__link" for="nav-8-6">
+      validator
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="validator" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        validator
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/validator/validator/" title="validator" class="md-nav__link">
+      validator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/optimade-python-tools/api_reference/validator/validator_model_patches/" title="validator_model_patches" class="md-nav__link">
+      validator_model_patches
     </a>
   </li>
 
@@ -1009,7 +1342,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Built by OPTIMADE Development Team
+            Built by the Materials-Consortia
           </div>
         
         Made with
@@ -1018,21 +1351,34 @@
         </a>
       </div>
       
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/Materials-Consortia" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="/optimade-python-tools/assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="/optimade-python-tools/assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="/optimade-python-tools/assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="/optimade-python-tools/assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "/optimade-python-tools/",
           features: [],
           search: Object.assign({
-            worker: "/optimade-python-tools/assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "/optimade-python-tools/assets/javascripts/worker/search.8e2cddea.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
