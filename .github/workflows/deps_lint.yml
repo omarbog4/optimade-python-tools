@@ -213,7 +213,7 @@ jobs:
       with:
         name: project
         file: ./coverage.xml
-        flags: unittests
+        flags: pytest
 
     - name: Upload coverage to Codecov
       if: matrix.python-version == 3.8 && github.repository == 'Materials-Consortia/optimade-python-tools'
@@ -221,7 +221,7 @@ jobs:
       with:
         name: validator
         file: ./validator_cov.xml
-        flags: unittests
+        flags: pytest
 
   docs:
     runs-on: ubuntu-latest
