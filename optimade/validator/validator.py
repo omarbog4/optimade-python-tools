@@ -8,6 +8,7 @@ models in this package.
 import re
 import sys
 import logging
+import random
 import urllib.parse
 from typing import Union, Tuple
 
@@ -19,7 +20,7 @@ except ImportError:
 import requests
 from fastapi.testclient import TestClient
 
-from optimade.models import InfoResponse, EntryInfoResponse, IndexInfoResponse
+from optimade.models import InfoResponse, EntryInfoResponse, IndexInfoResponse, DataType
 
 from .utils import (
     ValidatorLinksResponse,
@@ -44,6 +45,7 @@ LINKS_ENDPOINT = "links"
 VERSIONS_ENDPOINT = "versions"
 NON_ENTRY_ENDPOINTS = (BASE_INFO_ENDPOINT, LINKS_ENDPOINT, VERSIONS_ENDPOINT)
 REQUIRED_ENTRY_ENDPOINTS = ["references", "structures"]
+TOP_LEVEL_PROPERTIES = ("id", "type", "attributes")
 
 RESPONSE_CLASSES = {
     "references": ValidatorReferenceResponseMany,
@@ -62,6 +64,30 @@ RESPONSE_CLASSES_INDEX = {
     BASE_INFO_ENDPOINT: IndexInfoResponse,
     LINKS_ENDPOINT: ValidatorLinksResponse,
 }
+
+PROPERTIES = {}
+PROPERTIES["structures"] = {}
+PROPERTIES["structures"]["MUST"] = ("id", "type", "structure_features")
+PROPERTIES["structures"]["SHOULD"] = (
+    "last_modified",
+    "elements",
+    "nelements" "elements_ratios",
+    "chemical_formula_descriptive",
+    "chemical_formula_reduced",
+    "chemical_formula_anonymous",
+    "dimension_types",
+    "nperiodic_dimensions",
+    "lattice_vectors",
+    "cartesian_site_positions",
+    "nsites",
+    "species_at_sites",
+    "species",
+)
+PROPERTIES["structures"]["OPTIONAL"] = (
+    "immutable_id",
+    "chemical_formula_hill",
+    "assemblies",
+)
 
 
 class ImplementationValidator:
@@ -129,7 +155,6 @@ class ImplementationValidator:
             self.base_url = base_url
             self.client = Client(base_url, max_retries=self.max_retries)
 
-        self.test_id_by_type = {}
         self._setup_log()
         self.expected_entry_endpoints = (
             REQUIRED_ENTRY_ENDPOINTS_INDEX if self.index else REQUIRED_ENTRY_ENDPOINTS
@@ -150,6 +175,9 @@ class ImplementationValidator:
         # if valid is False on exit, script returns 1 to shell
         # if valid is None on exit, script returns 2 to shell, indicating an internal failure
         self.valid = None
+
+        self._test_id_by_type = {}
+        self._entry_info_by_type = {}
 
         self.success_count = 0
         self.failure_count = 0
@@ -206,7 +234,13 @@ class ImplementationValidator:
         for endp in self.test_entry_endpoints:
             entry_info_endpoint = f"{BASE_INFO_ENDPOINT}/{endp}"
             self._log.debug("Testing expected info endpoint %s", entry_info_endpoint)
-            self.test_info_or_links_endpoints(entry_info_endpoint)
+            entry_info = self.test_info_or_links_endpoints(entry_info_endpoint)
+            if entry_info:
+                self._entry_info_by_type[endp] = entry_info.dict()
+
+        # Use the _entry_info_by_type to construct filters on the relevant endpoints
+        for endp in self.test_entry_endpoints:
+            self.recurse_through_endpoint(endp)
 
         # Test that the results from multi-entry-endpoints obey e.g. page limits
         # and that all entries can be deserialized with the patched models
@@ -229,6 +263,121 @@ class ImplementationValidator:
         self.valid = not (bool(self.failure_count) or bool(self.internal_failure_count))
 
         self.print_summary()
+
+    def recurse_through_endpoint(self, endp):
+        entry_info = self._entry_info_by_type.get(endp)
+        # self.check_entry_info(entry_info, endp)
+
+        chosen_entry = self.get_archetypical_entry(endp)
+
+        if not entry_info:
+            raise ResponseError(
+                f"Unable to generate filters for endpoint {endp}: entry info not found."
+            )
+
+        _impl_properties = entry_info["data"]["properties"]
+
+        for prop in _impl_properties:
+            # check support level of property
+            prop_type = _impl_properties[prop]["type"]
+            sortable = _impl_properties[prop]["sortable"]
+            self.construct_queries_for_property(
+                prop, prop_type, sortable, endp, chosen_entry
+            )
+
+    @test_case
+    def get_archetypical_entry(self, endp):
+        response = self.get_endpoint(endp)
+        data_returned = response.json()["meta"]["data_returned"]
+        assert data_returned > 0
+        response = self.get_endpoint(
+            f"{endp}?page_offset={random.randint(0, data_returned-1)}"
+        )
+        archetypical_entry = response.json()["data"][0]
+        return archetypical_entry, f"set archetypical entry for {endp}"
+
+    def construct_queries_for_property(
+        self, prop, prop_type, sortable, endp, chosen_entry
+    ):
+        if prop_type in (DataType.INTEGER, DataType.FLOAT):
+            self.construct_numerical_filters(
+                prop, prop_type, sortable, endp, chosen_entry
+            )
+        elif prop_type == DataType.STRING:
+            if prop != "type":
+                self.construct_string_filters(
+                    prop, prop_type, sortable, endp, chosen_entry
+                )
+
+    #     elif prop_type == DataType.LIST:
+    #         self.construct_list_filters(prop, endp)
+    #     elif prop_type == DataType.TIMESTAMP:
+    #         self.construct_timestamp_filters(prop, endp)
+    #     elif prop_type == DataType.STRING:
+    # self.construct_string_filters(prop, endp)
+
+    def construct_numerical_filters(
+        self, prop, prop_type, sortable, endp, chosen_entry
+    ):
+
+        prop_value = chosen_entry["attributes"][prop]
+
+        if prop_type == DataType.INTEGER:
+            assert int(prop_value) == prop_value
+
+        num_data_returned = {}
+        inclusive_operators = ("=", "<=", ">=")
+        exclusive_operators = ("!=", "<", ">")
+
+        for operator in inclusive_operators + exclusive_operators:
+            query = f"{prop} {operator} {prop_value}"
+            response = self.get_endpoint(f"{endp}?filter={query}").json()
+            num_data_returned[operator] = response["meta"]["data_returned"]
+
+            excluded = operator in exclusive_operators
+            # if we have all results on this page, check that the blessed ID is in the response
+            if response["meta"]["data_returned"] <= len(response["data"]):
+                assert excluded ^ (
+                    chosen_entry["id"] in set(entry["id"] for entry in response["data"])
+                )
+
+            # check that at least the archetypical structure was returned
+            if operator in inclusive_operators:
+                assert num_data_returned[operator] >= 1
+
+        assert num_data_returned["<="] >= num_data_returned["="]
+        assert num_data_returned[">="] >= num_data_returned["="]
+
+    def construct_string_filters(self, prop, prop_type, sortable, endp, chosen_entry):
+
+        if prop == "id":
+            prop_value = chosen_entry["id"]
+
+        else:
+            prop_value = chosen_entry["attributes"][prop]
+
+        num_data_returned = {}
+        inclusive_operators = ("=", "CONTAINS", "STARTS WITH", "ENDS WITH")
+        exclusive_operators = ()
+
+        for operator in inclusive_operators + exclusive_operators:
+            query = f'{prop} {operator} "{prop_value}"'
+            response = self.get_endpoint(f"{endp}?filter={query}").json()
+            num_data_returned[operator] = response["meta"]["data_returned"]
+
+            excluded = operator in exclusive_operators
+            # if we have all results on this page, check that the blessed ID is in the response
+            if response["meta"]["data_returned"] <= len(response["data"]):
+                assert excluded ^ (
+                    chosen_entry["id"] in set(entry["id"] for entry in response["data"])
+                )
+
+            # check that at least the archetypical structure was returned
+            if operator in inclusive_operators:
+                assert num_data_returned[operator] >= 1
+
+        if prop == "id":
+            assert num_data_returned["="] == 1
 
     def print_summary(self):
         if not self.valid:
@@ -291,8 +440,8 @@ class ImplementationValidator:
                 _type,
             )
             response_cls = ValidatorEntryResponseOne
-        if _type in self.test_id_by_type:
-            test_id = self.test_id_by_type[_type]
+        if _type in self._test_id_by_type:
+            test_id = self._test_id_by_type[_type]
             response = self.get_endpoint(f"{_type}/{test_id}")
             if response:
                 self.deserialize_response(response, response_cls)
@@ -455,7 +604,7 @@ class ImplementationValidator:
 
         """
         if deserialized and deserialized.data:
-            self.test_id_by_type[deserialized.data[0].type] = deserialized.data[0].id
+            self._test_id_by_type[deserialized.data[0].type] = deserialized.data[0].id
             self._log.debug(
                 "Set type %s test ID to %s",
                 deserialized.data[0].type,
@@ -467,7 +616,7 @@ class ImplementationValidator:
                 "This may be caused by previous errors, if e.g. the endpoint failed deserialization."
             )
         return (
-            self.test_id_by_type[deserialized.data[0].type],
+            self._test_id_by_type[deserialized.data[0].type],
             f"successfully scraped test ID from {deserialized.data[0].type} endpoint",
         )
 
