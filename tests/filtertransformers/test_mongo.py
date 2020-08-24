@@ -378,6 +378,31 @@ class TestMongoTransformer:
             "cartesian_site_positions.11": {"$exists": True}
         }
 
+    def test_mongo_special_id(self, mapper):
+
+        from optimade.filtertransformers.mongo import MongoTransformer
+        from bson import ObjectId
+
+        class MyMapper(mapper("StructureMapper")):
+            ALIASES = (
+                ("elements", "my_elements"),
+                ("nelements", "nelem"),
+                ("immutable_id", "_id"),
+            )
+            LENGTH_ALIASES = (
+                ("chemsys", "nelements"),
+                ("cartesian_site_positions", "nsites"),
+                ("elements", "nelements"),
+            )
+            PROVIDER_FIELDS = ("chemsys",)
+
+        transformer = MongoTransformer(mapper=MyMapper())
+        parser = LarkParser(version=self.version, variant=self.variant)
+
+        assert transformer.transform(
+            parser.parse('immutable_id = "5cfb441f053b174410700d02"')
+        ) == {"_id": {"$eq": ObjectId("5cfb441f053b174410700d02")}}
+
     def test_aliased_length_operator(self, mapper):
         from optimade.filtertransformers.mongo import MongoTransformer
 

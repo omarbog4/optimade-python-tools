@@ -41,6 +41,7 @@ class MongoTransformer(Transformer):
         query = self._apply_relationship_filtering(query)
         query = self._apply_length_operators(query)
         query = self._apply_unknown_or_null_filter(query)
+        query = self._apply_mongo_id_filter(query)
 
         return query
 
@@ -440,6 +441,29 @@ class MongoTransformer(Transformer):
 
         return recursive_postprocessing(
             filter_, check_for_known_filter, replace_known_filter_with_or
+        )
+
+    def _apply_mongo_id_filter(self, filter_: dict) -> dict:
+        """ This method loops through the query and replaces any operations
+        on the special Mongodb `_id` key with the corresponding operation
+        on a BSON `ObjectId` type.
+        """
+
+        def check_for_id_key(prop, _):
+            """ Find cases where the query dict is operating on the `_id` field. """
+            return prop == "_id"
+
+        def replace_str_id_with_objectid(subdict, prop, expr):
+            from bson import ObjectId
+
+            for operator in subdict[prop]:
+                val = subdict[prop][operator]
+                if isinstance(val, str):
+                    subdict[prop][operator] = ObjectId(val)
+            return subdict
+
+        return recursive_postprocessing(
+            filter_, check_for_id_key, replace_str_id_with_objectid
         )
 
 
