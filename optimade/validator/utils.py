@@ -34,7 +34,7 @@ class ResponseError(Exception):
 
 
 class InternalError(Exception):
-    """ This exception should be raised when validation throws an unexpected error.
+    """This exception should be raised when validation throws an unexpected error.
     These should be counted separately from `ResponseError`'s and `ValidationError`'s.
 
     """
@@ -62,7 +62,7 @@ def print_success(string, **kwargs):
 
 class Client:  # pragma: no cover
     def __init__(self, base_url: str, max_retries=5):
-        """ Initialises the Client with the given `base_url` without testing
+        """Initialises the Client with the given `base_url` without testing
         if it is valid.
 
         Parameters:
@@ -83,7 +83,7 @@ class Client:  # pragma: no cover
         self.max_retries = max_retries
 
     def get(self, request: str):
-        """ Makes the given request, with a number of retries if being rate limited. The
+        """Makes the given request, with a number of retries if being rate limited. The
         request will be prepended with the `base_url` unless the request appears to be an
         absolute URL (i.e. starts with `http://` or `https://`).
 
@@ -133,7 +133,7 @@ class Client:  # pragma: no cover
 
 
 def test_case(test_fn):
-    """ Wrapper for test case functions, which pretty_prints any errors
+    """Wrapper for test case functions, which pretty_prints any errors
     depending on verbosity level and returns only the response to the caller.
 
     Parameters:
