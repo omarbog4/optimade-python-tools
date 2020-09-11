@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "OPTIMADE API - Index meta-database",
-    "description": "The [Open Databases Integration for Materials Design (OPTIMADE) consortium](https://www.optimade.org/) aims to make materials databases interoperational by developing a common REST API.\nThis is the \"special\" index meta-database.\n\nThis specification is generated using [`optimade-python-tools`](https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.11.0) v0.11.0.",
+    "description": "The [Open Databases Integration for Materials Design (OPTIMADE) consortium](https://www.optimade.org/) aims to make materials databases interoperational by developing a common REST API.\nThis is the \"special\" index meta-database.\n\nThis specification is generated using [`optimade-python-tools`](https://github.com/Materials-Consortia/optimade-python-tools/tree/v0.12.0) v0.12.0.",
     "version": "1.0.0"
   },
   "paths": {
@@ -778,6 +778,8 @@
       "IndexInfoResource": {
         "title": "IndexInfoResource",
         "required": [
+          "id",
+          "type",
           "attributes",
           "relationships"
         ],
@@ -785,10 +787,12 @@
         "properties": {
           "id": {
             "title": "Id",
+            "pattern": "^/$",
             "type": "string"
           },
           "type": {
             "title": "Type",
+            "pattern": "^info$",
             "type": "string"
           },
           "links": {
@@ -970,6 +974,7 @@
         "title": "LinksResource",
         "required": [
           "id",
+          "type",
           "attributes"
         ],
         "type": "object",
@@ -981,6 +986,7 @@
           },
           "type": {
             "title": "Type",
+            "pattern": "^links$",
             "type": "string",
             "description": "These objects are described in detail in the section Links Endpoint"
           },
@@ -1326,7 +1332,8 @@
       "RelatedLinksResource": {
         "title": "RelatedLinksResource",
         "required": [
-          "id"
+          "id",
+          "type"
         ],
         "type": "object",
         "properties": {
@@ -1337,6 +1344,7 @@
           },
           "type": {
             "title": "Type",
+            "pattern": "^links$",
             "type": "string"
           }
         },
@@ -1657,35 +1665,63 @@
           },
           "first": {
             "title": "First",
-            "maxLength": 65536,
-            "minLength": 1,
-            "type": "string",
-            "description": "The first page of data",
-            "format": "uri"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 65536,
+                "format": "uri"
+              },
+              {
+                "$ref": "#/components/schemas/Link"
+              }
+            ],
+            "description": "The first page of data"
           },
           "last": {
             "title": "Last",
-            "maxLength": 65536,
-            "minLength": 1,
-            "type": "string",
-            "description": "The last page of data",
-            "format": "uri"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 65536,
+                "format": "uri"
+              },
+              {
+                "$ref": "#/components/schemas/Link"
+              }
+            ],
+            "description": "The last page of data"
           },
           "prev": {
             "title": "Prev",
-            "maxLength": 65536,
-            "minLength": 1,
-            "type": "string",
-            "description": "The previous page of data",
-            "format": "uri"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 65536,
+                "format": "uri"
+              },
+              {
+                "$ref": "#/components/schemas/Link"
+              }
+            ],
+            "description": "The previous page of data"
           },
           "next": {
             "title": "Next",
-            "maxLength": 65536,
-            "minLength": 1,
-            "type": "string",
-            "description": "The next page of data",
-            "format": "uri"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 65536,
+                "format": "uri"
+              },
+              {
+                "$ref": "#/components/schemas/Link"
+              }
+            ],
+            "description": "The next page of data"
           }
         },
         "description": "A set of Links objects, possibly including pagination"
@@ -1719,7 +1755,8 @@
       "Warnings": {
         "title": "Warnings",
         "required": [
-          "detail"
+          "detail",
+          "type"
         ],
         "type": "object",
         "properties": {
@@ -1736,11 +1773,6 @@
               }
             ],
             "description": "A links object storing about"
-          },
-          "status": {
-            "title": "Status",
-            "type": "string",
-            "description": "the HTTP status code applicable to this problem, expressed as a string value."
           },
           "code": {
             "title": "Code",
@@ -1777,6 +1809,7 @@
           },
           "type": {
             "title": "Type",
+            "pattern": "^warning$",
             "type": "string",
             "description": "Warnings must be of type \"warning\""
           }
